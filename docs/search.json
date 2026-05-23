@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Below, you’ll find the schedule to all of the topics and material that we’ll cover this semester. A few notes on the important links (Content, Lab, and Example) are included below. Each week only contains a single link for each category: this is intentional! The material is all organized/compiled by week, rather than by day, even if we cover multiple topics over the course of a week.\n\nContent (): Here you’ll find the readings, lecture slides, and all other material that supports the lecture components of the course.\nLab (): This page contains the instructions, data, and other material for the 13 labs where we’ll explore examples of topics using real data.\nExample (): This page will contain worked-examples of the various topics that we’ll cover over the course of the semester.\n\n\n\nModule 1: Thinking Like a Data Scientist\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 1\n\n\n9/11/26\n\n\nOrientation & What is Data Science in Biology?\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 2\n\n\n9/18/26\n\n\nProject Organization & Reproducibility\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule 2: R for Data Handling & Exploration\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 3\n\n\n9/25/26\n\n\nIntro to R and Rstudio\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 4\n\n\n10/2/26\n\n\nData Wrangling I\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 5\n\n\n10/9/26\n\n\nData Wrangling II\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 6\n\n\n10/16/26\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule 3: Automation, Functions, & Scaling Up\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 7\n\n\n10/23/26\n\n\nFunctions and Automation\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 8\n\n\n10/30/26\n\n\nMulti-file Workflows\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule 4: Version Control & Open Science\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 9\n\n\n11/6/26\n\n\nGit Fundamentals\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 10\n\n\n11/13/26\n\n\nGitHub Collaboration\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 11\n\n\n11/20/26\n\n\nOpen Science & OSF\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule 5: Data Management & Databases\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 12\n\n\n11/27/26\n\n\nData Management & Metadata\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 13\n\n\n12/4/26\n\n\nDatabases & Data Quality\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nModule 6: Integration and Application\n\n\n\n\nWeek\n\n\nDate\n\n\nTopic\n\n\nContent\n\n\nLab\n\n\nExample\n\n\n\n\n\n\nWeek 14\n\n\n12/11/26\n\n\nWrap-up and Final Project Presentations"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Description Researchers are typically well-trained in the theory and practice of their chosen specialty, from developing questions to designing experiments and collecting data, as well as analyzing those data using statistical methods. However, the practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices.\nThis course is focused on providing hands-on experience in accessing, manipulating, managing, visualizing and communicating data using Open Science principles. Students will encounter the entire data life cycle from generation to preservation in the context of biological and ecological research. Students will be expected to complete assignments using their own data or other available datasets. It is a topic-driven weekly seminar (14 sessions at ~2h each), combining small amounts of lecture with problem solving and hands-on exercises."
+  },
+  {
+    "objectID": "syllabus.html#textbooksreadings",
+    "href": "syllabus.html#textbooksreadings",
+    "title": "Syllabus",
+    "section": "Textbooks/Readings",
+    "text": "Textbooks/Readings\nThis course does not have a single, assigned text, however we’ll make use of material from several reference books, journal articles, and websites throughout the semester. All of these materials will be posted on the course website. These are for reference only and serve as more in-depth treatments of some of the course material."
+  },
+  {
+    "objectID": "syllabus.html#software",
+    "href": "syllabus.html#software",
+    "title": "Syllabus",
+    "section": "Software",
+    "text": "Software\nThe purpose of this class is to teach both concepts and software - - this ensures that after this course, students will be able to implement the methods covered in their software of choice. That said, we need to choose some computational tool to do our work, so we will be using R and its integrated development environment, RStudio, in this course. R is the most widely used language and statistical software in the life sciences. It’s available on all major operating systems and is 100% free and open-source ensuring that students will retain access to the toolkits developed in this course long after the semester ends. We’ll cover all of the basics of installing and using R to load, manipulate, and visualize data, assuming that folks may have some familiarity with R, but with enough detail that novices will be able to pick up the necessary skills as well. However, if you’d like to get a head start on learning R, some great, free online resources are included on the course website."
+  },
+  {
+    "objectID": "syllabus.html#attendance",
+    "href": "syllabus.html#attendance",
+    "title": "Syllabus",
+    "section": "Attendance",
+    "text": "Attendance\nAttendance in lectures and labs is strongly encouraged. Can you learn these skills on your own? Sure. But you’ll get a better outcome and enjoy the process a whole lot more by doing it with your friends and colleagues! This is especially the case when learning a new skillset like R - - being able to quickly bounce a question off of someone IRL is always preferable to spending hours trawling StackExchange for an answer. Please give us a heads-up if you will be away for a week or more. If you will miss any assessment activity, it is your responsibility to contact us in advance so suitable arrangements can be made for a make-up exercise given valid circumstances (time-sensitive field work, bereavement, medical, etc.). Absence of a good faith attempt to let us know of your anticipated or unexpected absence may result in a grade of zero for missed assessments. Students will not be penalized for absence during the semester due to excused circumstances. Such circumstances include verified illness, participation in intercollegiate athletic events, subpoenas, jury duty, military service, bereavement, and religious observances. For complete information, please see Administrative Policy: Excused Absences and Makeup Work."
+  },
+  {
+    "objectID": "syllabus.html#expected-student-workload",
+    "href": "syllabus.html#expected-student-workload",
+    "title": "Syllabus",
+    "section": "Expected Student Workload",
+    "text": "Expected Student Workload\nFor this 2-credit course, it is expected that students spend a minimum of 6 hours per week completing coursework to earn an average grade. Coursework includes attending lectures, group assignments, online quizzes, studying, and other activities. Note: according to University policy, “one hour” equates to 50 minutes of time."
+  },
+  {
+    "objectID": "syllabus.html#ai-llms-and-bullshit",
+    "href": "syllabus.html#ai-llms-and-bullshit",
+    "title": "Syllabus",
+    "section": "AI, LLMs, and Bullshit",
+    "text": "AI, LLMs, and Bullshit\nI highly recommend NOT using ChatGPT or other large language models (aka LLMs) in this (or any…) class.\nThese tools, while highly functional and time-saving in certain situations, are at direct odds with the practice of learning and developing competence in concepts and skills - be they coding, writing, or other artistic pursuits. I’m not opposed to using these tools in a variety of circumstances, and I use ChatGPT for a variety of tasks to provide a quick review of my own work. These tools are phenomenal resources for coding when you already know what you are doing. Using LLMs requires careful skill, attention, practice, and they tend to be useful only in specific limited cases.\nUsing ChatGPT to write all of your code will not help you learn how to master R or understand the statistical concepts that we are learning in this class. What these models do is essentially amalgamate all of the publicly-available code on GitHub and spit out a plausible looking answer. This is otherwise known as bullshitting. Sure, bullshitting can sometimes get you part of, or, in rare instances, all the way to the right answer. But more often than not, the code it spits out will contain components that are outright wrong or have stuff you don’t need. These models don’t care if the “answer” provided is wrong or right (nor can the models actually know). It doesn’t care if your code runs or not. It just cares that the crap it spits back at you looks plausible. A hilarious, and slightly terrifying example of this comes from Andrew Heiss:\n\"A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before. I’ve seen other AI-generated recipes that call for a cup of horseradish in brownies or 21 pounds of cabbage for a pork dish. In May 2024, Google’s AI recommended adding glue to pizza sauce to stop the cheese from sliding off. Again, to people who have cooked before, these are all obviously wrong (and dangerous in the case of the glue!), but to a complete beginner, these look like plausible instructions.\"\nThe purpose of this course is to outfit y’all with the concepts and tools needed to accurately and honestly portray the results of hard-won data that we use to understand the way the world works so that we can be better stewards and citizens of our shared planet. I want y’all to succeed in this. I don’t want to read a bunch of bullshit generated by an LLM. It’s not useful to you. It’s not useful to me. It’s a waste of time.\nAll that said, I’m not going to play Sherlock and try and guess whether or not what you’re turning in is AI-generated. As I mentioned above, there are legitimate and good use-cases for LLMs in the work that we do such as helping debug some code, interpreting an error message that you don’t understand, or helping translate what individual lines of code may be doing if you can’t understand from the documentation. However, there’s a fairly good chance that I will notice if what you’re turning in came from a LMM. There are tells in the way machines write code versus the way most humans do. While this may not impact your grade, it will impact your learning. And it will make us sad. Please don’t make us sad."
+  },
+  {
+    "objectID": "syllabus.html#phones-and-electronic-devices",
+    "href": "syllabus.html#phones-and-electronic-devices",
+    "title": "Syllabus",
+    "section": "Phones and electronic devices",
+    "text": "Phones and electronic devices\nObviously we’ll need access to computers for this course, and taking notes during lectures on your computers is fine. However, I would suggest taking real, physical notes given the abundance of research that links this to improved comprehension and learning outcomes. As for cell phone use, please silence them and put them in a bag."
+  },
+  {
+    "objectID": "syllabus.html#student-conduct",
+    "href": "syllabus.html#student-conduct",
+    "title": "Syllabus",
+    "section": "Student conduct",
+    "text": "Student conduct\nThe University seeks an environment that promotes academic achievement and integrity, that is protective of free inquiry, and that serves the educational mission of the University. Similarly, the University seeks a community that is free from violence, threats, and intimidation; that is respectful of the rights, opportunities, and welfare of students, faculty, staff, and guests of the University; and that does not threaten the physical or mental health or safety of members of the University community. As a student at the University you are expected to adhere to the Student Conduct Code as approved by the Board of Regents. The Student Conduct Code can be found in the UMN Policy Library: https://policy.umn.edu/policy-regents/student-conduct-code."
+  },
+  {
+    "objectID": "syllabus.html#academic-integrity",
+    "href": "syllabus.html#academic-integrity",
+    "title": "Syllabus",
+    "section": "Academic integrity",
+    "text": "Academic integrity\nAcademic integrity is essential to a positive teaching and learning environment. All students enrolled in University courses are expected to complete coursework responsibilities with fairness and honesty. The University Student Code of Conduct defines scholastic dishonesty as:\n”‘...submission of false records of academic achievement; cheating on assignments or examinations; plagiarizing; altering, forging, or misusing a University academic record; taking, acquiring, or using test materials without faculty permission; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement.”’\nRarely - especially among upper division courses - have I found this to be a problem. I encourage and expect students to work together on laboratory assignments; in real practice, you will collaborate or discuss with colleagues the best analytical route to choose. However, the work you submit must be your own. Plagiarism (from classmates or the internet), cheating during tests or exams, or misrepresenting the nature of your involvement in any assigned work may result in disciplinary action, including, but not limited to, a penalty up to and including an “F” or “N” for the course."
+  },
+  {
+    "objectID": "syllabus.html#student-accommodations",
+    "href": "syllabus.html#student-accommodations",
+    "title": "Syllabus",
+    "section": "Student accommodations",
+    "text": "Student accommodations\nOccasionally, the need arises to employ different testing techniques in assessing student mastery of the subject matter. Determining appropriate disability accommodations is a collaborative process. You as a student must register with Disability Services and provide documentation of your disability; I will then work with Disability Services to determine appropriate accommodations. See http://disability.umn.edu."
+  },
+  {
+    "objectID": "syllabus.html#sexual-harassment-sexual-assault-stalking-and-relationship-violence",
+    "href": "syllabus.html#sexual-harassment-sexual-assault-stalking-and-relationship-violence",
+    "title": "Syllabus",
+    "section": "Sexual harassment, sexual assault, stalking, and relationship violence",
+    "text": "Sexual harassment, sexual assault, stalking, and relationship violence\nThe University prohibits sexual misconduct and encourages those affected to seek support, explore reporting options, and contact a confidential resource on campus if desiring to speak confidentially with someone. Instructors are required to share reports of possible sexual misconduct with the campus Title IX office, which will then offer resources and support. For confidential help, to report sexual misconduct, or to access more information, contact your campus Title IX office or relevant policy contacts or consult the University’s policy on sexual misconduct. For more information, please see Administrative Policy: Sexual Harassment, Sexual Assault, Stalking and Relationship Violence."
+  },
+  {
+    "objectID": "syllabus.html#discrimination",
+    "href": "syllabus.html#discrimination",
+    "title": "Syllabus",
+    "section": "Discrimination",
+    "text": "Discrimination\nAll University members are prohibited from engaging in, or assisting or abetting another’s engagement in, discrimination and related retaliation (collectively “prohibited conduct”). The University of Minnesota (the “University”) will take prompt and effective steps intended to end prohibited conduct; prevent its recurrence; and, as appropriate, remedy its effects. For more information, consult Administration Policy: Discrimination."
+  },
+  {
+    "objectID": "syllabus.html#diversity-equity-inclusion-and-equal-opportunity",
+    "href": "syllabus.html#diversity-equity-inclusion-and-equal-opportunity",
+    "title": "Syllabus",
+    "section": "Diversity, equity, inclusion, and equal opportunity",
+    "text": "Diversity, equity, inclusion, and equal opportunity\nThe University provides equal access to and opportunity in its programs and facilities, without regard to race, color, creed, religion, national origin, gender, age, marital status, familial status, disability, public assistance status, membership or activity in a local commission created for the purpose of dealing with discrimination, veteran status, sexual orientation, gender identity, or gender expression. For more information, please consult Board of Regents Policy: Diversity, Equity, Inclusion, and Equal Opportunity."
+  },
+  {
+    "objectID": "syllabus.html#academic-freedom-and-responsibility",
+    "href": "syllabus.html#academic-freedom-and-responsibility",
+    "title": "Syllabus",
+    "section": "Academic freedom and responsibility",
+    "text": "Academic freedom and responsibility\nAcademic freedom is central to the University, allowing students to explore, discuss, and research relevant topics within a course’s scope. With this freedom comes the responsibility to engage critically, respect differing views, develop the capacity for critical judgment, engage in a sustained and independent search for truth, and meet course requirements. Concerns about academic freedom are taken seriously – students can reach out to me, department leadership, advisors, or the Office of the Provost for support. Read more about Academic Freedom and Responsibility."
+  },
+  {
+    "objectID": "syllabus.html#stress-management",
+    "href": "syllabus.html#stress-management",
+    "title": "Syllabus",
+    "section": "Stress management",
+    "text": "Stress management\nWe live in continually unprecedented times. On top of all the external stressors in our lives, strained relationships, anxiety, depression, substance addiction problems, and more can impede learning, reduce your ability to participate in daily activities, and reduce your academic performance (in addition to just making your life more difficult and miserable!). Please realize that you are not alone and that a broad range of confidential mental health services are available on campus to assist you. Reaching out for help is challenging – but it is a smart and courageous thing to do. http://www.mentalhealth.umn.edu"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Entomology 3927/5927",
+    "section": "",
+    "text": "The practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices. This course is focused on providing hands-on experience in accessing, manipulating, managing, visualizing and communicating data using Open Science principles. We’ll encounter the entire data life cycle from generation to preservation in the context of biological and ecological research.\n\n\n\n\n\n\nFall 2026 Semester College of Food, Agricultural, and Natural Resource Sciences University of Minnesota"
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Entomology 3927/5927",
+    "section": "Instructor",
+    "text": "Instructor\n Dr. Jeremy Hemberger  408 Hodson Hall  jhemberg@umn.edu"
+  },
+  {
+    "objectID": "index.html#lecture-details",
+    "href": "index.html#lecture-details",
+    "title": "Entomology 3927/5927",
+    "section": "Lecture details",
+    "text": "Lecture details\n Friday  1:30-2:15pm  490 Hodson Hall"
+  },
+  {
+    "objectID": "index.html#lab-details",
+    "href": "index.html#lab-details",
+    "title": "Entomology 3927/5927",
+    "section": "Lab details",
+    "text": "Lab details\n Friday  2:15-3:30pm  490 Hodson Hall"
+  },
+  {
+    "objectID": "index.html#important-links",
+    "href": "index.html#important-links",
+    "title": "Entomology 3927/5927",
+    "section": "Important links",
+    "text": "Important links\n Canvas Site\n Class Github"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

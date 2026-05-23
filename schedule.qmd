@@ -1,0 +1,89 @@
+---
+title: "Schedule"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+Below, you'll find the schedule to all of the topics and material that we'll cover this semester. A few notes on the important links (`Content`, `Lab`, and `Example`) are included below. Each week only contains a single link for each category: this is intentional! The material is all organized/compiled by week, rather than by day, even if we cover multiple topics over the course of a week.
+
+-   [**Content**](/content/) ({{< fa chalkboard-user >}}): Here you'll find the readings, lecture slides, and all other material that supports the lecture components of the course.
+-   [**Lab**](/lab/) ({{< fa laptop-code >}}): This page contains the instructions, data, and other material for the 13 labs where we'll explore examples of topics using real data.
+-   [**Example**](/example/) ({{< fa file-code >}}): This page will contain worked-examples of the various topics that we'll cover over the course of the semester.
+
+------------------------------------------------------------------------
+
+```{r build-table, echo=FALSE, include = FALSE, output = 'asis'}
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+library(fontawesome)
+options(knitr.kable.NA = '')
+
+schedule.df <- read_csv("./data/ent3927-schedule.csv") %>%
+  nest(.by = "group")
+
+show_table <- function(group_id) {
+  # Add a heading
+  cat(as.character(paste("\n\n###", schedule.df$group[[group_id]], "\n\n")))
+  
+schedule <- schedule.df$data[[group_id]] %>%
+  # mutate(symbol = fa("book-open")) %>%
+  # mutate(symbol = cell_spec(symbol, "html")) %>%
+  # rename(content2 = symbol) %>%
+  # select(-content) %>%
+  # fill(5:7, .direction = "down") %>%
+  # slice(1) %>%
+  # mutate(content = "[{{< fa book-open >}}](content/w1-content)") %>%
+  mutate(content = if_else(is.na(content), 
+                           true = NA,
+                           false = cell_spec(fa("chalkboard-user"),
+                                             format = "html",
+                                             link = paste0(.$content, ".qmd"),
+                                             # link = "content/w1-content.qmd",
+                                             escape = F,
+                                             align = "c",
+                                             font_size = "x-large"))) %>%
+  mutate(lab = if_else(is.na(lab),
+                       true = NA,
+                       false = cell_spec(fa("laptop-code"),
+                                         format = "html",
+                                         link = paste0(.$lab, ".qmd"),
+                                         # link = "content/w1-content.qmd",
+                                         escape = F,
+                                         align = "c",
+                                         font_size = "x-large"))) %>%
+  mutate(example = if_else(is.na(example),
+                           true = NA,
+                           false = cell_spec(fa("file-code"),
+                                             format = "html",
+                                             link = paste0(.$example, ".qmd"),
+                                             # link = "content/w1-content.qmd",
+                                             escape = F,
+                                             align = "c",
+                                             font_size = "x-large"))) %>%
+  # fill(4:6, .direction = "down") %>%
+  select(week, date, title, content, lab, example) %>%
+  kbl(# col.names = c("Week", "Date", "Topic", "Content", "Lab", "Example"),
+      col.names = c("Week", "Date", "Topic", "Content", "Lab", "Example"),
+      escape = FALSE,
+      format = "html",
+      align = c("lllccc")) %>%
+  kable_styling(bootstrap_options = c(),
+                full_width = TRUE) %>%
+  column_spec(1, width = "15%", bold = TRUE) %>%
+  column_spec(2, width = "15%") %>%
+  column_spec(3, width = "40%", italic = TRUE) %>%
+  column_spec(4:6, width = "10%") %>%
+  collapse_rows(columns = c(1))
+
+cat(schedule)
+}
+
+
+```
+
+```{r show-table, echo = FALSE, output = 'asis'}
+# schedule
+walk(seq(1, nrow(schedule.df)), ~show_table(.x))
+```

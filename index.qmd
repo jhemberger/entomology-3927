@@ -1,0 +1,73 @@
+---
+# title: "Entomology 5126"
+# subtitle: "Spatial and Temporal Analyses (of Bio/Ecological Data)"
+image: media/ent-3927-header.png
+toc: false
+about: 
+  template: jolla
+  image-shape: rectangle
+  image-width: 55em
+  # links:
+    # - text: Syllabus
+    #   href: media/ent5126-syllabus_sp2026.pdf
+    # - text: GitHub
+    #   href: https://github.com/jhemberger/entomology-5126
+    # - text: Email
+    #   href: mailto:jhemberg@umn.edu
+# engine: knitr
+---
+
+:::::::: {columns}
+:::: {.column width="70%"}
+::: landing-text
+The practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices. This course is focused on providing hands-on experience in ***accessing***, ***manipulating***, ***managing***, ***visualizing*** and ***communicating*** data using Open Science principles. We'll encounter the entire data life cycle from generation to preservation in the context of biological and ecological research.
+:::
+::::
+
+::: {.column width="5%"}
+:::
+
+:::: {.column width="24%"}
+::: landing-text
+**Fall 2026 Semester**</br> College of Food, Agricultural, and Natural Resource Sciences</br> University of Minnesota
+:::
+::::
+::::::::
+
+------------------------------------------------------------------------
+
+::::::::::: {columns}
+:::: {.column width="24%"}
+::: landing-text
+## Instructor
+
+{{< fa person-chalkboard >}} [Dr. Jeremy Hemberger](https://entomology.umn.edu/people/jeremy-hemberger)</br> {{< fa building >}} 408 Hodson Hall</br> {{< fa envelope >}} [jhemberg\@umn.edu](mailto:jhemberg@umn.edu)
+:::
+::::
+
+:::: {.column width="24%"}
+::: landing-text
+## Lecture details
+
+{{< fa calendar >}} Friday</br> {{< fa clock >}} 1:30-2:15pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
+:::
+::::
+
+:::: {.column width="24%"}
+::: landing-text
+## Lab details
+
+{{< fa calendar >}} Friday</br> {{< fa clock >}} 2:15-3:30pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
+:::
+::::
+
+:::: {.column width="24%"}
+::: landing-text
+## Important links
+
+[{{< fa user-graduate >}} [Canvas Site](https://canvas.umn.edu//)]{.btn .btn-outline-warning}
+
+[{{< fa brands github >}} [Class Github](https://github.com/jhemberger/entomology-5126)]{.btn .btn-outline-warning}
+:::
+::::
+:::::::::::
