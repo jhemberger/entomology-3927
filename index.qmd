@@ -11,7 +11,7 @@ about:
     # - text: Syllabus
     #   href: media/ent5126-syllabus_sp2026.pdf
     # - text: GitHub
-    #   href: https://github.com/jhemberger/entomology-5126
+    #   href: https://github.com/entomology-3927-5927
     # - text: Email
     #   href: mailto:jhemberg@umn.edu
 # engine: knitr
@@ -67,7 +67,7 @@ The practice of working with and managing data to produce repeatable analyses is
 
 [{{< fa user-graduate >}} [Canvas Site](https://canvas.umn.edu//)]{.btn .btn-outline-warning}
 
-[{{< fa brands github >}} [Class Github](https://github.com/jhemberger/entomology-5126)]{.btn .btn-outline-warning}
+[{{< fa brands github >}} [Class Github](https://github.com/entomology-3927-5927)]{.btn .btn-outline-warning}
 :::
 ::::
 :::::::::::

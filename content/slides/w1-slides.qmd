@@ -1,0 +1,91 @@
+---
+title: "Week 1"
+subtitle: "Class orientation and introduction to data science"
+editor:
+  mode: source
+format:
+  revealjs: 
+    # center-title-slide: false
+    output-file: w1-slides.html
+    theme: ["simple", "slide_styles/slide-styles.scss"]
+    # navigation-mode: vertical
+    smaller: true
+    slide-number: c/t
+    chalkboard: 
+      buttons: true
+    preview-links: auto
+    auto-stretch: false
+    transition: fade
+    transition-speed: slow
+    logo: /media/ent-3927-header.png
+    css: ["default", "slide_styles/slide-styles.css", "slide_styles/slide-styles.scss"]
+    # footer: '[https://jhemberger.github.io/entomology-5126/](https://jhemberger.github.io/entomology-5126/)'
+resources:
+  - slide_media/week_1/ento3927-syllabus_fall2026.pdf
+---
+
+# Welcome!
+
+## What we'll cover this week {.smaller}
+
+. . .
+
+::: box-1-list
+[{{< fa user >}}]{.margin-1} Who am I?
+:::
+
+. . .
+
+::: box-2-list
+[{{< fa clipboard-list >}}]{.margin-1} Course logistics and learning objectives
+:::
+
+. . .
+
+::: box-3-list
+[{{< fa square-poll-horizontal >}}]{.margin-1} Course survey
+:::
+
+. . .
+
+::: box-4-list
+[{{< fa table-list >}}]{.margin-1} What is data science?
+:::
+
+. . .
+
+::: box-5-list
+[{{< fa arrows-spin >}}]{.margin-1} Reproducibility crisis, the data life cycle, and being FAIR
+:::
+
+# Who am I? {.bkrd-color-1}
+
+## Jeremy Hemberger, PhD {.smaller}
+
+***Assistant Professor - Department of Entomology*** </br> </br> 👨🏻‍🔬 I lead the [Insect Biodiversity under Global Change lab](https://jhemberger.github.io/ibug_lab_website/)</br> 🐝 Research: global change impacts on insects</br> 👨🏻‍🏫 Teaching: quantitative methods in ecology and entomology</br>
+
+:::::: columns
+::: {.column width="33%"}
+![](slide_media/week_1/research1.jpeg){.absolute .rnd-img width="300" height="200"}
+:::
+
+::: {.column width="33%"}
+![](slide_media/week_1/research2.jpeg){.absolute .rnd-img height="200"}
+:::
+
+::: {.column width="33%"}
+![](slide_media/week_1/research3.jpeg){.absolute .rnd-img width="300" height="200"}
+:::
+::::::
+
+## Jeremy Hemberger, PhD {.smaller}
+
+***Assistant Professor - Department of Entomology*** </br> </br> 🏫 Office location: 408 Hodson </br> 🕥 Office hours: 8:00-12:00 Mondays (in person)
+
+# Course logistics and learning objectives {.bkrd-color-2}
+
+# Course survey {.bkrd-color-3}
+
+# What is data science? {.bkrd-color-4}
+
+# Reproducibility crisis, the data life cycle, and being FAIR {.bkrd-color-5}

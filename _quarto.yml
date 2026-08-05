@@ -25,7 +25,7 @@ website:
         icon: file-pdf
         target: _blank # opens link (or page) in a new browser tab
       - icon: github # add icons as navbar buttons
-        href: https://github.com/jhemberger/entomology-3927
+        href: https://github.com/entomology-3927-5927
         target: _blank
       - icon: envelope
         href: mailto:jhemberg@umn.edu
