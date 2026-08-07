@@ -1,0 +1,12 @@
+---
+title: "Overview of lectures and lecture material"
+sidebar: true
+toc: true
+page-layout: full
+date: last-modified
+date-format: long
+---
+
+------------------------------------------------------------------------
+
+Each week...

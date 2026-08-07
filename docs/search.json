@@ -147,18 +147,67 @@
     "text": "Important links\n Canvas Site\n Class Github"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Overview of lectures and lecture material",
     "section": "",
-    "text": "About this site"
+    "text": "Each week…",
+    "crumbs": [
+      "Content",
+      "Overview",
+      "Overview of lectures and lecture material"
+    ]
+  },
+  {
+    "objectID": "content/w1-content.html",
+    "href": "content/w1-content.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)\n Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)\n Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)\n Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)",
+    "crumbs": [
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "content/w1-content.html#readings",
+    "href": "content/w1-content.html#readings",
+    "title": "Week 1",
+    "section": "",
+    "text": "Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)\n Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)\n Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)\n Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)",
+    "crumbs": [
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "content/w1-content.html#questions-well-address-this-week",
+    "href": "content/w1-content.html#questions-well-address-this-week",
+    "title": "Week 1",
+    "section": "Questions we’ll address this week",
+    "text": "Questions we’ll address this week\n\nWhat is data science?\nHow does data science differ from statistics?\nWhat is the reproducibility crisis, where do issues arise, and how will we address them in this class?\nWhat are FAIR data?",
+    "crumbs": [
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "content/w1-content.html#slides",
+    "href": "content/w1-content.html#slides",
+    "title": "Week 1",
+    "section": "Slides",
+    "text": "Slides\n Open slides in full screen mode  Download slides as a PDF\n\n\n\n\n\n\n\n\nTip\n\n\n\nTip: If you type ? (or shift + /) while going through the slides, you can see a list of special slide-specific commands.",
+    "crumbs": [
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
   },
   {
     "objectID": "content/slides/w1-slides.html#what-well-cover-this-week",
     "href": "content/slides/w1-slides.html#what-well-cover-this-week",
     "title": "Week 1",
     "section": "What we’ll cover this week",
-    "text": "What we’ll cover this week\n\n\n Who am I?\n\n\n\n\n Course logistics and learning objectives\n\n\n\n\n Course survey\n\n\n\n\n What is data science?\n\n\n\n\n Reproducibility crisis, the data life cycle, and being FAIR"
+    "text": "What we’ll cover this week\n\n\n Who am I?\n\n\n\n\n Course logistics and learning objectives\n\n\n\n\n Course survey\n\n\n\n\n What is data science?\n\n\n\n\n Reproducibility crisis\n\n\n\n\n The data life cycle, and being FAIR"
   },
   {
     "objectID": "content/slides/w1-slides.html#jeremy-hemberger-phd",
@@ -175,17 +224,98 @@
     "text": "Jeremy Hemberger, PhD\nAssistant Professor - Department of Entomology   🏫 Office location: 408 Hodson  🕥 Office hours: 8:00-12:00 Mondays (in person)"
   },
   {
-    "objectID": "content/slides/w1-slides.html#syllabus",
-    "href": "content/slides/w1-slides.html#syllabus",
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d",
+    "href": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d",
     "title": "Week 1",
-    "section": "Syllabus",
-    "text": "Syllabus"
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos"
   },
   {
-    "objectID": "content/slides/w1-slides.html#syllabus-1",
-    "href": "content/slides/w1-slides.html#syllabus-1",
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d-1",
+    "href": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d-1",
     "title": "Week 1",
-    "section": "Syllabus",
-    "text": "Syllabus"
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d-2",
+    "href": "content/slides/w1-slides.html#wrangling-chaos-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206661206861742d636f77626f79203e7d7d-2",
+    "title": "Week 1",
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos \n\nThere’s no one single definition of data science, but a broad definition that we can use here is a field of study that uses scientific methods, processes, and systems to extract knowledge and insights from data"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#data-science-statistics",
+    "href": "content/slides/w1-slides.html#data-science-statistics",
+    "title": "Week 1",
+    "section": "Data science ≠ statistics",
+    "text": "Data science ≠ statistics\n\nStatistics uses data you have collected to quantify uncertainty and establish relationships.\n\n Artisan baker: exact recipe, understanding the why and trying to identify the mechanism of observed changes in data. Inference driven\n\n\n\nData science tries to build systems to extract knowledge and insights from structured and unstructured data we have not yet seen.\n\n Bread factory: we don’t care about the recipe, we want the final prediction to be the most accurate. Prediction driven\n\n\n\n\n\n\n\n\n\nImportant\n\n\nData science could not exist without statistics! The math under the hood of all data science is derived from statistical theory."
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#how-well-use-data-science-in-this-class",
+    "href": "content/slides/w1-slides.html#how-well-use-data-science-in-this-class",
+    "title": "Week 1",
+    "section": "How we’ll use data science in this class",
+    "text": "How we’ll use data science in this class\n\nOur goal is not to learn statistics or how to extract meaning from data here. Rather, our goal is to learn the tools, tricks, and best practices of data science to make our work efficient, robust, and reproducible"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#biology-and-ecology-have-an-issue-with-reproducibility",
+    "href": "content/slides/w1-slides.html#biology-and-ecology-have-an-issue-with-reproducibility",
+    "title": "Week 1",
+    "section": "Biology and ecology have an issue with reproducibility",
+    "text": "Biology and ecology have an issue with reproducibility\n\nConducting experiments in highly variable natural field conditions reduces our capacity to truly “replicate” or “reproduce” our science relative to other biological disciplines that work under more controlled conditions.\n\n\n\n In many ways, this is an un-solvable consequence of studying the natural world. It’s basically impossible to directly replicate experiments or studies, but we can conceptually replicate.\n\n\n\n\n This makes increasing the replicability of the aspects we can control (experiment pre-registration, open data, publishing code, data management, etc.) critically important!\n\n\n\n\nThis is what this course is all about!"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#working-with-data-has-historically-been-the-most-opaque",
+    "href": "content/slides/w1-slides.html#working-with-data-has-historically-been-the-most-opaque",
+    "title": "Week 1",
+    "section": "Working with data has historically been the most opaque",
+    "text": "Working with data has historically been the most opaque\n\n\nUntil the decade, the management, wrangling, analysis, and presentation of experimental or observational data has been the least reproducible/documented part of the science we do\n\n\n\n\n The details of how we did our experiments was often the focus of our published methods. Even today that’s still the case, even though many aspects of the experimental conditions in natural settings are totally outside of our control."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "content/content-index.html",
+    "href": "content/content-index.html",
+    "title": "Overview of lectures and lecture material",
+    "section": "",
+    "text": "Each week…",
+    "crumbs": [
+      "Overview",
+      "Overview of lectures and lecture material"
+    ]
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#the-data-life-cycle",
+    "href": "content/slides/w1-slides.html#the-data-life-cycle",
+    "title": "Week 1",
+    "section": "The data life cycle",
+    "text": "The data life cycle"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#well-be-learning-tools-and-concepts-that-enable-us-to-establish-repeatable-rules-based-workflows-that-ensure-anyone-who-gets-access-to-our-datacode-will-be-able-to-arrive-at-the-same-outputanswer.",
+    "href": "content/slides/w1-slides.html#well-be-learning-tools-and-concepts-that-enable-us-to-establish-repeatable-rules-based-workflows-that-ensure-anyone-who-gets-access-to-our-datacode-will-be-able-to-arrive-at-the-same-outputanswer.",
+    "title": "Week 1",
+    "section": "We’ll be learning tools and concepts that enable us to establish repeatable, rules-based workflows that ensure anyone who gets access to our data/code will be able to arrive at the same output/answer.",
+    "text": "We’ll be learning tools and concepts that enable us to establish repeatable, rules-based workflows that ensure anyone who gets access to our data/code will be able to arrive at the same output/answer."
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#point-n-click-vs.-writing-code",
+    "href": "content/slides/w1-slides.html#point-n-click-vs.-writing-code",
+    "title": "Week 1",
+    "section": "Point ’n click vs. writing code",
+    "text": "Point ’n click vs. writing code"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#section",
+    "href": "content/slides/w1-slides.html#section",
+    "title": "Week 1",
+    "section": "",
+    "text": "We’ll be learning tools and concepts that enable us to establish repeatable, rules-based workflows that ensure anyone who gets access to our data/code will be able to arrive at the same output/answer."
   }
 ]

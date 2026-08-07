@@ -36,48 +36,56 @@ website:
     #   Background image: Large milkweed bug nymph aggregation (<i>Oncopeltus fasciatus</i>), 2017
     right: Built with [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
   sidebar:
-    - title: "Labs"
+    - title: "Workshops"
       style: "docked"
       search: false
       background: light
       contents: 
-        - section: "Getting started"
+        - section: "Overview"
           contents:
-            - lab/index.qmd
-        - section: "Module 1: RStudio and Tidyverse crash course"
+            - workshop/workshop-index.qmd
+        - section: "Module 1: Introduction to Data Science and R"
           contents:
-            - text: "Lab 1: An introduction to R"
-              file: lab/w1-lab.qmd
-            - text: "Lab 2: Data wrangling and plotting"
-              file: lab/w2-lab.qmd
-            - text: "Lab 3: Summarizing data"
-              file: lab/w3-lab.qmd
-        - section: "Module 2: Reviewing foundations in statistics"
+            - text: "Week 1: Intro to data science and R"
+              file: workshop/w1-workshop.qmd
+            - text: "Week 2: Project organization, RStudio, your 'devenv'"
+              file: workshop/w2-workshop.qmd
+        - section: "Module 2: Git and GitHub fundamentals"
           contents:
-            - text: "Lab 4: Independent two-sample t-tests and ANOVA"
-              file: lab/w4-lab.qmd
-            - text: "Lab 5: Simple linear regression"
-              file: lab/w5-lab.qmd
-            - text: "Lab 6: Multiple linear regression and ANCOVA"
-              file: lab/w6-lab.qmd
-            - text: "Lab 7: Curvy data"
-              file: lab/w7-lab.qmd
-        - section: "Module 3: Integrating time into our models"
+            - text: "Week 3: Go on, Git!"
+              file: workshop/w3-workshop.qmd
+            - text: "Week 4: Go on, Git it onto GitHub"
+              file: workshop/w4-workshop.qmd
+        - section: "Module 3: Basic data wrangling and visualization in R"
           contents:
-            - text: "Lab 8: Time series: Autoregressive models"
-              file: lab/w8-lab.qmd
-            - text: "Lab 9: Mixed-effects models for time series"
-              file: lab/w9-lab.qmd
-        - section: "Module 4: Integrating space into our models"
+            - text: "Week 5: Data wrangling 1"
+              file: workshop/w5-workshop.qmd
+            - text: "Week 6: Data wrangling 2"
+              file: workshop/w6-workshop.qmd
+            - text: "Week 7: Data visualization: theory and practice"
+              file: workshop/w7-workshop.qmd
+        - section: "Module 4: Automation, functions, and scaling"
           contents:
-            - text: "Lab 10: Spatial point processes: Ripley’s K"
-              file: lab/w10-lab.qmd
-            - text: "Lab 11: Spatial point process models"
-              file: lab/w11-lab.qmd
-            - text: "Lab 12: Lattice data: Spatial linear models"
-              file: lab/w12-lab.qmd
-            - text: "Lab 13: Geostatistics"
-              file: lab/w13-lab.qmd
+            - text: "Week 8: Functions and automation"
+              file: workshop/w8-workshop.qmd
+            - text: "Week 9: Batching, scaling work/pipelines"
+              file: workshop/w9-workshop.qmd
+        - section: "Module 5: Getting data from databases and data management"
+          contents:
+            - text: "Week 10: Databases, web APIs, web-scraping"
+              file: workshop/w10-workshop.qmd
+            - text: "Week 11: Data mangagement, metadata, documentation"
+              file: workshop/w11-workshop.qmd
+        - section: "Module 6: Open Science Framework and transparent science"
+          content:
+            - text: "Week 12: Open Science Framework"
+              file: workshop/w12-workshop.qmd
+        - section: "Module 7: Integration and application"
+          content:
+            - text: "Week 13: In-class work day/overflow"
+              file: workshop/w13-workshop.qmd
+            - text: "Week 14: Final Presentations"
+              file: workshop/w14-workshop.qmd
     - title: "Content"
       style: "docked"
       search: false
@@ -85,43 +93,49 @@ website:
       contents: 
         - section: "Overview"
           contents:
-            - content/index.qmd
-        - section: "Module 1: RStudio and Tidyverse crash course"
+            - content/content-index.qmd
+        - section: "Module 1: Introduction to Data Science and R"
           contents:
-            - text: "Week 1: Class orientation and introduction to R and data wrangling"
+            - text: "Week 1: Intro to data science and R"
               file: content/w1-content.qmd
-        - section: "Module 2: Reviewing foundations in statistics"
-          contents:
-            - text: "Week 2: Sampling, probability, random variables"
+            - text: "Week 2: Project organization, RStudio, your 'devenv'"
               file: content/w2-content.qmd
-            - text: "Week 3: Data transformations, hypotheses, t-tests"
+        - section: "Module 2: Git and GitHub fundamentals"
+          contents:
+            - text: "Week 3: Go on, Git!"
               file: content/w3-content.qmd
-            - text: "Week 4: More t-tests and ANOVA"
+            - text: "Week 4: Go on, Git it onto GitHub"
               file: content/w4-content.qmd
-            - text: "Week 5: Correlation and simple linear regression"
+        - section: "Module 3: Basic data wrangling and visualization in R"
+          contents:
+            - text: "Week 5: Data wrangling 1"
               file: content/w5-content.qmd
-            - text: "Week 6: Multiple regression"
+            - text: "Week 6: Data wrangling 2"
               file: content/w6-content.qmd
-            - text: "Week 7: Model selection and midterm review"
+            - text: "Week 7: Data visualization: theory and practice"
               file: content/w7-content.qmd
-        - section: "Module 3: Integrating time into our models"
+        - section: "Module 4: Automation, functions, and scaling"
           contents:
-            - text: "Week 9: Midterm review and introduction to space and time"
+            - text: "Week 8: Functions and automation"
+              file: content/w8-content.qmd
+            - text: "Week 9: Batching, scaling work/pipelines"
               file: content/w9-content.qmd
-            - text: "Week 10: Mixed effects models, information critera"
-              file: content/w10-content.qmd
-        - section: "Module 4: Integrating space into our models"
+        - section: "Module 5: Getting data from databases and data management"
           contents:
-            - text: "Week 11: Spatial point processes, generalized linear models"
+            - text: "Week 10: Databases, web APIs, web-scraping"
+              file: content/w10-content.qmd
+            - text: "Week 11: Data mangagement, metadata, documentation"
               file: content/w11-content.qmd
-            - text: "Week 12: More GLMs and point process models"
+        - section: "Module 6: Open Science Framework and transparent science"
+          content:
+            - text: "Week 12: Open Science Framework"
               file: content/w12-content.qmd
-            - text: "Week 13: Lattice data, autocorrelation, SAR/CAR models"
+        - section: "Module 7: Integration and application"
+          content:
+            - text: "Week 13: In-class work day/overflow"
               file: content/w13-content.qmd
-            - text: "Week 14: Geostatistics"
+            - text: "Week 14: Final Presentations"
               file: content/w14-content.qmd
-            - text: "Week 15: Course wrap-up and final exam review"
-              file: content/w15-content.qmd
 
 
 format:

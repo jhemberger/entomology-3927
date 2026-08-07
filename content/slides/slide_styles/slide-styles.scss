@@ -6,11 +6,12 @@
    max-height: 6vh !important;
 }
 // colors
-$theme5126-1: #ffe77170;
-$theme5126-2: #fda04870;
-$theme5126-3: #f28df970;
-$theme5126-4: #abf9b970;
-$theme5126-5: #FAF0CAff;
+$theme3927-1: #97B27D;
+$theme3927-2: #3A3A3A;
+$theme3927-3: #FFC200;
+$theme3927-4: #CFFFFE;
+$theme3927-5: #E56B08;
+$theme3927-6: #FAF0CAff;
 
 // fonts
 $robo: "Roboto Condensed", serif;
@@ -25,19 +26,19 @@ $presentation-heading-color: #333333ff !default;
 
 // slide formatting
 .bkrd-color-1 {
-  background-color: $theme5126-1 !important; 
+  background-color: $theme3927-1 !important; 
 }
 .bkrd-color-2 {
-  background-color: $theme5126-2 !important; 
+  background-color: $theme3927-2 !important; 
 }
 .bkrd-color-3 {
-  background-color: $theme5126-3 !important; 
+  background-color: $theme3927-3 !important; 
 }
 .bkrd-color-4 {
-  background-color: $theme5126-4 !important; 
+  background-color: $theme3927-4 !important; 
 }
 .bkrd-color-5 {
-  background-color: $theme5126-5 !important; 
+  background-color: $theme3927-5 !important; 
 }
 
 // round image border
@@ -60,7 +61,7 @@ $presentation-heading-color: #333333ff !default;
 }
 
 .highlight-tomato {
-  color: $theme5126-2;
+  color: #ff6347;
   font-weight: 600
 }
 
@@ -96,12 +97,13 @@ $presentation-heading-color: #333333ff !default;
   margin-left: 3em;
 }
 
+// Content boxes
 .box-1-list {
     margin: 1em 0;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #ffe77170;
+    background-color: rgba($theme3927-1, 0.5);
 }
 
 .box-2-list {
@@ -109,7 +111,7 @@ $presentation-heading-color: #333333ff !default;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #fda04870;
+    background-color: rgba($theme3927-2, 0.5);
 }
 
 .box-3-list {
@@ -117,7 +119,7 @@ $presentation-heading-color: #333333ff !default;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #f28df970;
+    background-color: rgba($theme3927-3, 0.5);
 }
 
 .box-4-list {
@@ -125,7 +127,7 @@ $presentation-heading-color: #333333ff !default;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #abf9b970;
+    background-color: rgba($theme3927-4, 0.5);
 }
 
 .box-5-list {
@@ -133,7 +135,7 @@ $presentation-heading-color: #333333ff !default;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #FAF0CA70;
+    background-color: rgba($theme3927-5, 0.5);
 }
 
 .box-6-list {
@@ -141,6 +143,5 @@ $presentation-heading-color: #333333ff !default;
     border-radius: 15px;
     padding: 0.25em;
         padding-left: 1em;
-    background-color: #FFF8F0;
-    border-color: #333333ff;
+    background-color: rgba($theme3927-6, 0.5);
 }
