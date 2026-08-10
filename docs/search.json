@@ -165,6 +165,7 @@
     "section": "",
     "text": "Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)\n Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)\n Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)\n Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)",
     "crumbs": [
+      "Content",
       "Module 1: Introduction to Data Science and R",
       "Week 1: Intro to data science and R"
     ]
@@ -176,6 +177,7 @@
     "section": "",
     "text": "Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)\n Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)\n Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)\n Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)",
     "crumbs": [
+      "Content",
       "Module 1: Introduction to Data Science and R",
       "Week 1: Intro to data science and R"
     ]
@@ -187,6 +189,7 @@
     "section": "Questions we’ll address this week",
     "text": "Questions we’ll address this week\n\nWhat is data science?\nHow does data science differ from statistics?\nWhat is the reproducibility crisis, where do issues arise, and how will we address them in this class?\nWhat are FAIR data?",
     "crumbs": [
+      "Content",
       "Module 1: Introduction to Data Science and R",
       "Week 1: Intro to data science and R"
     ]
@@ -198,6 +201,7 @@
     "section": "Slides",
     "text": "Slides\n Open slides in full screen mode  Download slides as a PDF\n\n\n\n\n\n\n\n\nTip\n\n\n\nTip: If you type ? (or shift + /) while going through the slides, you can see a list of special slide-specific commands.",
     "crumbs": [
+      "Content",
       "Module 1: Introduction to Data Science and R",
       "Week 1: Intro to data science and R"
     ]
@@ -284,8 +288,9 @@
     "href": "content/content-index.html",
     "title": "Overview of lectures and lecture material",
     "section": "",
-    "text": "Each week…",
+    "text": "Each week the content will be structured with the same headings to provide you with the material needed. There will be a Readings, Questions, and Slides section.\n\nReadings: required and optional readings that are pertinent to the topic covered that week. These will include primary literature, book chapters, websites, and other tidbits that I think provide a solid foundation on the skill sets that we cover each week.\nQuestions: these will be the motivating questions that guide each week’s materials; by the end of the class/workshop for that week, you should be able to answer these and/or use the developed skills to accomplish a certain set of tasks.\nSlides: these are the slides that I will use for the brief mini-lectures for each week for your reference.",
     "crumbs": [
+      "Content",
       "Overview",
       "Overview of lectures and lecture material"
     ]
@@ -317,5 +322,86 @@
     "title": "Week 1",
     "section": "",
     "text": "We’ll be learning tools and concepts that enable us to establish repeatable, rules-based workflows that ensure anyone who gets access to our data/code will be able to arrive at the same output/answer."
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos",
+    "href": "content/slides/w1-slides.html#wrangling-chaos",
+    "title": "Week 1",
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos-1",
+    "href": "content/slides/w1-slides.html#wrangling-chaos-1",
+    "title": "Week 1",
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos"
+  },
+  {
+    "objectID": "content/slides/w1-slides.html#wrangling-chaos-2",
+    "href": "content/slides/w1-slides.html#wrangling-chaos-2",
+    "title": "Week 1",
+    "section": "Wrangling chaos ",
+    "text": "Wrangling chaos \n\nThere’s no one single definition of data science, but a broad definition that we can use here is a field of study that uses scientific methods, processes, and systems to extract knowledge and insights from data"
+  },
+  {
+    "objectID": "workshop/w1-workshop.html",
+    "href": "workshop/w1-workshop.html",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "",
+    "text": "Download lab data",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#frontmatter",
+    "href": "workshop/w1-workshop.html#frontmatter",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "",
+    "text": "Download lab data",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/workshop-index.html",
+    "href": "workshop/workshop-index.html",
+    "title": "Overview of workshops + basic info",
+    "section": "",
+    "text": "Here, you’ll find the virtual companion to all of our hands-on labs for the semester. These will be the same as your physical hand-outs, but I know many folks prefer to have them up on their screens as they work through the activities.\nThe purpose of these labs is to practice applying the topics that we discuss in lecture using real-world examples and data. The associated data files for each lab are linked in the Frontmatter section atop each page (all the files are also located here). Over the semester, we’ll explore some of the frustrations and challenges of working with bio/ecological data (of which there are many!), but together we’ll conquer them, setting y’all up for success in analyzing, interpreting, and sharing your own data.\nAs a reminder, each of the 13 labs will have an assignment/report that will be evaluated. The first three periods will be devoted to a primer of using R/RStudio for managing, wrangling, and interpreting data, and the reports associated with these will receive feedback but will not be included in the course grade. The remaining 10 lab assignments/reports will be graded and count toward 40% of total course grade (4% per report). There will also be a lab final worth 15% of the total course grade. In this, students will be given a real data set to analyze and develop a report for during the last lab period.",
+    "crumbs": [
+      "Workshops",
+      "Overview",
+      "Overview of workshops + basic info"
+    ]
+  },
+  {
+    "objectID": "workshop/workshop-index.html#downloading-installing-and-setting-up-r-and-rstudio",
+    "href": "workshop/workshop-index.html#downloading-installing-and-setting-up-r-and-rstudio",
+    "title": "Overview of workshops + basic info",
+    "section": "Downloading, installing, and setting up R and RStudio",
+    "text": "Downloading, installing, and setting up R and RStudio\nFor this course, we’ll be using the Posit Cloud service for labs and assignments. It’s essentially an online virtual machine to run RStudio in your browser. This will avoid version issues, package incompatibilities, and Mac vs Windows challenges that we might otherwise face. This is a paid service we’ll be using for class and it will expire after our semester concludes, so I also encourage you to install R and R Studio on your own machines if you haven’t already. Click on the buttons below to install both R (the language, or engine that enables our analyses to be performed) and RStudio (the shell, or vessel that the engine of R sits in and gives us the nifty features to manage files, version history, and write pretty and readable code).\n Launch Posit Cloud  Download R  Download RStudio\n\nQuality of life improvements\nRStudio is a highly customizable program that will let you nerd out to your heart’s content. Feel free! A few things that I suggest you customize right away will help you (and me) to debug and read your code.\n\nAfter launching RStudio, go to Tools —&gt; Global options.\nSelect the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.\nNext, select the “Code” tab on the side, and then select the “Display” panel. Enable: Highlight selected line, Allow scroll past end of document, Highlight function calls, and Use rainbow parentheses 🌈. These things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you’re editing in your R files.",
+    "crumbs": [
+      "Workshops",
+      "Overview",
+      "Overview of workshops + basic info"
+    ]
+  },
+  {
+    "objectID": "workshop/workshop-index.html#completing-and-submitting-labs",
+    "href": "workshop/workshop-index.html#completing-and-submitting-labs",
+    "title": "Overview of workshops + basic info",
+    "section": "Completing and submitting labs",
+    "text": "Completing and submitting labs\nIn labs, we’ll be writing code in a couple of different ways, but primarily what I will be recommending is using an R Notebook to write, annotate, and interpret your code. R Notebooks are a type of Markdown file where we can mix formatted text, code chunks, and a whole bunch of other goodies. R Notebooks help to organize your code into sections and subsections, and will let you write about the output directly in the document rather than creating a Word document (shudder…). We’ll go through this a bit more in the first lab, but take a look at the following links to learn a bit more about R Notebooks and R Markdown.\n\nWriting code in R notebooks\nR Notebook (Markdown) cheatsheet",
+    "crumbs": [
+      "Workshops",
+      "Overview",
+      "Overview of workshops + basic info"
+    ]
   }
 ]

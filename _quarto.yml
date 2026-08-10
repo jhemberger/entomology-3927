@@ -14,10 +14,10 @@ website:
         text: Home
       - syllabus.qmd
       - schedule.qmd
-      - href: content/index.qmd
+      - href: content/content-index.qmd
         text: Content
-      - href: lab/index.qmd
-        text: Labs
+      - href: workshop/workshop-index.qmd
+        text: Workshops
       - resources.qmd
     right:
       - href: media/ento3927-syllabus_fall2026.pdf # providing a relative file path to a pdf will open up a browser-based pdf viewer when clicked

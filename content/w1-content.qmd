@@ -9,23 +9,26 @@ format:
 ---
 
 ## Readings
-- {{< fa file-pdf >}} [Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)](slides/slide_media/week_1/Yvonne M. Buckley-2025-Journal of Ecology.pdf)
-- {{< fa file-pdf >}} [Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)](slides/slide_media/week_1/Hannah Fraser-2020-Ecology and Evolution.pdf)
-- {{< fa file-pdf >}} [Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)](slides/slide_media/week_1/Clint%20D.%20Kelly-2019-PeerJ.pdf)
-- {{< fa file-pdf >}} [Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)](slides/slide_media/week_1/Alessandro%20Filazzola-2021-Methods%20in%20Ecology%20and%20Evolution.pdf)
-  
+
+-   {{< fa file-pdf >}} [Buckley, Y. M. et al. Using dynamic documents to mend cracks in the reproducible research pipeline. J. Ecol. 113, 270–274 (2025)](slides/slide_media/week_1/Yvonne%20M.%20Buckley-2025-Journal%20of%20Ecology.pdf)
+-   {{< fa file-pdf >}} [Fraser, H., Barnett, A., Parker, T. H. & Fidler, F. The role of replication studies in ecology. Ecol. Evol. 10, 5197–5207 (2020)](slides/slide_media/week_1/Hannah%20Fraser-2020-Ecology%20and%20Evolution.pdf)
+-   {{< fa file-pdf >}} [Kelly, C. D. Rate and success of study replication in ecology and evolution. PeerJ 7, e7654 (2019)](slides/slide_media/week_1/Clint%20D.%20Kelly-2019-PeerJ.pdf)
+-   {{< fa file-pdf >}} [Filazzola, A. & Cahill, J. F. Replication in field ecology: Identifying challenges and proposing solutions. Methods Ecol. Evol. 12, 1780–1792 (2021)](slides/slide_media/week_1/Alessandro%20Filazzola-2021-Methods%20in%20Ecology%20and%20Evolution.pdf)
 
 ## Questions we'll address this week
-1. What is data science?
-2. How does data science differ from statistics?
-3. What is the reproducibility crisis, where do issues arise, and how will we address them in this class?
-4. What are FAIR data?
+
+1.  What is data science?
+2.  How does data science differ from statistics?
+3.  What is the reproducibility crisis, where do issues arise, and how will we address them in this class?
+4.  What are FAIR data?
 
 ## Slides
-[{{< fa up-right-from-square >}} Open slides in full screen mode](slides/w1-slides.html){.btn .btn-primary role="button"}
-[{{< fa file-pdf >}} Download slides as a PDF](slides/w1-slides.html?print-pdf){.btn .btn-primary role="button"}
 
-<iframe src="slides/w1-slides.html" width="100%" height="500px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
+[{{< fa up-right-from-square >}} Open slides in full screen mode](slides/w1-slides.html){.btn .btn-primary role="button"} [{{< fa file-pdf >}} Download slides as a PDF](slides/w1-slides.html?print-pdf){.btn .btn-primary role="button"}
+
+<iframe src="slides/w1-slides.html" width="100%" height="500px" style="border: 1px solid #ccc; border-radius: 8px;">
+
+</iframe>
 
 ::: callout-tip
 **Tip**: If you type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) while going through the slides, you can see a list of special slide-specific commands.

@@ -1,0 +1,22 @@
+---
+title: "Workshop 1: Intro to data science and R"
+subtitle: Entomology 3927 - Fall 2026
+author: Jeremy Hemberger
+date: last-modified
+date-format: long
+format: html
+# format:
+  # pdf:
+    # toc: true
+    # number-sections: true
+    # colorlinks: true
+highlight-style: ayu
+---
+
+## Frontmatter
+
+<p class="buttons" style="text-align:left;">
+
+{{< fa download >}} [Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-outline-warning}
+
+</p>
