@@ -145,29 +145,3 @@ $presentation-heading-color: #333333ff !default;
         padding-left: 1em;
     background-color: rgba($theme3927-6, 0.5);
 }
-
-// Custom styling for primary buttons
-.btn.btn-primary {
-  background-color: $theme3927-3;       /* Custom background color */
-  border-color: $theme3927-5;           /* Match border color */
-  color: #ffffff;                       /* Text color */
-  border-radius: 8px;                   /* Corner rounding */
-  padding: 0.5em 1.25em;                /* Button padding */
-  font-weight: 600;                     /* Text thickness */
-  text-decoration: none;                /* Remove underline from link buttons */
-  transition: all 0.2s ease-in-out;    /* Smooth hover effect */
-
-  // Hover state
-  &:hover, &:focus {
-    background-color: darken($theme3927-5, 10%);
-    border-color: darken($theme3927-5, 10%);
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  // Active / Clicked state
-  &:active {
-    background-color: darken($theme3927-5, 15%);
-    border-color: darken($theme3927-5, 15%);
-  }
-}

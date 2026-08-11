@@ -1,15 +1,12 @@
 ---
 title: "Workshop 1: Intro to data science and R"
-subtitle: Entomology 3927 - Fall 2026
+subtitle: "Entomology 3927 - Fall 2026"
 author: Jeremy Hemberger
 date: last-modified
 date-format: long
-format: html
-# format:
-  # pdf:
-    # toc: true
-    # number-sections: true
-    # colorlinks: true
+format:
+  html:
+    theme: custom.scss
 highlight-style: ayu
 ---
 
@@ -17,6 +14,39 @@ highlight-style: ayu
 
 <p class="buttons" style="text-align:left;">
 
-{{< fa download >}} [Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-outline-warning}
+[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
 
 </p>
+
+## A tour of the R studio IDE and GUI
+
+In it's simplest out-of-box form, R Studio is composed of four different sections, called panes:
+
+![](workshop_media/w1/rstudio.png)
+
+1. **Source** (Top-Left): Write and edit R scripts, markdown files, or notebooks. Run lines or whole blocks directly from here
+2. **Console** (Bottom-Left): Execute raw commands immediately and view text output or error messages
+3. **Environment & History** (Top-Right): Inspect active variables, data frames, loaded values, and past command history
+4. **Files, Plots, Packages & Help** (Bottom-Right): Browse local directories, view generated data plots, manage library packages, and read documentation.
+
+### Setting up your Devenv (Development Environment)
+
+RStudio is a highly customizable program that will let you nerd out to your heart's content. Feel free! A few things that I suggest you customize right away will help you (and your collaborators/me) to debug and read your code.
+
+- After launching RStudio, go to Tools ---\> Global options.
+- Select the "Appearance" tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.
+- Next, select the "Code" tab on the side, and then select the "Display" panel. Enable: 
+
+- [x] `Highlight selected line`
+- [x] `Allow scroll past end of document`
+- [x] `Highlight function calls` 
+- [x] `Use rainbow parentheses` 🌈
+
+These things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you're editing in your R files.
+
+## Basic programming in R
+
+## Project and code organization
+
+## Scripts vs. console
+

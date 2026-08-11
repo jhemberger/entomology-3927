@@ -5,8 +5,8 @@ toc: true
 page-layout: full
 ---
 
-:::box-6-list
-Description Researchers are typically well-trained in the theory and practice of their chosen specialty, from developing questions to designing experiments and collecting data, as well as analyzing those data using statistical methods. However, the practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices. 
+::: box-6-list
+Description Researchers are typically well-trained in the theory and practice of their chosen specialty, from developing questions to designing experiments and collecting data, as well as analyzing those data using statistical methods. However, the practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices.
 
 ***This course is focused on providing hands-on experience in accessing, manipulating, managing, visualizing and communicating data using Open Science principles***. Students will encounter the entire data life cycle from generation to preservation in the context of biological and ecological research. Students will be expected to complete assignments using their own data or other available datasets. It is a topic-driven weekly seminar (14 sessions at \~2h each), combining small amounts of lecture with problem solving and hands-on exercises.
 :::
@@ -21,71 +21,71 @@ This course is targeted for graduate students and upper-level undergraduate stud
 
 Upon successful completion of this course, students will be able to:
 
-1. Articulate why and how to think systematically about data science and management, as this is distinct from (but complementary to) data collection and statistical analysis
+1.  Articulate why and how to think systematically about data science and management, as this is distinct from (but complementary to) data collection and statistical analysis
 
-2. Develop computing and coding skills for exploring, managing, and communicating data including writing functions/automating analyses
+2.  Develop computing and coding skills for exploring, managing, and communicating data including writing functions/automating analyses
 
-3. Become familiar with R, Git/Github (version control), and the Open Science Framework (OSF) 
+3.  Become familiar with R, Git/Github (version control), and the Open Science Framework (OSF)
 
-4. Create well-structured data bases and build data management plans for their own research
+4.  Create well-structured data bases and build data management plans for their own research
 
-5. Apply these tools to address biological questions ensuring *transparency* and *repeatability*
+5.  Apply these tools to address biological questions ensuring *transparency* and *repeatability*
 
 # Meeting times
 
-Weekly session: We will meet for one session per week, with a combination of lectures and hands-on labs/activities using R during each session. Attendance is, obviously, strongly encouraged\! For some of you, some of the material may be review from previous courses, or you may already have some exposure to the topics. Despite this, I still encourage you to attend to (1) make sure your memory serves and (2) get to know your fellow students (i.e., collaborators). We’ll also be re-enforcing the expectations for future assignments. 
+Weekly session: We will meet for one session per week, with a combination of lectures and hands-on labs/activities using R during each session. Attendance is, obviously, strongly encouraged! For some of you, some of the material may be review from previous courses, or you may already have some exposure to the topics. Despite this, I still encourage you to attend to (1) make sure your memory serves and (2) get to know your fellow students (i.e., collaborators). We’ll also be re-enforcing the expectations for future assignments.
 
 # Schedule of topics
 
 | Unit | Week | Topic | Key Concepts / Skills |
-| :---- | :---- | :---- | :---- |
-| **1\. Foundations: Thinking Like a Data Scientist** | Week 1 | What is Data Science in Ecology? | Data science vs. statistics; reproducibility crisis; workflow (data → insight → communication) |
+|:-----------------|:-----------------|:-----------------|:-----------------|
+| **1. Foundations: Thinking Like a Data Scientist** | Week 1 | What is Data Science in Ecology? | Data science vs. statistics; reproducibility crisis; workflow (data → insight → communication) |
 |  | Week 2 | Project Organization & Reproducibility | Folder structure; naming conventions; scripts vs. GUI; intro to R Markdown / Quarto |
-| **2\. R for Data Handling & Exploration** | Week 3 | Intro to R & RStudio | Objects, data types; importing data; scripting basics |
+| **2. R for Data Handling & Exploration** | Week 3 | Intro to R & RStudio | Objects, data types; importing data; scripting basics |
 |  | Week 4 | Data Wrangling I | Tidy data principles; filtering, selecting, mutating |
 |  | Week 5 | Data Wrangling II | Joins; reshaping; missing data; pipelines |
 |  | Week 6 | Data Visualization | Visualization principles; exploratory plots; visualizing uncertainty |
-| **3\. Automation, Functions, & Scaling Up** | Week 7 | Functions & Automation | Writing functions; reusable code; iteration (loops/map) |
+| **3. Automation, Functions, & Scaling Up** | Week 7 | Functions & Automation | Writing functions; reusable code; iteration (loops/map) |
 |  | Week 8 | Multi-file Workflows | Batch processing; project organization; scalable workflows |
-| **4\. Version Control & Open Science** | Week 9 | Git Fundamentals | Version control concepts; commit, diff, history |
+| **4. Version Control & Open Science** | Week 9 | Git Fundamentals | Version control concepts; commit, diff, history |
 |  | Week 10 | GitHub Collaboration | Repositories; branching; pull requests; sharing code |
 |  | Week 11 | Open Science & OSF | Transparency; preregistration; data sharing; OSF tools |
-| **5\. Data Management & Databases** | Week 12 | Data Management & Metadata | Data management plans; metadata standards; documentation |
+| **5. Data Management & Databases** | Week 12 | Data Management & Metadata | Data management plans; metadata standards; documentation |
 |  | Week 13 | Databases & Data Quality | Relational data; structuring datasets; validation & QC |
-| **6\. Integration & Application** | Week 14 | Final Project Presentations |  |
+| **6. Integration & Application** | Week 14 | Final Project Presentations |  |
 
 # Student assessments and grading
 
-The primary assessment of the course will be weekly reports that cover the topics discussed during each session and can be submitted/managed using the practices that we learn during the semester (R Markdown reports). We will also have a final project that consists of two components: a data management plan (graduate students only; written using NSF guidelines) and a data communication project that presents a product (data visualization/infographic) that utilizes the data management plant and produced using a reproducible and version controlled workflow. 
+The primary assessment of the course will be weekly reports that cover the topics discussed during each session and can be submitted/managed using the practices that we learn during the semester (R Markdown reports). We will also have a final project that consists of two components: a data management plan (graduate students only; written using NSF guidelines) and a data communication project that presents a product (data visualization/infographic) that utilizes the data management plant and produced using a reproducible and version controlled workflow.
 
-At the end of the course, letter grades will be assigned to the quantitative point totals from student performance in the class. Pretty standard stuff here\! Grading scale follows university policy: [Grading and Transcripts policy](https://policy.umn.edu/education/gradingtranscripts).
+At the end of the course, letter grades will be assigned to the quantitative point totals from student performance in the class. Pretty standard stuff here! Grading scale follows university policy: [Grading and Transcripts policy](https://policy.umn.edu/education/gradingtranscripts).
 
-::::::::::: {columns}
-:::: {.column-width="47.5%"}
-| Point Breakdown |  |  |
-| ----- | :---- | :---- |
-| **Assignment** | **Points** | **Percent** |
-| Weekly reports (10 × 12\) | 120 | 60% |
-| Data management plan (grad students only) | 40 | 20% |
-| Data communication project | 40 | 20% |
-| **Total** | **200** | **100%** |
-::::
+:::::: {columns}
+::: {.column-width="47.5%"}
+| Point Breakdown                           |            |             |
+|-------------------------------------------|:-----------|:------------|
+| **Assignment**                            | **Points** | **Percent** |
+| Weekly reports (10 × 12)                  | 120        | 60%         |
+| Data management plan (grad students only) | 40         | 20%         |
+| Data communication project                | 40         | 20%         |
+| **Total**                                 | **200**    | **100%**    |
+:::
 
-:::: {.column-width="5%"}
-::::
+::: {.column-width="5%"}
+:::
 
-:::: {.column-width="47.5%"}
-| Final Grade Breakdown |  |  |  |
-| ----- | :---- | :---- | :---- |
-| **Grade** | **Range** | **Grade** | **Range** |
-| A | 93–100% | C | 73–76% |
-| A− | 90–92% | C− | 70–72% |
-| B+ | 87–89% | D+ | 67–69% |
-| B | 83–86% | D | 63–66% |
-| B− | 80–82% | D− | 60–62% |
-| C+ | 77–79% | F | \< 60% |
-::::
-:::::::::::
+::: {.column-width="47.5%"}
+| Final Grade Breakdown |           |           |           |
+|-----------------------|:----------|:----------|:----------|
+| **Grade**             | **Range** | **Grade** | **Range** |
+| A                     | 93–100%   | C         | 73–76%    |
+| A−                    | 90–92%    | C−        | 70–72%    |
+| B+                    | 87–89%    | D+        | 67–69%    |
+| B                     | 83–86%    | D         | 63–66%    |
+| B−                    | 80–82%    | D−        | 60–62%    |
+| C+                    | 77–79%    | F         | \< 60%    |
+:::
+::::::
 
 Adjustments to final grades based on class participation or instructional interaction demonstrating mastery may be made on a case-by-case basis. Similarly, adjustments to the entire class based on comparisons to previous offerings may be made.
 
@@ -97,14 +97,13 @@ This course does not have a single, assigned text, however we’ll make use of m
 
 ## Software
 
-The purpose of this class is to teach both **concepts** and **software** \- \- this ensures that after this course, students will be able to implement the methods covered in their software of choice. That said, we need to choose some computational tool to do our work, so we will be using R and its integrated development environment, RStudio, in this course. R is the most widely used language and statistical software in the life sciences. It’s available on all major operating systems and is 100% free and open-source ensuring that students will retain access to the toolkits developed in this course long after the semester ends. We’ll cover all of the basics of installing and using R to load, manipulate, and visualize data, assuming that folks may have some familiarity with R, but with enough detail that novices will be able to pick up the necessary skills as well. However, if you’d like to get a head start on learning R, some great, free online resources are included on the course website. 
-
+The purpose of this class is to teach both **concepts** and **software** - - this ensures that after this course, students will be able to implement the methods covered in their software of choice. That said, we need to choose some computational tool to do our work, so we will be using R and its integrated development environment, RStudio, in this course. R is the most widely used language and statistical software in the life sciences. It’s available on all major operating systems and is 100% free and open-source ensuring that students will retain access to the toolkits developed in this course long after the semester ends. We’ll cover all of the basics of installing and using R to load, manipulate, and visualize data, assuming that folks may have some familiarity with R, but with enough detail that novices will be able to pick up the necessary skills as well. However, if you’d like to get a head start on learning R, some great, free online resources are included on the course website.
 
 # Policies
 
 ## Attendance
 
-Attendance in lectures and labs is ***strongly*** encouraged. Can you learn these skills on your own? Sure. But you’ll get a better outcome and enjoy the process a whole lot more by doing it with your friends and colleagues\! This is especially the case when learning a new skillset like R \- \- being able to quickly bounce a question off of someone IRL is always preferable to spending hours trawling StackExchange for an answer. Please give us a heads-up if you will be away for a week or more. If you will miss any assessment activity, it is your responsibility to contact us in advance so suitable arrangements can be made for a make-up exercise given valid circumstances (time-sensitive field work, bereavement, medical, etc.). Absence of a good faith attempt to let us know of your anticipated or unexpected absence may result in a grade of zero for missed assessments. Students will not be penalized for absence during the semester due to excused circumstances. Such circumstances include verified illness, participation in intercollegiate athletic events, subpoenas, jury duty, military service, bereavement, and religious observances. For complete information, please see Administrative Policy: [Excused Absences and Makeup Work](https://policy.umn.edu/education/makeupwork).
+Attendance in lectures and labs is ***strongly*** encouraged. Can you learn these skills on your own? Sure. But you’ll get a better outcome and enjoy the process a whole lot more by doing it with your friends and colleagues! This is especially the case when learning a new skillset like R - - being able to quickly bounce a question off of someone IRL is always preferable to spending hours trawling StackExchange for an answer. Please give us a heads-up if you will be away for a week or more. If you will miss any assessment activity, it is your responsibility to contact us in advance so suitable arrangements can be made for a make-up exercise given valid circumstances (time-sensitive field work, bereavement, medical, etc.). Absence of a good faith attempt to let us know of your anticipated or unexpected absence may result in a grade of zero for missed assessments. Students will not be penalized for absence during the semester due to excused circumstances. Such circumstances include verified illness, participation in intercollegiate athletic events, subpoenas, jury duty, military service, bereavement, and religious observances. For complete information, please see Administrative Policy: [Excused Absences and Makeup Work](https://policy.umn.edu/education/makeupwork).
 
 ## Expected Student Workload
 
@@ -112,54 +111,54 @@ For this **2-credit** course, it is expected that students spend a minimum of **
 
 ## AI, LLMs, and Bullshit
 
-I highly recommend **NOT** using ChatGPT or other large language models (aka LLMs) in this (or any…) class. 
+I highly recommend **NOT** using ChatGPT or other large language models (aka LLMs) in this (or any…) class.
 
-These tools, while highly functional and time-saving in certain situations, are at direct odds with the practice of learning and developing competence in concepts and skills \- be they coding, writing, or other artistic pursuits. I’m not opposed to using these tools in a variety of circumstances, and I use ChatGPT for a variety of tasks to provide a quick review of my own work. These tools are phenomenal resources for coding ***when you already know what you are doing***. Using LLMs requires careful skill, attention, practice, and they tend to be useful only in specific limited cases. 
+These tools, while highly functional and time-saving in certain situations, are at direct odds with the practice of learning and developing competence in concepts and skills - be they coding, writing, or other artistic pursuits. I’m not opposed to using these tools in a variety of circumstances, and I use ChatGPT for a variety of tasks to provide a quick review of my own work. These tools are phenomenal resources for coding ***when you already know what you are doing***. Using LLMs requires careful skill, attention, practice, and they tend to be useful only in specific limited cases.
 
 Using ChatGPT to write all of your code will not help you learn how to master R or understand the statistical concepts that we are learning in this class. What these models do is essentially amalgamate all of the publicly-available code on GitHub and spit out a plausible looking answer. This is otherwise known as [bullshitting](https://link.springer.com/article/10.1007/s10676-024-09775-5). Sure, bullshitting can sometimes get you part of, or, in rare instances, all the way to the right answer. But more often than not, the code it spits out will contain components that are outright wrong or have stuff you don’t need. These models don’t care if the “answer” provided is wrong or right (nor can the models actually know). It doesn’t care if your code runs or not. It just cares that the crap it spits back at you looks plausible. A hilarious, and slightly terrifying example of this comes from [Andrew Heiss](https://www.andrewheiss.com/):
-
-```
-"A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before. I’ve seen other AI-generated recipes that call for a cup of horseradish in brownies or 21 pounds of cabbage for a pork dish. In May 2024, Google’s AI recommended adding glue to pizza sauce to stop the cheese from sliding off. Again, to people who have cooked before, these are all obviously wrong (and dangerous in the case of the glue!), but to a complete beginner, these look like plausible instructions."
-```
+        
+> "A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before. I’ve seen other AI-generated recipes that call for a cup of horseradish in brownies or 21 pounds of cabbage for a pork dish. In May 2024, Google’s AI recommended adding glue to pizza sauce to stop the cheese from sliding off. Again, to people who have cooked before, these are all obviously wrong (and dangerous in the case of the glue!), but to a complete beginner, these look like plausible instructions."
 
 The purpose of this course is to outfit y’all with the concepts and tools needed to accurately and honestly portray the results of hard-won data that we use to understand the way the world works so that we can be better stewards and citizens of our shared planet. I want y’all to succeed in this. I don’t want to read a bunch of bullshit generated by an LLM. It’s not useful to you. It’s not useful to me. It’s a waste of time.
 
-All that said, I’m not going to play Sherlock and try and guess whether or not what you’re turning in is AI-generated. As I mentioned above, there are legitimate and good use-cases for LLMs in the work that we do such as helping debug some code, interpreting an error message that you don’t understand, or helping translate what individual lines of code may be doing if you can’t understand from the documentation. However, there’s a fairly good chance that I will notice if what you’re turning in came from a LMM. There are tells in the way machines write code versus the way most humans do. While this may not impact your grade, it will impact your learning. And it will make us sad. Please don’t make us sad. 
+All that said, I’m not going to play Sherlock and try and guess whether or not what you’re turning in is AI-generated. As I mentioned above, there are legitimate and good use-cases for LLMs in the work that we do such as helping debug some code, interpreting an error message that you don’t understand, or helping translate what individual lines of code may be doing if you can’t understand from the documentation. However, there’s a fairly good chance that I will notice if what you’re turning in came from a LMM. There are tells in the way machines write code versus the way most humans do. While this may not impact your grade, it will impact your learning. And it will make us sad. Please don’t make us sad.
 
 ## Phones and electronic devices
 
-Obviously we’ll need access to computers for this course, and taking notes during lectures on your computers is fine. However, I would suggest taking real, physical notes given the abundance of research that links this to improved comprehension and learning outcomes. As for cell phone use, please silence them and put them in a bag. 
+Obviously we’ll need access to computers for this course, and taking notes during lectures on your computers is fine. However, I would suggest taking real, physical notes given the abundance of research that links this to improved comprehension and learning outcomes. As for cell phone use, please silence them and put them in a bag.
 
 ## Student conduct
 
-The University seeks an environment that promotes academic achievement and integrity, that is protective of free inquiry, and that serves the educational mission of the University. Similarly, the University seeks a community that is free from violence, threats, and intimidation; that is respectful of the rights, opportunities, and welfare of students, faculty, staff, and guests of the University; and that does not threaten the physical or mental health or safety of members of the University community. As a student at the University you are expected to adhere to the Student Conduct Code as approved by the Board of Regents. The Student Conduct Code can be found in the UMN Policy Library: [https://policy.umn.edu/policy-regents/student-conduct-code](https://policy.umn.edu/policy-regents/student-conduct-code).
+The University seeks an environment that promotes academic achievement and integrity, that is protective of free inquiry, and that serves the educational mission of the University. Similarly, the University seeks a community that is free from violence, threats, and intimidation; that is respectful of the rights, opportunities, and welfare of students, faculty, staff, and guests of the University; and that does not threaten the physical or mental health or safety of members of the University community. As a student at the University you are expected to adhere to the Student Conduct Code as approved by the Board of Regents. The Student Conduct Code can be found in the UMN Policy Library: <https://policy.umn.edu/policy-regents/student-conduct-code>.
 
 ## Academic integrity
 
 Academic integrity is essential to a positive teaching and learning environment. All students enrolled in University courses are expected to complete coursework responsibilities with fairness and honesty. The University Student Code of Conduct defines scholastic dishonesty as:
 
-```
-”‘...submission of false records of academic achievement; cheating on assignments or examinations; plagiarizing; altering, forging, or misusing a University academic record; taking, acquiring, or using test materials without faculty permission; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement.”’
-```
+> ”‘...submission of false records of academic achievement; cheating on assignments or examinations; plagiarizing; altering, forging, or misusing a University academic record; taking, acquiring, or using test materials without faculty permission; acting alone or in cooperation with another to falsify records or to obtain dishonestly grades, honors, awards, or professional endorsement.”’
 
-Rarely \- especially among upper division courses \- have I found this to be a problem. I ***encourage and expect*** students to work together on laboratory assignments; in real practice, you will collaborate or discuss with colleagues the best analytical route to choose. However, ***the work you submit must be your own***. Plagiarism (from classmates or the internet), cheating during tests or exams, or misrepresenting the nature of your involvement in any assigned work may result in disciplinary action, including, but not limited to, a penalty up to and including an “F” or “N” for the course.
+Rarely - especially among upper division courses - have I found this to be a problem. I ***encourage and expect*** students to work together on laboratory assignments; in real practice, you will collaborate or discuss with colleagues the best analytical route to choose. However, ***the work you submit must be your own***. Plagiarism (from classmates or the internet), cheating during tests or exams, or misrepresenting the nature of your involvement in any assigned work may result in disciplinary action, including, but not limited to, a penalty up to and including an “F” or “N” for the course.
 
 ## Student accommodations
 
-Occasionally, the need arises to employ different testing techniques in assessing student mastery of the subject matter. Determining appropriate disability accommodations is a collaborative process. You as a student must register with Disability Services and provide documentation of your disability; I will then work with Disability Services to determine appropriate accommodations. See [http://disability.umn.edu](http://disability.umn.edu).
+Occasionally, the need arises to employ different testing techniques in assessing student mastery of the subject matter. Determining appropriate disability accommodations is a collaborative process. You as a student must register with Disability Services and provide documentation of your disability; I will then work with Disability Services to determine appropriate accommodations. See <http://disability.umn.edu>.
 
-## Sexual harassment, sexual assault, stalking, and relationship violence  
+## Sexual harassment, sexual assault, stalking, and relationship violence
+
 The University prohibits sexual misconduct and encourages those affected to seek support, explore reporting options, and contact a confidential resource on campus if desiring to speak confidentially with someone. Instructors are required to share reports of possible sexual misconduct with the campus Title IX office, which will then offer resources and support. For confidential help, to report sexual misconduct, or to access more information, contact your campus [Title IX office or relevant policy contacts](https://eot.umn.edu/report-misconduct) or consult the University’s policy on sexual misconduct. For more information, please see Administrative Policy: [*Sexual Harassment, Sexual Assault, Stalking and Relationship Violence*](https://policy.umn.edu/hr/sexharassassault).
 
-## Discrimination  
+## Discrimination
+
 All University members are prohibited from engaging in, or assisting or abetting another’s engagement in, discrimination and related retaliation (collectively “prohibited conduct”). The University of Minnesota (the “University”) will take prompt and effective steps intended to end prohibited conduct; prevent its recurrence; and, as appropriate, remedy its effects. For more information, consult Administration Policy: [Discrimination](https://policy.umn.edu/hr/discrimination).
 
-## Diversity, equity, inclusion, and equal opportunity  
+## Diversity, equity, inclusion, and equal opportunity
+
 The University provides equal access to and opportunity in its programs and facilities, without regard to race, color, creed, religion, national origin, gender, age, marital status, familial status, disability, public assistance status, membership or activity in a local commission created for the purpose of dealing with discrimination, veteran status, sexual orientation, gender identity, or gender expression. For more information, please consult Board of Regents Policy: [*Diversity, Equity, Inclusion, and Equal Opportunity*](https://policy.umn.edu/policy-regents/diversity-equity-inclusion-and-equal-opportunity)*.*
 
-## Academic freedom and responsibility  
+## Academic freedom and responsibility
+
 Academic freedom is central to the University, allowing students to explore, discuss, and research relevant topics within a course’s scope. With this freedom comes the responsibility to engage critically, respect differing views, develop the capacity for critical judgment, engage in a sustained and independent search for truth, and meet course requirements. Concerns about academic freedom are taken seriously – students can reach out to me, department leadership, advisors, or the Office of the Provost for support. Read more about [Academic Freedom and Responsibility](https://policy.umn.edu/policy-regents/academic-freedom-and-responsibility).
 
 ## Stress management
 
-We live in continually unprecedented times. On top of all the external stressors in our lives, strained relationships, anxiety, depression, substance addiction problems, and more can impede learning, reduce your ability to participate in daily activities, and reduce your academic performance (in addition to just making your life more difficult and miserable\!). Please realize that you are not alone and that a broad range of confidential mental health services are available on campus to assist you. Reaching out for help is challenging – but it is a smart and courageous thing to do. [http://www.mentalhealth.umn.edu](http://www.mentalhealth.umn.edu)  
+We live in continually unprecedented times. On top of all the external stressors in our lives, strained relationships, anxiety, depression, substance addiction problems, and more can impede learning, reduce your ability to participate in daily activities, and reduce your academic performance (in addition to just making your life more difficult and miserable!). Please realize that you are not alone and that a broad range of confidential mental health services are available on campus to assist you. Reaching out for help is challenging – but it is a smart and courageous thing to do. <http://www.mentalhealth.umn.edu>
