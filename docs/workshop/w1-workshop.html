@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jeremy Hemberger">
-<meta name="dcterms.date" content="2026-08-11">
+<meta name="dcterms.date" content="2026-08-12">
 
 <title>Workshop 1: Intro to data science and R – Entomology 3927/5927</title>
 <style>
@@ -24,6 +24,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -317,14 +352,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#frontmatter" id="toc-frontmatter" class="nav-link active" data-scroll-target="#frontmatter">Frontmatter</a></li>
-  <li><a href="#a-tour-of-the-r-studio-ide-and-gui" id="toc-a-tour-of-the-r-studio-ide-and-gui" class="nav-link" data-scroll-target="#a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI</a>
+  <li><a href="#frontmatter-1" id="toc-frontmatter-1" class="nav-link active" data-scroll-target="#frontmatter-1">Frontmatter 1️⃣</a></li>
+  <li><a href="#a-tour-of-the-r-studio-ide-and-gui" id="toc-a-tour-of-the-r-studio-ide-and-gui" class="nav-link" data-scroll-target="#a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI 💻</a>
   <ul class="collapse">
-  <li><a href="#setting-up-your-devenv-development-environment" id="toc-setting-up-your-devenv-development-environment" class="nav-link" data-scroll-target="#setting-up-your-devenv-development-environment">Setting up your Devenv (Development Environment)</a></li>
+  <li><a href="#setting-up-your-devenv-development-environment" id="toc-setting-up-your-devenv-development-environment" class="nav-link" data-scroll-target="#setting-up-your-devenv-development-environment">Setting up your DevEnv (Development Environment)</a></li>
   </ul></li>
-  <li><a href="#basic-programming-in-r" id="toc-basic-programming-in-r" class="nav-link" data-scroll-target="#basic-programming-in-r">Basic programming in R</a></li>
-  <li><a href="#project-and-code-organization" id="toc-project-and-code-organization" class="nav-link" data-scroll-target="#project-and-code-organization">Project and code organization</a></li>
-  <li><a href="#scripts-vs.-console" id="toc-scripts-vs.-console" class="nav-link" data-scroll-target="#scripts-vs.-console">Scripts vs.&nbsp;console</a></li>
+  <li><a href="#basic-programming-in-r" id="toc-basic-programming-in-r" class="nav-link" data-scroll-target="#basic-programming-in-r">Basic programming in R 🧑🏻‍💻</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments 📝</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages 📦</a></li>
+  <li><a href="#scripts-vs.-console" id="toc-scripts-vs.-console" class="nav-link" data-scroll-target="#scripts-vs.-console">Scripts vs.&nbsp;console 🖥️</a>
+  <ul class="collapse">
+  <li><a href="#r-markdown-and-r-notebooks-now-quarto-documents" id="toc-r-markdown-and-r-notebooks-now-quarto-documents" class="nav-link" data-scroll-target="#r-markdown-and-r-notebooks-now-quarto-documents">R Markdown and R Notebooks (now, Quarto documents!)</a></li>
+  </ul></li>
+  <li><a href="#example-quarto-document" id="toc-example-quarto-document" class="nav-link" data-scroll-target="#example-quarto-document">Example quarto document</a>
+  <ul class="collapse">
+  <li><a href="#create-the-data" id="toc-create-the-data" class="nav-link" data-scroll-target="#create-the-data">Create the data</a></li>
+  <li><a href="#make-a-plot" id="toc-make-a-plot" class="nav-link" data-scroll-target="#make-a-plot">Make a plot</a></li>
+  </ul></li>
+  <li><a href="#project-and-code-organization" id="toc-project-and-code-organization" class="nav-link" data-scroll-target="#project-and-code-organization">Project and code organization 💾</a>
+  <ul class="collapse">
+  <li><a href="#project-directory-structure" id="toc-project-directory-structure" class="nav-link" data-scroll-target="#project-directory-structure">Project directory structure</a></li>
+  <li><a href="#r-project-workspace-and-.rdata" id="toc-r-project-workspace-and-.rdata" class="nav-link" data-scroll-target="#r-project-workspace-and-.rdata">R Project workspace and <code>.Rdata</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -351,7 +400,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 11, 2026</p>
+      <p class="date">August 12, 2026</p>
     </div>
   </div>
   
@@ -363,47 +412,268 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="frontmatter" class="level2">
-<h2 class="anchored" data-anchor-id="frontmatter">Frontmatter</h2>
+<section id="frontmatter-1" class="level2">
+<h2 class="anchored" data-anchor-id="frontmatter-1">Frontmatter 1️⃣</h2>
 <p class="buttons" style="text-align:left;">
 </p><p><a href="https://canvas.umn.edu/courses/539629/modules/items/15583284" class="btn btn-primary"><i class="fa-solid fa-download" aria-label="download"></i> Download lab data</a></p>
 <p></p>
 </section>
 <section id="a-tour-of-the-r-studio-ide-and-gui" class="level2">
-<h2 class="anchored" data-anchor-id="a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI</h2>
+<h2 class="anchored" data-anchor-id="a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI 💻</h2>
 <p>In it’s simplest out-of-box form, R Studio is composed of four different sections, called panes:</p>
 <p><img src="workshop_media/w1/rstudio.png" class="img-fluid"></p>
 <ol type="1">
-<li><strong>Source</strong> (Top-Left): Write and edit R scripts, markdown files, or notebooks. Run lines or whole blocks directly from here</li>
-<li><strong>Console</strong> (Bottom-Left): Execute raw commands immediately and view text output or error messages</li>
-<li><strong>Environment &amp; History</strong> (Top-Right): Inspect active variables, data frames, loaded values, and past command history</li>
-<li><strong>Files, Plots, Packages &amp; Help</strong> (Bottom-Right): Browse local directories, view generated data plots, manage library packages, and read documentation.</li>
+<li><strong>Source:</strong> This pane is where you will write/view R scripts. Some outputs (such as if you view a dataset using View()) will appear as a tab here.</li>
+<li><strong>Console/Terminal/Jobs:</strong> This is actually where you see the execution of commands. This is the same display you would see if you were using R at the command line without RStudio. You can work interactively (i.e.&nbsp;enter R commands here), but for the most part we will run a script (or lines in a script) in the source pane and watch their execution and output here. The “Terminal” tab give you access to the BASH terminal (the Linux operating system, unrelated to R). RStudio also allows you to run jobs (analyses) in the background. This is useful if some analysis will take a while to run. You can see the status of those jobs in the background.</li>
+<li><strong>Environment/History:</strong> Here, RStudio will show you what datasets and objects (variables) you have created and which are defined in memory. You can also see some properties of objects/datasets such as their type and dimensions. The “History” tab contains a history of the R commands you’ve executed R.</li>
+<li><strong>Files/Plots/Packages/Help/Viewer:</strong> This multipurpose pane will show you the contents of directories on your computer. You can also use the “Files” tab to navigate and set the working directory. The “Plots” tab will show the output of any plots generated. In “Packages” you will see what packages are actively loaded, or you can attach installed packages. “Help” will display help files for R functions and packages. “Viewer” will allow you to view local web content (e.g.&nbsp;HTML outputs).</li>
 </ol>
 <section id="setting-up-your-devenv-development-environment" class="level3">
-<h3 class="anchored" data-anchor-id="setting-up-your-devenv-development-environment">Setting up your Devenv (Development Environment)</h3>
+<h3 class="anchored" data-anchor-id="setting-up-your-devenv-development-environment">Setting up your DevEnv (Development Environment)</h3>
 <p>RStudio is a highly customizable program that will let you nerd out to your heart’s content. Feel free! A few things that I suggest you customize right away will help you (and your collaborators/me) to debug and read your code.</p>
-<ul>
-<li><p>After launching RStudio, go to Tools —&gt; Global options.</p></li>
-<li><p>Select the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.</p></li>
-<li><p>Next, select the “Code” tab on the side, and then select the “Display” panel. Enable:</p></li>
-<li><p><label><input type="checkbox" checked=""><code>Highlight selected line</code></label></p></li>
-<li><p><label><input type="checkbox" checked=""><code>Allow scroll past end of document</code></label></p></li>
-<li><p><label><input type="checkbox" checked=""><code>Highlight function calls</code></label></p></li>
-<li><p><label><input type="checkbox" checked=""><code>Use rainbow parentheses</code> 🌈</label></p></li>
-</ul>
+<ol type="1">
+<li>After launching RStudio, go to <kbd>Tools</kbd> —&gt; <kbd>Global options</kbd>.</li>
+<li>Select the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.</li>
+<li>Next, select the “Code” tab on the side, and then select the “Display” panel. Enable:
+<ul class="task-list">
+<li><label><input type="checkbox" checked=""><code>Highlight selected line</code></label></li>
+<li><label><input type="checkbox" checked=""><code>Allow scroll past end of document</code></label></li>
+<li><label><input type="checkbox" checked=""><code>Highlight function calls</code></label></li>
+<li><label><input type="checkbox" checked=""><code>Use rainbow parentheses</code> 🌈</label></li>
+</ul></li>
+</ol>
 <p>These things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you’re editing in your R files.</p>
 </section>
 </section>
 <section id="basic-programming-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="basic-programming-in-r">Basic programming in R</h2>
+<h2 class="anchored" data-anchor-id="basic-programming-in-r">Basic programming in R 🧑🏻‍💻</h2>
+<p>R is a functional programming language that is used to operate on <strong>objects</strong>. Objects are any piece of data that we store in memory, and perform different operations on, either using arithmetic or one or more R functions (things like <code>sum()</code> or <code>mean()</code>).</p>
+<p>For example, we can create a variable called <code>x</code> and assign it a value of 23. In the console, enter the following:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">23</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The object we create here, is 23, but we use a variable, <code>x</code>, to point to that object in memory so that we can easily reference/use it in our various bits of code. The <code>&lt;-</code> is the assignment operator, and it tells R we want to create a new variable and store it in memory so that we can access it later. You’ll see the variable, <code>x</code>, pop up in your <kbd>Environment</kbd> pane after you run the code. If you were to just type in 23 without the operator, R acts like a giant calculator and just spits out the answer, in this case, 23. We can do things with this object, like math:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> <span class="dv">3</span>   <span class="co"># Add 3 to x</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 26</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">*</span> <span class="dv">40</span>  <span class="co"># Multiple x by 40</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 920</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="sc">%%</span> <span class="dv">3</span>  <span class="co"># Return the remainder of x / 3 (modulo) </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<p>Or use it inside of <strong>functions</strong>. An R function has three key properties:</p>
+<ul>
+<li>Functions have a name (e.g.&nbsp;<code>dir</code>, <code>getwd</code>); note that <em>functions are case sensitive</em>!</li>
+<li>Following the name, functions have a pair of ()</li>
+<li>Inside the parentheses, a function may take 0 or more arguments. The arguments include inputs to the function, and settings that modify how the function behaves.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x) <span class="co"># Calculates mean of our variable x</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 23</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co"># Calculates mean of our variable x, but also removes any NA values</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 23</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">c</span>(x, x, x)) <span class="co"># Calculates the sum of a vector containing three x variables</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 69</code></pre>
+</div>
+</div>
+<p>Note that all of the above lines of code spit out answers in the console, but don’t create any additional variables in our global environment. That’s because we haven’t use the assignment operator to tell R, “Hey, I’d like to save this bit of information so that I can use it later”.</p>
 </section>
-<section id="project-and-code-organization" class="level2">
-<h2 class="anchored" data-anchor-id="project-and-code-organization">Project and code organization</h2>
+<section id="comments" class="level2">
+<h2 class="anchored" data-anchor-id="comments">Comments 📝</h2>
+<p>You have already seen comments in the code above. R ignores any text after a <code>#</code>. The purpose of these comments are to explain the <em>why</em> of your code, not the <em>how</em> or the <em>what</em>. To quote <em>R for Data Science</em>:</p>
+<blockquote class="blockquote">
+<p>For data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them. There’s no way to re-capture this knowledge from the code itself</p>
+</blockquote>
+<p>You can also leave little breadcrumbs for yourself as reminders of what exactly some output is, or why you’ve changed the argument of a function to a certain value. Comments are invaluable to future you and collaborators: use them!</p>
+</section>
+<section id="packages" class="level2">
+<h2 class="anchored" data-anchor-id="packages">Packages 📦</h2>
 </section>
 <section id="scripts-vs.-console" class="level2">
-<h2 class="anchored" data-anchor-id="scripts-vs.-console">Scripts vs.&nbsp;console</h2>
+<h2 class="anchored" data-anchor-id="scripts-vs.-console">Scripts vs.&nbsp;console 🖥️</h2>
+<p>So far, we’ve just been using console to write code. This works, but as you may notice, we have no working history of our different lines of code. All the stuff we’ve entered is there, but we can’t edit it without re-entering it. When we write R code, we almost always use scripts. These take two basic forms: a simple text file (a <code>.r</code> script) or, a type of Markdown file (<code>.Rmd</code>) called an R Notebook. The next-generation of these files are called Quarto files (basically the same thing as <code>.Rmd</code>, but with added support for additional programming languages). There are advantages to each of these formats, and either one can work for conducting data analysis in any form. In general, this is what I recommend.</p>
+<ul>
+<li><code>.r</code> files: use these to build stand-alone, complete automated scripts or custom functions that you may want to source either outside of R Studio (i.e., via a Terminal), or in different <code>.Rmd</code> or <code>.r</code> files.</li>
+<li><code>.Rmd</code> (or <code>.qmd</code>) files: use these when you want to combine code, interactive plots, and written narrative into a single file that can be processed into publishable reports (either via .html or PDF).</li>
+</ul>
+<section id="r-markdown-and-r-notebooks-now-quarto-documents" class="level3">
+<h3 class="anchored" data-anchor-id="r-markdown-and-r-notebooks-now-quarto-documents">R Markdown and R Notebooks (now, Quarto documents!)</h3>
+<p>In general, I highly recommend using <code>.Rmd</code> (<code>.qmd</code>) notebooks to conduct your data analyses. This allows us to practice <em>literate programming</em>, combining code, narrative, figures, etc. into a seamless document that has a logical structure from to bottom. These documents necessarily center the output or results of your work, not just the code the produced it. This format allows you to more easily capture the how (i.e., your code) <em>and</em> the why and what you were thinking as you conducted your analysis.</p>
+<p>These files are essentially specialized Markdown files, which is a light-weight way to write formatted text using a plain-text editor (i.e., R Studio or Positron). You can create headings, embed images, format in specialized ways using html or other style sheets (if you so choose), add code chunks that run and produce output</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Fun Fact!">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Fun Fact!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This document you’re reading, and the entire website for this course, was built using Quarto and R (as was my <a href="https://jhemberger.github.io/ibug_lab_website/">lab website</a>)! By harnessing the power of this tool, you can create super effective and light-weight online portals for your work to communicate your methods and findings.</p>
+</div>
+</div>
+<section id="r-notebook-structure" class="level4">
+<h4 class="anchored" data-anchor-id="r-notebook-structure">R Notebook structure</h4>
+<p>There are basically 3 main parts to any <code>.rmd</code> or <code>.qmd</code> file:</p>
+<ol type="1">
+<li>An (optional) YAML header surrounded by: <code>---</code></li>
+<li>Chunks of R code surrounded by ```</li>
+<li>Text mixed with simple text formatting like # <code>heading</code> and *italics*</li>
+</ol>
+<p>Here’s an example:</p>
+<p>Here is a simple Quarto document:</p>
+<div class="cell">
+<pre class="qmd cell-code"><code>---
+title: "My First Quarto Analysis"
+author: "Your Name"
+format: html
+---
+
+# Example quarto document
+
+This is a simple Quarto document.
+
+## Create the data
+
+```{r}
+data &lt;- data.frame(
+  species = c("Bee", "Butterfly", "Fly", "Beetle"),
+  abundance = c(12, 8, 15, 5)
+)
+
+data
+```
+
+## Make a plot
+
+```{r}
+library(ggplot2)
+
+ggplot(data, aes(x = species, y = abundance)) +
+  geom_col()
+```</code></pre>
+</div>
+<p>When you are finished and want to export this to a report, you could render it as <code>.html</code> where it will look like this:</p>
+</section>
+</section>
+</section>
+<section id="example-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="example-quarto-document">Example quarto document</h2>
+<p>This is a simple Quarto document.</p>
+<section id="create-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-data">Create the data</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">species =</span> <span class="fu">c</span>(<span class="st">"Bee"</span>, <span class="st">"Butterfly"</span>, <span class="st">"Fly"</span>, <span class="st">"Beetle"</span>),</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">abundance =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">8</span>, <span class="dv">15</span>, <span class="dv">5</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>data</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    species abundance
+1       Bee        12
+2 Butterfly         8
+3       Fly        15
+4    Beetle         5</code></pre>
+</div>
+</div>
+</section>
+<section id="make-a-plot" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-plot">Make a plot</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">y =</span> abundance)) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="w1-workshop_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Suggestion:">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Suggestion:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Go peek at the <a href="https://github.com/entomology-3927-5927">GitHub repository</a> for this site to see how the various pages are constructed as <code>.qmd</code> files and compare that to the rendered, website version. You’ll get a sense of how the various formatting features of markdown work.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="project-and-code-organization" class="level2">
+<h2 class="anchored" data-anchor-id="project-and-code-organization">Project and code organization 💾</h2>
+<p>Keeping your work organized is an extremely important aspect of making your projects reproducible and a great way to help future you or collaborators make sense of what you’ve done. You can conduct your work and analyses in a piecemeal, chaotic fashion, but the goal of this class is to instill consisent, clear protocols to follow for all projects so that we properly document and allow our work to be easily reproduced/checked. The first step toward this is always using <strong>R Studio Projects</strong> (this is similar to the folder-based system that many other IDEs like VSCode and Positron use).</p>
+<p>R Studio projects basically act as a starting point for all of your work on a given…well, project. They allow us to:</p>
+<ul>
+<li>Save data, files, variables, packages related to a specific analysis project/paper</li>
+<li>Easily pickup where you last left off</li>
+<li>Collaborate by integrating tools such as version control using git (which we’ll cover more in the coming weeks)</li>
+</ul>
+<p>Projects also maintain a consistent file structure and relative pathing system so that your various scripts can easily locate dependent files, packages, data, etc. This concept is called a <strong>working directory</strong>. You can manually set this, but it’s not advised as you’ll need to reset it every single time you run a script or bit of code, and it will create headaches for anyone/machine that tries to run the code on another computer. By creating a project, you create an enclosed ecosystem that you can move around at will and everything will still work because the working directory is set relative to the project file (here, directory is just the technical term for a computer folder).</p>
+<p>We’ll create a single R Studio project for this class, and manage all of the weekly tasks within that project. Later, we’ll initiate a git repository inside the project so that we explicitly track our files using version control, and link this to GitHub repo so our work will be (1) publically accessible and (2) backed up on a cloud-based service.</p>
+<ol type="1">
+<li>To create a project, go to the <kbd>File</kbd> menu, and click <kbd>New Project…</kbd>.</li>
+<li>If you already have a folder on your computer where you’d like to start your project, select <kbd>Existing Directory</kbd> and navigate to select that folder. If you want to create a new directory, select <kbd>New Directory</kbd>, and then select <kbd>New Project</kbd>. For the “Directory Name”, enter: <code>ent3927-5927_fall-2026</code>. For “Create project as subdirectory of”, click Browse… and then click Choose and navigate to whatever folder you want your <em>project</em> (and thereby project directory) to live inside.</li>
+<li>For now, ignore the git and renv toggle boxes. We’ll discuss those more later.</li>
+<li>Click <kbd>Create Project</kbd>. In the “Files” tab of the lower right pane, you should see an R Studio project file, <code>ent3927-5927_fall-2026.Rproj</code>. R Studio projects end with the “.Rproj” file extension.</li>
+</ol>
+<section id="project-directory-structure" class="level3">
+<h3 class="anchored" data-anchor-id="project-directory-structure">Project directory structure</h3>
+<p>A key to making projects easy to navigate is to use a consistent directory organizational structure. This way, code, data, reports, and other components of your project live in the same places and it reduces how much you need to huntfor things/remember where they are. It also (you’ll notice a theme here) makes it easy for collaborators or folks looking through your project to locate things if they’re organized in a logical fashion.</p>
+<div class="cell">
+<pre class="qmd cell-code"><code>my-r-project/
+│
+├── .gitignore               # Excludes large, generated, or sensitive files from Git
+├── my-r-project.Rproj       # RStudio Project settings file
+├── README.md                # Project overview, setup instructions, and metadata
+├── project_notes.qmd.       # Digital notebook that has to-do lists, notes, etc.
+├── renv.lock                # (Optional) Snapshot of package dependencies for reproducibility
+│
+├── data/                    # All project data
+│   ├── raw/                 # Unmodified original data (Read-Only)
+│   └── processed/           # Cleaned, transformed, or intermediate data outputs
+│
+├── code/                    # Custom R scripts and functions
+│   ├── 01_data_cleaning.qmd # Data importing and wrangling scripts
+│   ├── 02_analysis.qmd      # Core analysis and statistical models
+│   └── utils.R              # Custom functions shared across scripts
+│
+├── output/                  # Non-code objects generated by analysis
+│   ├── figures/             # Exported plots (e.g., .png, .pdf)
+│   └── tables/              # Exported summary tables (e.g., .csv, .rds)
+│
+├── docs/                    # Final reports, Quarto docs, manuscripts, or presentation slides
+    ├── index.qmd            # Main Quarto report file
+    └── references.bib       # Citation bibliography</code></pre>
+</div>
+<p>Eventually, it’s possible that you can keep your entire project from post-data collection onward in a single environment and even write your manuscruipts using Quarto.</p>
+</section>
+<section id="r-project-workspace-and-.rdata" class="level3">
+<h3 class="anchored" data-anchor-id="r-project-workspace-and-.rdata">R Project workspace and <code>.Rdata</code></h3>
+<p>As you create objects and conduct your analyis, your environment will accumulate more and more stuff. As new R users, you likely consider these objects to be “real” things that you can save and work with later. In fact, R Studio has nifty tools that allow you to explicitly save this global environment as an <code>.Rdata</code> folder</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

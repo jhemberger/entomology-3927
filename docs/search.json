@@ -373,7 +373,7 @@
     "href": "workshop/workshop-index.html",
     "title": "Overview of workshops + basic info",
     "section": "",
-    "text": "Here, you’ll find the virtual companion to all of our hands-on workshops for the semester. These will be the same as your physical hand-outs, but I know many folks prefer to have them up on their screens as they work through the activities.\nThe purpose of these workshops is to practice applying the topics that we discuss in lecture using real-world examples and data. The associated data files for each lab are linked in the Frontmatter section atop each page (all the files are also located here). Over the semester, we’ll explore some of the frustrations and challenges of working with bio/ecological data (of which there are many!), but together we’ll conquer them, setting y’all up for success in analyzing, interpreting, and sharing your own data.\nAs a reminder, each of the 13 workshops will have an assignment/report that will be evaluated. The first three periods will be devoted to a primer of using R/RStudio for managing, wrangling, and interpreting data, and the reports associated with these will receive feedback but will not be included in the course grade. The remaining 10 lab assignments/reports will be graded and count toward 40% of total course grade (4% per report). There will also be a lab final worth 15% of the total course grade. In this, students will be given a real data set to analyze and develop a report for during the last lab period.",
+    "text": "Here, you’ll find the virtual companion to all of our hands-on workshops for the semester. These will be the same as your physical hand-outs, but I know many folks prefer to have them up on their screens as they work through the activities.\nThe purpose of these workshops is to practice applying the topics that we discuss in lecture using real-world examples and data. The associated data files for each lab are linked in the Frontmatter section atop each page (all the files are also located here). Over the semester, we’ll explore some of the frustrations and challenges of working with bio/ecological data (of which there are many!), but together we’ll conquer them, setting y’all up for success in analyzing, interpreting, and sharing your own data.\nA total of 8 of the workshops will have an assignment/report that will be peer reviewed (i.e., evaluated). The first three to four weeks will be devoted to a primer of using R/RStudio, basic programming, project management, and the use of Git and GitHub (which we will use extensively in this class to manage course materials and feedback).",
     "crumbs": [
       "Workshops",
       "Overview",
@@ -385,7 +385,7 @@
     "href": "workshop/workshop-index.html#downloading-installing-and-setting-up-r-and-rstudio",
     "title": "Overview of workshops + basic info",
     "section": "Downloading, installing, and setting up R and RStudio",
-    "text": "Downloading, installing, and setting up R and RStudio\nFor this course, we’ll be using the Posit Cloud service for workshops and assignments. It’s essentially an online virtual machine to run RStudio in your browser. This will avoid version issues, package incompatibilities, and Mac vs Windows challenges that we might otherwise face. This is a paid service we’ll be using for class and it will expire after our semester concludes, so I also encourage you to install R and R Studio on your own machines if you haven’t already. Click on the buttons below to install both R (the language, or engine that enables our analyses to be performed) and RStudio (the shell, or vessel that the engine of R sits in and gives us the nifty features to manage files, version history, and write pretty and readable code).\n Launch Posit Cloud  Download R  Download RStudio\n\nQuality of life improvements\nRStudio is a highly customizable program that will let you nerd out to your heart’s content. Feel free! A few things that I suggest you customize right away will help you (and me) to debug and read your code.\n\nAfter launching RStudio, go to Tools —&gt; Global options.\nSelect the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.\nNext, select the “Code” tab on the side, and then select the “Display” panel. Enable: Highlight selected line, Allow scroll past end of document, Highlight function calls, and Use rainbow parentheses 🌈. These things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you’re editing in your R files.",
+    "text": "Downloading, installing, and setting up R and RStudio\nFor this course, we’ll be using R and R Studio to do all of our work. You also have the option of using the Posit Cloud service for workshops and assignments. It’s essentially an online virtual machine to run RStudio in your browser. This will avoid version issues, package incompatibilities, and Mac vs Windows challenges that you might otherwise face. This is a paid service we’ll be using for class and it will expire after our semester concludes, so I also encourage you to install R and R Studio on your own machines if you haven’t already. Click on the buttons below to install both R (the language, or engine that enables our analyses to be performed) and RStudio (the shell, or vessel that the engine of R sits in and gives us the nifty features to manage files, version history, and write pretty and readable code).\n Launch Posit Cloud  Download R  Download RStudio",
     "crumbs": [
       "Workshops",
       "Overview",
@@ -432,8 +432,8 @@
     "objectID": "workshop/w1-workshop.html#a-tour-of-the-r-studio-ide-and-gui",
     "href": "workshop/w1-workshop.html#a-tour-of-the-r-studio-ide-and-gui",
     "title": "Workshop 1: Intro to data science and R",
-    "section": "A tour of the R studio IDE and GUI",
-    "text": "A tour of the R studio IDE and GUI\nIn it’s simplest out-of-box form, R Studio is composed of four different sections, called panes:\n\n\nSource (Top-Left): Write and edit R scripts, markdown files, or notebooks. Run lines or whole blocks directly from here\nConsole (Bottom-Left): Execute raw commands immediately and view text output or error messages\nEnvironment & History (Top-Right): Inspect active variables, data frames, loaded values, and past command history\nFiles, Plots, Packages & Help (Bottom-Right): Browse local directories, view generated data plots, manage library packages, and read documentation.\n\n\nSetting up your Devenv (Development Environment)\nRStudio is a highly customizable program that will let you nerd out to your heart’s content. Feel free! A few things that I suggest you customize right away will help you (and your collaborators/me) to debug and read your code.\n\nAfter launching RStudio, go to Tools —&gt; Global options.\nSelect the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.\nNext, select the “Code” tab on the side, and then select the “Display” panel. Enable:\nHighlight selected line\nAllow scroll past end of document\nHighlight function calls\nUse rainbow parentheses 🌈\n\nThese things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you’re editing in your R files.",
+    "section": "A tour of the R studio IDE and GUI 💻",
+    "text": "A tour of the R studio IDE and GUI 💻\nIn it’s simplest out-of-box form, R Studio is composed of four different sections, called panes:\n\n\nSource: This pane is where you will write/view R scripts. Some outputs (such as if you view a dataset using View()) will appear as a tab here.\nConsole/Terminal/Jobs: This is actually where you see the execution of commands. This is the same display you would see if you were using R at the command line without RStudio. You can work interactively (i.e. enter R commands here), but for the most part we will run a script (or lines in a script) in the source pane and watch their execution and output here. The “Terminal” tab give you access to the BASH terminal (the Linux operating system, unrelated to R). RStudio also allows you to run jobs (analyses) in the background. This is useful if some analysis will take a while to run. You can see the status of those jobs in the background.\nEnvironment/History: Here, RStudio will show you what datasets and objects (variables) you have created and which are defined in memory. You can also see some properties of objects/datasets such as their type and dimensions. The “History” tab contains a history of the R commands you’ve executed R.\nFiles/Plots/Packages/Help/Viewer: This multipurpose pane will show you the contents of directories on your computer. You can also use the “Files” tab to navigate and set the working directory. The “Plots” tab will show the output of any plots generated. In “Packages” you will see what packages are actively loaded, or you can attach installed packages. “Help” will display help files for R functions and packages. “Viewer” will allow you to view local web content (e.g. HTML outputs).\n\n\nSetting up your DevEnv (Development Environment)\nRStudio is a highly customizable program that will let you nerd out to your heart’s content. Feel free! A few things that I suggest you customize right away will help you (and your collaborators/me) to debug and read your code.\n\nAfter launching RStudio, go to Tools —&gt; Global options.\nSelect the “Appearance” tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.\nNext, select the “Code” tab on the side, and then select the “Display” panel. Enable:\n\nHighlight selected line\nAllow scroll past end of document\nHighlight function calls\nUse rainbow parentheses 🌈\n\n\nThese things will help you better catch syntax errors with missed parentheses, and help you and me quickly see where you’re editing in your R files.",
     "crumbs": [
       "Workshops",
       "Module 1: Introduction to Data Science and R",
@@ -444,8 +444,8 @@
     "objectID": "workshop/w1-workshop.html#basic-programming-in-r",
     "href": "workshop/w1-workshop.html#basic-programming-in-r",
     "title": "Workshop 1: Intro to data science and R",
-    "section": "Basic programming in R",
-    "text": "Basic programming in R",
+    "section": "Basic programming in R 🧑🏻‍💻",
+    "text": "Basic programming in R 🧑🏻‍💻\nR is a functional programming language that is used to operate on objects. Objects are any piece of data that we store in memory, and perform different operations on, either using arithmetic or one or more R functions (things like sum() or mean()).\nFor example, we can create a variable called x and assign it a value of 23. In the console, enter the following:\n\nx &lt;- 23\n\nThe object we create here, is 23, but we use a variable, x, to point to that object in memory so that we can easily reference/use it in our various bits of code. The &lt;- is the assignment operator, and it tells R we want to create a new variable and store it in memory so that we can access it later. You’ll see the variable, x, pop up in your Environment pane after you run the code. If you were to just type in 23 without the operator, R acts like a giant calculator and just spits out the answer, in this case, 23. We can do things with this object, like math:\n\nx + 3   # Add 3 to x\n\n[1] 26\n\nx * 40  # Multiple x by 40\n\n[1] 920\n\nx %% 3  # Return the remainder of x / 3 (modulo) \n\n[1] 2\n\n\nOr use it inside of functions. An R function has three key properties:\n\nFunctions have a name (e.g. dir, getwd); note that functions are case sensitive!\nFollowing the name, functions have a pair of ()\nInside the parentheses, a function may take 0 or more arguments. The arguments include inputs to the function, and settings that modify how the function behaves.\n\n\nmean(x) # Calculates mean of our variable x\n\n[1] 23\n\nmean(x, na.rm = TRUE) # Calculates mean of our variable x, but also removes any NA values\n\n[1] 23\n\nsum(c(x, x, x)) # Calculates the sum of a vector containing three x variables\n\n[1] 69\n\n\nNote that all of the above lines of code spit out answers in the console, but don’t create any additional variables in our global environment. That’s because we haven’t use the assignment operator to tell R, “Hey, I’d like to save this bit of information so that I can use it later”.",
     "crumbs": [
       "Workshops",
       "Module 1: Introduction to Data Science and R",
@@ -456,8 +456,8 @@
     "objectID": "workshop/w1-workshop.html#project-and-code-organization",
     "href": "workshop/w1-workshop.html#project-and-code-organization",
     "title": "Workshop 1: Intro to data science and R",
-    "section": "Project and code organization",
-    "text": "Project and code organization",
+    "section": "Project and code organization 💾",
+    "text": "Project and code organization 💾\nKeeping your work organized is an extremely important aspect of making your projects reproducible and a great way to help future you or collaborators make sense of what you’ve done. You can conduct your work and analyses in a piecemeal, chaotic fashion, but the goal of this class is to instill consisent, clear protocols to follow for all projects so that we properly document and allow our work to be easily reproduced/checked. The first step toward this is always using R Studio Projects (this is similar to the folder-based system that many other IDEs like VSCode and Positron use).\nR Studio projects basically act as a starting point for all of your work on a given…well, project. They allow us to:\n\nSave data, files, variables, packages related to a specific analysis project/paper\nEasily pickup where you last left off\nCollaborate by integrating tools such as version control using git (which we’ll cover more in the coming weeks)\n\nProjects also maintain a consistent file structure and relative pathing system so that your various scripts can easily locate dependent files, packages, data, etc. This concept is called a working directory. You can manually set this, but it’s not advised as you’ll need to reset it every single time you run a script or bit of code, and it will create headaches for anyone/machine that tries to run the code on another computer. By creating a project, you create an enclosed ecosystem that you can move around at will and everything will still work because the working directory is set relative to the project file (here, directory is just the technical term for a computer folder).\nWe’ll create a single R Studio project for this class, and manage all of the weekly tasks within that project. Later, we’ll initiate a git repository inside the project so that we explicitly track our files using version control, and link this to GitHub repo so our work will be (1) publically accessible and (2) backed up on a cloud-based service.\n\nTo create a project, go to the File menu, and click New Project….\nIf you already have a folder on your computer where you’d like to start your project, select Existing Directory and navigate to select that folder. If you want to create a new directory, select New Directory, and then select New Project. For the “Directory Name”, enter: ent3927-5927_fall-2026. For “Create project as subdirectory of”, click Browse… and then click Choose and navigate to whatever folder you want your project (and thereby project directory) to live inside.\nFor now, ignore the git and renv toggle boxes. We’ll discuss those more later.\nClick Create Project. In the “Files” tab of the lower right pane, you should see an R Studio project file, ent3927-5927_fall-2026.Rproj. R Studio projects end with the “.Rproj” file extension.\n\n\nProject directory structure\nA key to making projects easy to navigate is to use a consistent directory organizational structure. This way, code, data, reports, and other components of your project live in the same places and it reduces how much you need to huntfor things/remember where they are. It also (you’ll notice a theme here) makes it easy for collaborators or folks looking through your project to locate things if they’re organized in a logical fashion.\n\nmy-r-project/\n│\n├── .gitignore               # Excludes large, generated, or sensitive files from Git\n├── my-r-project.Rproj       # RStudio Project settings file\n├── README.md                # Project overview, setup instructions, and metadata\n├── project_notes.qmd.       # Digital notebook that has to-do lists, notes, etc.\n├── renv.lock                # (Optional) Snapshot of package dependencies for reproducibility\n│\n├── data/                    # All project data\n│   ├── raw/                 # Unmodified original data (Read-Only)\n│   └── processed/           # Cleaned, transformed, or intermediate data outputs\n│\n├── code/                    # Custom R scripts and functions\n│   ├── 01_data_cleaning.qmd # Data importing and wrangling scripts\n│   ├── 02_analysis.qmd      # Core analysis and statistical models\n│   └── utils.R              # Custom functions shared across scripts\n│\n├── output/                  # Non-code objects generated by analysis\n│   ├── figures/             # Exported plots (e.g., .png, .pdf)\n│   └── tables/              # Exported summary tables (e.g., .csv, .rds)\n│\n├── docs/                    # Final reports, Quarto docs, manuscripts, or presentation slides\n    ├── index.qmd            # Main Quarto report file\n    └── references.bib       # Citation bibliography\n\nEventually, it’s possible that you can keep your entire project from post-data collection onward in a single environment and even write your manuscruipts using Quarto.\n\n\nR Project workspace and .Rdata\nAs you create objects and conduct your analyis, your environment will accumulate more and more stuff. As new R users, you likely consider these objects to be “real” things that you can save and work with later. In fact, R Studio has nifty tools that allow you to explicitly save this global environment as an .Rdata folder",
     "crumbs": [
       "Workshops",
       "Module 1: Introduction to Data Science and R",
@@ -468,8 +468,116 @@
     "objectID": "workshop/w1-workshop.html#scripts-vs.-console",
     "href": "workshop/w1-workshop.html#scripts-vs.-console",
     "title": "Workshop 1: Intro to data science and R",
-    "section": "Scripts vs. console",
-    "text": "Scripts vs. console",
+    "section": "Scripts vs. console 🖥️",
+    "text": "Scripts vs. console 🖥️\nSo far, we’ve just been using console to write code. This works, but as you may notice, we have no working history of our different lines of code. All the stuff we’ve entered is there, but we can’t edit it without re-entering it. When we write R code, we almost always use scripts. These take two basic forms: a simple text file (a .r script) or, a type of Markdown file (.Rmd) called an R Notebook. The next-generation of these files are called Quarto files (basically the same thing as .Rmd, but with added support for additional programming languages). There are advantages to each of these formats, and either one can work for conducting data analysis in any form. In general, this is what I recommend.\n\n.r files: use these to build stand-alone, complete automated scripts or custom functions that you may want to source either outside of R Studio (i.e., via a Terminal), or in different .Rmd or .r files.\n.Rmd (or .qmd) files: use these when you want to combine code, interactive plots, and written narrative into a single file that can be processed into publishable reports (either via .html or PDF).\n\n\nR Markdown and R Notebooks (now, Quarto documents!)\nIn general, I highly recommend using .Rmd (.qmd) notebooks to conduct your data analyses. This allows us to practice literate programming, combining code, narrative, figures, etc. into a seamless document that has a logical structure from to bottom. These documents necessarily center the output or results of your work, not just the code the produced it. This format allows you to more easily capture the how (i.e., your code) and the why and what you were thinking as you conducted your analysis.\nThese files are essentially specialized Markdown files, which is a light-weight way to write formatted text using a plain-text editor (i.e., R Studio or Positron). You can create headings, embed images, format in specialized ways using html or other style sheets (if you so choose), add code chunks that run and produce output\n\n\n\n\n\n\nNoteFun Fact!\n\n\n\nThis document you’re reading, and the entire website for this course, was built using Quarto and R (as was my lab website)! By harnessing the power of this tool, you can create super effective and light-weight online portals for your work to communicate your methods and findings.\n\n\n\nR Notebook structure\nThere are basically 3 main parts to any .rmd or .qmd file:\n\nAn (optional) YAML header surrounded by: ---\nChunks of R code surrounded by ```\nText mixed with simple text formatting like # heading and *italics*\n\nHere’s an example:\nHere is a simple Quarto document:\n\n---\ntitle: \"My First Quarto Analysis\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# Example quarto document\n\nThis is a simple Quarto document.\n\n## Create the data\n\n```{r}\ndata &lt;- data.frame(\n  species = c(\"Bee\", \"Butterfly\", \"Fly\", \"Beetle\"),\n  abundance = c(12, 8, 15, 5)\n)\n\ndata\n```\n\n## Make a plot\n\n```{r}\nlibrary(ggplot2)\n\nggplot(data, aes(x = species, y = abundance)) +\n  geom_col()\n```\n\nWhen you are finished and want to export this to a report, you could render it as .html where it will look like this:",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/workshop-index.html#completing-and-submitting-workshop-reports",
+    "href": "workshop/workshop-index.html#completing-and-submitting-workshop-reports",
+    "title": "Overview of workshops + basic info",
+    "section": "Completing and submitting workshop reports",
+    "text": "Completing and submitting workshop reports\nIn labs, we’ll be writing code in a couple of different ways, but primarily what I will be recommending is using an R Notebook to write, annotate, and interpret your code. R Notebooks are a type of Markdown file where we can mix formatted text, code chunks, and a whole bunch of other goodies. R Notebooks help to organize your code into sections and subsections, and will let you write about the output directly in the document rather than creating a Word document (shudder…). We’ll go through this a bit more in the first lab, but take a look at the following links to learn a bit more about R Notebooks and R Markdown.\n\nWriting code in R notebooks\nR Notebook (Markdown) cheatsheet",
+    "crumbs": [
+      "Workshops",
+      "Overview",
+      "Overview of workshops + basic info"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#comments",
+    "href": "workshop/w1-workshop.html#comments",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "Comments 📝",
+    "text": "Comments 📝\nYou have already seen comments in the code above. R ignores any text after a #. The purpose of these comments are to explain the why of your code, not the how or the what. To quote R for Data Science:\n\nFor data analysis code, use comments to explain your overall plan of attack and record important insights as you encounter them. There’s no way to re-capture this knowledge from the code itself\n\nYou can also leave little breadcrumbs for yourself as reminders of what exactly some output is, or why you’ve changed the argument of a function to a certain value. Comments are invaluable to future you and collaborators: use them!",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#qmd",
+    "href": "workshop/w1-workshop.html#qmd",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "`````qmd",
+    "text": "`````qmd\ntitle: “My First Quarto Analysis” author: “Your Name” format: html —",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#create-the-data",
+    "href": "workshop/w1-workshop.html#create-the-data",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "Create the data",
+    "text": "Create the data\n\ndata &lt;- data.frame(\n  species = c(\"Bee\", \"Butterfly\", \"Fly\", \"Beetle\"),\n  abundance = c(12, 8, 15, 5)\n)\n\ndata\n\n    species abundance\n1       Bee        12\n2 Butterfly         8\n3       Fly        15\n4    Beetle         5",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#make-a-plot",
+    "href": "workshop/w1-workshop.html#make-a-plot",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "Make a plot",
+    "text": "Make a plot\n\nlibrary(ggplot2)\n\nggplot(data, aes(x = species, y = abundance)) +\n  geom_col()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipSuggestion:\n\n\n\nGo peek at the GitHub repository for this site to see how the various pages are constructed as .qmd files and compare that to the rendered, website version. You’ll get a sense of how the various formatting features of markdown work.",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#this-will-render-as",
+    "href": "workshop/w1-workshop.html#this-will-render-as",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "This will render as:",
+    "text": "This will render as:\ntitle: “My First Quarto Analysis” author: “Your Name” format: html —",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#example-quarto-document",
+    "href": "workshop/w1-workshop.html#example-quarto-document",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "Example quarto document",
+    "text": "Example quarto document\nThis is a simple Quarto document.\n\nCreate the data\n\ndata &lt;- data.frame(\n  species = c(\"Bee\", \"Butterfly\", \"Fly\", \"Beetle\"),\n  abundance = c(12, 8, 15, 5)\n)\n\ndata\n\n    species abundance\n1       Bee        12\n2 Butterfly         8\n3       Fly        15\n4    Beetle         5\n\n\n\n\nMake a plot\n\nlibrary(ggplot2)\n\nggplot(data, aes(x = species, y = abundance)) +\n  geom_col()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipSuggestion:\n\n\n\nGo peek at the GitHub repository for this site to see how the various pages are constructed as .qmd files and compare that to the rendered, website version. You’ll get a sense of how the various formatting features of markdown work.",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#packages",
+    "href": "workshop/w1-workshop.html#packages",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "Packages 📦",
+    "text": "Packages 📦",
+    "crumbs": [
+      "Workshops",
+      "Module 1: Introduction to Data Science and R",
+      "Week 1: Intro to data science and R"
+    ]
+  },
+  {
+    "objectID": "workshop/w1-workshop.html#frontmatter-1",
+    "href": "workshop/w1-workshop.html#frontmatter-1",
+    "title": "Workshop 1: Intro to data science and R",
+    "section": "",
+    "text": "Download lab data",
     "crumbs": [
       "Workshops",
       "Module 1: Introduction to Data Science and R",
