@@ -10,17 +10,17 @@ format:
     highlight-style: ayu
 ---
 
-## Frontmatter 1️⃣
+## Frontmatter ‼️
 
 <p class="buttons" style="text-align:left;">
 
-[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary} [{{< fa brands r-project title="R Project">}} [Download R](https://cran.r-project.org/){style="color: white !important;"}]{.btn .btn-primary role="button"} [{{< fa registered >}} [Download RStudio](https://posit.co/download/rstudio-desktop/){style="color: white !important;"}]{.btn .btn-primary role="button"}
 
 </p>
 
 ## A tour of the R studio IDE and GUI 💻
 
-In it's simplest out-of-box form, R Studio is composed of four different sections, called panes:
+In it's simplest, out-of-box form, R Studio is composed of four different sections, called panes:
 
 ![](workshop_media/w1/rstudio.png)
 
@@ -34,7 +34,7 @@ In it's simplest out-of-box form, R Studio is composed of four different section
 RStudio is a highly customizable program that will let you nerd out to your heart's content. Feel free! A few things that I suggest you customize right away will help you (and your collaborators/me) to debug and read your code.
 
 1.  After launching RStudio, go to <kbd>Tools</kbd> ---\> <kbd>Global options</kbd>.
-2.  Select the "Appearance" tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting.
+2.  Select the "Appearance" tab on the side, and select an editor theme that you like best. I highly recommend one where comments (text preceded by a #) are some shade of gray. This helps them be obvious without being obnoxiously bright and distracting. There are no shortage of [other themes out there:](https://github.com/max-alletsee/rstudio-themes).
 3.  Next, select the "Code" tab on the side, and then select the "Display" panel. Enable:
     - [x] `Highlight selected line`
     - [x] `Allow scroll past end of document`
@@ -83,7 +83,19 @@ You have already seen comments in the code above. R ignores any text after a `#`
 You can also leave little breadcrumbs for yourself as reminders of what exactly some output is, or why you've changed the argument of a function to a certain value. Comments are invaluable to future you and collaborators: use them!
 
 ## Packages 📦
+R ships with a huge number of useful, pre-loaded bits of code that you can use to load, manipulate, and model data. However, there's also an even huger (sp?) world of code developed by others to complete various tasks from manipulating data, to loading and accessing data APIs, to building complex Baysian statistical models, to working with geospatial data. These bits of code developed by others are packaged as something called....well...packages. They're sort of like apps on your phone; programs that operate either on their own or in conjunction with other packages to expand the baseline capabilities of R. Chances are, if you can think of it, there is a package that already exists to do it.
 
+To get these packages, we have to first install them. We use R Studio's package manager to do this. To install new packages, go to the <kbd>Tools</kbd> menu and select <kbd>Install Packages...</kbd>. In the `Packages` content box, you can start to enter the name and the list should auto-populate from the CRAN repository. Select install, and then the package will be downloaded from the interwebs and installed on your computer. 
+
+Great! But, if you want to use the package, we first have to tell R to load it up. R packages are stored deep inside your computer, and when R Studio boots up, it loads the bare minimum number of packages to ensure our experience is a nimble and fast as possible. The more packages you load, the more stuff R has to keep track of in memory. Given this, we tend to load only the packages we need to complete a project/task, not the entirety of the R ecosystem! To load a package, we use the `library()` function.
+
+```{r}
+library(tidyverse)
+```
+
+Neat! Loading the tidyverse packages actually loads 9!? packages altogether for data wrangling, visualization, and manipulating. In fact, about 95% of your every-day R tasks will likely be completed using one of those 9 packages. As you'll learn in a few weeks, Tidyverse is, in fact, the law. 
+
+![](workshop_media/w1/tidyverse.gif){width="100%"}
 
 ## Scripts vs. console 🖥️
 So far, we've just been using console to write code. This works, but as you may notice, we have no working history of our different lines of code. All the stuff we've entered is there, but we can't edit it without re-entering it. When we write R code, we almost always use scripts. These take two basic forms: a simple text file (a `.r` script) or, a type of Markdown file (`.Rmd`) called an R Notebook. The next-generation of these files are called Quarto files (basically the same thing as `.Rmd`, but with added support for additional programming languages). There are advantages to each of these formats, and either one can work for conducting data analysis in any form. In general, this is what I recommend.
