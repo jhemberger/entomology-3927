@@ -1,5 +1,5 @@
 ---
-title: "Workshop 1: Intro to data science and R"
+title: "Workshop 1: Intro to R, Project Organization, and the DevEnv"
 subtitle: "Entomology 3927 - Fall 2026"
 author: Jeremy Hemberger
 date: last-modified
@@ -14,7 +14,7 @@ format:
 
 <p class="buttons" style="text-align:left;">
 
-[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary} [{{< fa brands r-project title="R Project">}} [Download R](https://cran.r-project.org/){style="color: white !important;"}]{.btn .btn-primary role="button"} [{{< fa registered >}} [Download RStudio](https://posit.co/download/rstudio-desktop/){style="color: white !important;"}]{.btn .btn-primary role="button"}
+[{{< fa brands r-project title="R Project">}} [Download R](https://cran.r-project.org/){style="color: white !important;"}]{.btn .btn-primary role="button"} [{{< fa registered >}} [Download RStudio](https://posit.co/download/rstudio-desktop/){style="color: white !important;"}]{.btn .btn-primary role="button"}
 
 </p>
 
@@ -73,7 +73,7 @@ mean(x, na.rm = TRUE) # Calculates mean of our variable x, but also removes any 
 sum(c(x, x, x)) # Calculates the sum of a vector containing three x variables
 ```
 
-Note that all of the above lines of code spit out answers in the console, but don't create any additional variables in our global environment. That's because we haven't use the assignment operator to tell R, "Hey, I'd like to save this bit of information so that I can use it later". 
+Note that all of the above lines of code spit out answers in the console, but don't create any additional variables in our global environment. That's because we haven't use the assignment operator to tell R, "Hey, I'd like to save this bit of information so that I can use it later". This is enough on basic programming for now, we'll spend all next week talking about the various types of objects, how they're structured, and how to access them next week. For now, let's continue our little tour...
 
 ## Comments 📝
 You have already seen comments in the code above. R ignores any text after a `#`. The purpose of these comments are to explain the *why* of your code, not the *how* or the *what*. To quote *R for Data Science*:
@@ -85,7 +85,7 @@ You can also leave little breadcrumbs for yourself as reminders of what exactly 
 ## Packages 📦
 R ships with a huge number of useful, pre-loaded bits of code that you can use to load, manipulate, and model data. However, there's also an even huger (sp?) world of code developed by others to complete various tasks from manipulating data, to loading and accessing data APIs, to building complex Baysian statistical models, to working with geospatial data. These bits of code developed by others are packaged as something called....well...packages. They're sort of like apps on your phone; programs that operate either on their own or in conjunction with other packages to expand the baseline capabilities of R. Chances are, if you can think of it, there is a package that already exists to do it.
 
-To get these packages, we have to first install them. We use R Studio's package manager to do this. To install new packages, go to the <kbd>Tools</kbd> menu and select <kbd>Install Packages...</kbd>. In the `Packages` content box, you can start to enter the name and the list should auto-populate from the CRAN repository. Select install, and then the package will be downloaded from the interwebs and installed on your computer. 
+To get these packages, we have to first install them. We use R Studio's package manager to do this. To install new packages, go to the <kbd>Tools</kbd> menu and select <kbd>Install Packages...</kbd>. In the `Packages` content box, you can start to enter the name and the list should auto-populate from the CRAN repository. Select install, and then the package will be downloaded from the interwebs and installed on your computer. Once installed, you can use it in perpituity -- you don't need to reinstall it every time you start R. However, packages are not static, and are frequently updated by the maintainers/authors. We can also use the same menu to *update* our packages. I recommend doing this at least once per month so that you're keeping current with bug fixes, new features, etc. 
 
 Great! But, if you want to use the package, we first have to tell R to load it up. R packages are stored deep inside your computer, and when R Studio boots up, it loads the bare minimum number of packages to ensure our experience is a nimble and fast as possible. The more packages you load, the more stuff R has to keep track of in memory. Given this, we tend to load only the packages we need to complete a project/task, not the entirety of the R ecosystem! To load a package, we use the `library()` function.
 
@@ -96,6 +96,19 @@ library(tidyverse)
 Neat! Loading the tidyverse packages actually loads 9!? packages altogether for data wrangling, visualization, and manipulating. In fact, about 95% of your every-day R tasks will likely be completed using one of those 9 packages. As you'll learn in a few weeks, Tidyverse is, in fact, the law. 
 
 ![](workshop_media/w1/tidyverse.gif){width="100%"}
+
+### But how the f*** do I use these things?!
+Packages are the backbone of R and enable us to do way more than we'd ever be able to do on our own with base R functionality only. However, we *do* need to learn *how* to use the various bits of software that a package installs! There's many ways to go about this, and the most basic one is to read the documentation for the package on CRAN. These are, often, very technical documents, but define the use cases, functions, and other features the package offers. Increasingly, package authors may also maintain a website for the package (often via github) that has more easy-to-follow and detailed instructions on how to use the various functions and features of a package. These websites often contain vingettes or articles walking through the common (or somtimes uncommon) uses-cases for the package. Check out this one for the `cowplot` package By Claus Wilke, which is dedicated to helping craft publication-quality figures in R: [https://wilkelab.org/cowplot/](https://wilkelab.org/cowplot/).
+
+If you have questions about using specific *functions* of a package, the quick way to get help is, again, to reference the documentation of the package within R Studio. To do this, we use the console and enter `?` followed by the package and function. For example:
+
+```{r}
+?cowplot::plot_grid()
+```
+
+Which will open up the documentation for that function inside the `Help` pane in the lower right of the R Studio GUI: 
+
+![](workshop_media/w1/help.png){width="100%"}
 
 ## Scripts vs. console 🖥️
 So far, we've just been using console to write code. This works, but as you may notice, we have no working history of our different lines of code. All the stuff we've entered is there, but we can't edit it without re-entering it. When we write R code, we almost always use scripts. These take two basic forms: a simple text file (a `.r` script) or, a type of Markdown file (`.Rmd`) called an R Notebook. The next-generation of these files are called Quarto files (basically the same thing as `.Rmd`, but with added support for additional programming languages). There are advantages to each of these formats, and either one can work for conducting data analysis in any form. In general, this is what I recommend.
@@ -237,5 +250,9 @@ my-r-project/
 
 Eventually, it's possible that you can keep your entire project from post-data collection onward in a single environment and even write your manuscruipts using Quarto. 
 
-### R Project workspace and `.Rdata`
-As you create objects and conduct your analyis, your environment will accumulate more and more stuff. As new R users, you likely consider these objects to be "real" things that you can save and work with later. In fact, R Studio has nifty tools that allow you to explicitly save this global environment as an `.Rdata` folder 
+### R Project workspace and `.RData`
+As you create objects and conduct your analyis, your environment will accumulate more and more stuff. As new R users, you likely consider these objects to be "real" things that you can save and work with later. In fact, R Studio has nifty tools that allow you to explicitly save this global environment as an `.RData` file that will re-load when you boot up R Studio, allowing you to continue working with objects that you had created in previous sessions. This practice is OK for folks really new to R/R Studio, but I *highly, highly, highly* recommend that you **don't** do this. The reason is that re-loading objects like this treats them as something "real", when instead we should be treating the code that creates these objects as "real". 
+
+Intead, each time to reboot R Studio, re-run your code. Doing this ensures that your code produces consistent, reproducible results. This is scary, because it feels like you're literally deleting your hard work and hoping for the best when you re-run your code. In my experience, this feeling fades quickly, and is a good way to reinforce that you are writing good, dependable, reproducible code that you can trust to behave and produce the expected output. For data or processes that may take a long time to run (as you work with big data more and more, some processes can take many minutes to run), create intermediate objects that you can save to the physical disk (e.g., cleaned data files, model output, figures, etc.). 
+
+To get in this habit early (which, again, I *highly* recommend), you can disable the autosaving of `.RData` files. Go to <kbd>Tools</kbd> and select <kbd>Global Options...</kbd>. In that menu, under the **General | Basic** settings, unselect "Restore .RData into workspace at startup" and select "Never" for "Save workspace to .RData on exit". 

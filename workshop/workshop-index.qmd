@@ -13,15 +13,13 @@ Here, you'll find the virtual companion to all of our hands-on workshops for the
 
 The purpose of these workshops is to practice applying the topics that we discuss in lecture using real-world examples and data. The associated data files for each lab are linked in the `Frontmatter` section atop each page (all the files are also located [here](link%20here)). Over the semester, we'll explore some of the frustrations and challenges of working with bio/ecological data (of which there are many!), but together we'll conquer them, setting y'all up for success in analyzing, interpreting, and sharing your own data.
 
-A total of 8 of the workshops will have an assignment/report that will be peer reviewed (i.e., evaluated). The first three to four weeks will be devoted to a primer of using R/RStudio, basic programming, project management, and the use of Git and GitHub (which we will use extensively in this class to manage course materials and feedback). 
+A total of 8 of the workshops will have an assignment/report that will be peer reviewed (i.e., evaluated). The first three to four weeks will be devoted to a primer of using R/RStudio, basic programming, project management, and the use of Git and GitHub (which we will use extensively in this class to manage course materials and feedback).
 
 ## Downloading, installing, and setting up R and RStudio
 
 For this course, we'll be using R and R Studio to do all of our work. You also have the option of using the Posit Cloud service for workshops and assignments. It's essentially an online virtual machine to run RStudio in your browser. This will avoid version issues, package incompatibilities, and Mac vs Windows challenges that you might otherwise face. This is a paid service we'll be using for class and it will expire after our semester concludes, so I also encourage you to install R and R Studio on your own machines if you haven't already. Click on the buttons below to install both R (the language, or engine that enables our analyses to be performed) and RStudio (the shell, or vessel that the engine of R sits in and gives us the nifty features to manage files, version history, and write pretty and readable code).
 
 [{{< fa cloud >}} [Launch Posit Cloud](https://posit.cloud/){style="color: white !important;"}]{.btn .btn-primary role="button"} [{{< fa brands r-project title="R Project">}} [Download R](https://cran.r-project.org/){style="color: white !important;"}]{.btn .btn-primary role="button"} [{{< fa registered >}} [Download RStudio](https://posit.co/download/rstudio-desktop/){style="color: white !important;"}]{.btn .btn-primary role="button"}
-
-
 
 ## Completing and submitting workshop reports
 

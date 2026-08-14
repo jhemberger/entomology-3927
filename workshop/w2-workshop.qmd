@@ -1,0 +1,47 @@
+---
+title: "Workshop 1: Data structures, objects, tibbles, etc."
+subtitle: "Entomology 3927 - Fall 2026"
+author: Jeremy Hemberger
+date: last-modified
+date-format: long
+format:
+  html:
+    theme: custom.scss
+    highlight-style: ayu
+---
+
+## Frontmatter ‼️
+
+<p class="buttons" style="text-align:left;">
+
+[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+
+</p>
+
+## Tour de Objects 🚴 🚴 🚴💨
+As we discussed last week, programming in R is all about creating, maniupulating, and operating on [objects]{.highlight-tomato}. 
+
+### The atomic data types 
+
+### Vectors
+
+### Lists
+
+### Data frames and tibbles
+
+### Functions
+
+## Code Style 💃
+
+### Naming files, objects
+
+#### Reserved words 🤐
+
+### Spaces
+
+### Pipes
+
+### Comments and code outline (via `.qmd`)
+
+## Hands-on exercises 🧑🏻‍💻
+

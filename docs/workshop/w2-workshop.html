@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jeremy Hemberger">
+<meta name="dcterms.date" content="2026-08-14">
 
-<title>Entomology 3927/5927</title>
+<title>Workshop 1: Data structures, objects, tibbles, etc. – Entomology 3927/5927</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +28,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/web-favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2baf9616dcd62a487e8517e630363ef5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-8e27d02d7e9ddeb70974f9e6cee4b5cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../media/web-favicon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2baf9616dcd62a487e8517e630363ef5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b827b83e2543535bb52db5d8068cfdad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,16 +79,16 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/ent-3927-hex.png" alt="" class="navbar-logo light-content">
-    <img src="./media/ent-3927-hex.png" alt="" class="navbar-logo dark-content">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../media/ent-3927-hex.png" alt="" class="navbar-logo light-content">
+    <img src="../media/ent-3927-hex.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -95,33 +98,33 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./content/content-index.html"> 
+    <a class="nav-link" href="../content/content-index.html"> 
 <span class="menu-text">Content</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./workshop/workshop-index.html"> 
+    <a class="nav-link active" href="../workshop/workshop-index.html" aria-current="page"> 
 <span class="menu-text">Workshops</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">resources.html</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./media/ento3927-syllabus_fall2026.pdf" target="_blank"> <i class="bi bi-file-pdf" role="img">
+    <a class="nav-link" href="../media/ento3927-syllabus_fall2026.pdf" target="_blank"> <i class="bi bi-file-pdf" role="img">
 </i> 
 <span class="menu-text">Course Syllabus</span></a>
   </li>  
@@ -141,66 +144,293 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, tibbles, etc</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/workshop-index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview of workshops + basic info</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 1: Introduction to Data Science and R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w1-workshop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1: Intro to R, Project Organization, and the ‘DevEnv’</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w2-workshop.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Week 2: Data structures, objects, tibbles, etc</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 2: Git and GitHub fundamentals</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w3-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3: Go on, Git!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w4-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4: Go on, Git it onto GitHub</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 3: Basic data wrangling and visualization in R</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w5-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5: Data wrangling 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w6-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6: Data wrangling 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w7-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7: Data visualization: theory and practice</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 4: Automation, functions, and scaling</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w8-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8: Functions and automation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w9-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9: Batching, scaling work/pipelines</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Module 5: Getting data from databases and data management</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w10-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10: Databases, web APIs, web-scraping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../workshop/w11-workshop.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11: Data mangagement, metadata, documentation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Module 6: Open Science Framework and transparent science</span></span>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Module 7: Integration and application</span></span>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#frontmatter" id="toc-frontmatter" class="nav-link active" data-scroll-target="#frontmatter">Frontmatter ‼️</a></li>
+  <li><a href="#tour-de-objects" id="toc-tour-de-objects" class="nav-link" data-scroll-target="#tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</a>
+  <ul class="collapse">
+  <li><a href="#the-atomic-data-types" id="toc-the-atomic-data-types" class="nav-link" data-scroll-target="#the-atomic-data-types">The atomic data types</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#data-frames-and-tibbles" id="toc-data-frames-and-tibbles" class="nav-link" data-scroll-target="#data-frames-and-tibbles">Data frames and tibbles</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  </ul></li>
+  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style 💃</a>
+  <ul class="collapse">
+  <li><a href="#naming-files-objects" id="toc-naming-files-objects" class="nav-link" data-scroll-target="#naming-files-objects">Naming files, objects</a></li>
+  <li><a href="#spaces" id="toc-spaces" class="nav-link" data-scroll-target="#spaces">Spaces</a></li>
+  <li><a href="#pipes" id="toc-pipes" class="nav-link" data-scroll-target="#pipes">Pipes</a></li>
+  <li><a href="#comments-and-code-outline-via-.qmd" id="toc-comments-and-code-outline-via-.qmd" class="nav-link" data-scroll-target="#comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</a></li>
+  </ul></li>
+  <li><a href="#hands-on-exercises" id="toc-hands-on-exercises" class="nav-link" data-scroll-target="#hands-on-exercises">Hands-on exercises 🧑🏻‍💻</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="media/ent-3927-header.png" class="about-image
-  rectangle " style="width: 55em;">
- <header id="title-block-header" class="quarto-title-block"></header><main class="content column-page" id="quarto-document-content">
-<div class="{columns}">
-<div class="column" style="width:70%;">
-<div class="landing-text">
-<p>The practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices. This course is focused on providing hands-on experience in <strong><em>accessing</em></strong>, <strong><em>manipulating</em></strong>, <strong><em>managing</em></strong>, <strong><em>visualizing</em></strong> and <strong><em>communicating</em></strong> data using Open Science principles. We’ll encounter the entire data life cycle from generation to preservation in the context of biological and ecological research.</p>
-</div>
-</div>
-<div class="column" style="width:5%;">
-</div>
-<div class="column" style="width:24%;">
-<div class="landing-text">
-<p><strong>Fall 2026 Semester</strong><br> College of Food, Agricultural, and Natural Resource Sciences<br> University of Minnesota</p>
-</div>
-</div>
-</div>
-<hr>
-<div class="{columns}">
-<div class="column" style="width:24%;">
-<section id="instructor" class="level2 landing-text">
-<h2 data-anchor-id="instructor">Instructor</h2>
-<p><i class="fa-solid fa-person-chalkboard" aria-label="person-chalkboard"></i> <a href="https://entomology.umn.edu/people/jeremy-hemberger">Dr.&nbsp;Jeremy Hemberger</a><br> <i class="fa-solid fa-building" aria-label="building"></i> 408 Hodson Hall<br> <i class="fa-solid fa-envelope" aria-label="envelope"></i> <a href="mailto:jhemberg@umn.edu">jhemberg@umn.edu</a></p>
-</section>
-</div>
-<div class="column" style="width:24%;">
-<section id="lecture-details" class="level2 landing-text">
-<h2 data-anchor-id="lecture-details">Lecture details</h2>
-<p><i class="fa-solid fa-calendar" aria-label="calendar"></i> Friday<br> <i class="fa-solid fa-clock" aria-label="clock"></i> 1:30-3:30pm<br> <i class="fa-solid fa-location-dot" aria-label="location-dot"></i> 490 Hodson Hall<br></p>
-</section>
-</div>
-<div class="column" style="width:24%;">
-<section id="lab-details" class="level2 landing-text">
-<h2 data-anchor-id="lab-details">Lab details</h2>
-<p><i class="fa-solid fa-calendar" aria-label="calendar"></i> Friday<br> <i class="fa-solid fa-clock" aria-label="clock"></i> 1:30-3:30pm<br> <i class="fa-solid fa-location-dot" aria-label="location-dot"></i> 490 Hodson Hall<br></p>
-</section>
-</div>
-<div class="column" style="width:24%;">
-<section id="important-links" class="level2 landing-text">
-<h2 data-anchor-id="important-links">Important links</h2>
-<p><span class="btn btn-primary" role="button"><i class="fa-solid fa-user-graduate" aria-label="user-graduate"></i> <a href="https://canvas.umn.edu//" style="color: white !important;">Canvas Site</a></span></p>
-<p><span class="btn btn-primary" role="button"><i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/entomology-3927-5927" style="color: white !important;">Class Github</a></span></p>
-</section>
-</div>
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, tibbles, etc</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Workshop 1: Data structures, objects, tibbles, etc.</h1>
+<p class="subtitle lead">Entomology 3927 - Fall 2026</p>
 </div>
 
 
-</main>  
-</div>
- <!-- /main -->
+
+<div class="quarto-title-meta column-body">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jeremy Hemberger </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 14, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="frontmatter" class="level2">
+<h2 class="anchored" data-anchor-id="frontmatter">Frontmatter ‼️</h2>
+<p class="buttons" style="text-align:left;">
+</p><p><a href="https://canvas.umn.edu/courses/539629/modules/items/15583284" class="btn btn-primary"><i class="fa-solid fa-download" aria-label="download"></i> Download lab data</a></p>
+<p></p>
+</section>
+<section id="tour-de-objects" class="level2">
+<h2 class="anchored" data-anchor-id="tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</h2>
+<p>As we discussed last week, programming in R is all about creating, maniupulating, and operating on <span class="highlight-tomato">objects</span>.</p>
+<section id="the-atomic-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="the-atomic-data-types">The atomic data types</h3>
+</section>
+<section id="vectors" class="level3">
+<h3 class="anchored" data-anchor-id="vectors">Vectors</h3>
+</section>
+<section id="lists" class="level3">
+<h3 class="anchored" data-anchor-id="lists">Lists</h3>
+</section>
+<section id="data-frames-and-tibbles" class="level3">
+<h3 class="anchored" data-anchor-id="data-frames-and-tibbles">Data frames and tibbles</h3>
+</section>
+<section id="functions" class="level3">
+<h3 class="anchored" data-anchor-id="functions">Functions</h3>
+</section>
+</section>
+<section id="code-style" class="level2">
+<h2 class="anchored" data-anchor-id="code-style">Code Style 💃</h2>
+<section id="naming-files-objects" class="level3">
+<h3 class="anchored" data-anchor-id="naming-files-objects">Naming files, objects</h3>
+<section id="reserved-words" class="level4">
+<h4 class="anchored" data-anchor-id="reserved-words">Reserved words 🤐</h4>
+</section>
+</section>
+<section id="spaces" class="level3">
+<h3 class="anchored" data-anchor-id="spaces">Spaces</h3>
+</section>
+<section id="pipes" class="level3">
+<h3 class="anchored" data-anchor-id="pipes">Pipes</h3>
+</section>
+<section id="comments-and-code-outline-via-.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</h3>
+</section>
+</section>
+<section id="hands-on-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="hands-on-exercises">Hands-on exercises 🧑🏻‍💻</h2>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

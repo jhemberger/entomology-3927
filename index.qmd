@@ -49,7 +49,7 @@ The practice of working with and managing data to produce repeatable analyses is
 ::: landing-text
 ## Lecture details
 
-{{< fa calendar >}} Friday</br> {{< fa clock >}} 1:30-2:15pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
+{{< fa calendar >}} Friday</br> {{< fa clock >}} 1:30-3:30pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
 :::
 ::::
 
@@ -57,7 +57,7 @@ The practice of working with and managing data to produce repeatable analyses is
 ::: landing-text
 ## Lab details
 
-{{< fa calendar >}} Friday</br> {{< fa clock >}} 2:15-3:30pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
+{{< fa calendar >}} Friday</br> {{< fa clock >}} 1:30-3:30pm</br> {{< fa location-dot >}} 490 Hodson Hall</br>
 :::
 ::::
 
@@ -65,9 +65,9 @@ The practice of working with and managing data to produce repeatable analyses is
 ::: landing-text
 ## Important links
 
-[{{< fa user-graduate >}} [Canvas Site](https://canvas.umn.edu//)]{.btn .btn-outline-warning}
+[{{< fa user-graduate >}} [Canvas Site](https://canvas.umn.edu//){style="color: white !important;"}]{.btn .btn-primary role="button"}
 
-[{{< fa brands github >}} [Class Github](https://github.com/entomology-3927-5927)]{.btn .btn-outline-warning}
+[{{< fa brands github >}} [Class Github](https://github.com/entomology-3927-5927){style="color: white !important;"}]{.btn .btn-primary role="button"}
 :::
 ::::
 :::::::::::

@@ -46,9 +46,9 @@ website:
             - workshop/workshop-index.qmd
         - section: "Module 1: Introduction to Data Science and R"
           contents:
-            - text: "Week 1: Intro to data science and R"
+            - text: "Week 1: Intro to R, Project Organization, and the 'DevEnv'"
               file: workshop/w1-workshop.qmd
-            - text: "Week 2: Project organization, RStudio, your 'devenv'"
+            - text: "Week 2: Data structures, objects, tibbles, etc"
               file: workshop/w2-workshop.qmd
         - section: "Module 2: Git and GitHub fundamentals"
           contents:

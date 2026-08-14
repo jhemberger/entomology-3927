@@ -5,7 +5,7 @@ toc: true
 page-layout: full
 ---
 
-::: box-6-list
+::: box-3-list
 Description Researchers are typically well-trained in the theory and practice of their chosen specialty, from developing questions to designing experiments and collecting data, as well as analyzing those data using statistical methods. However, the practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices.
 
 ***This course is focused on providing hands-on experience in accessing, manipulating, managing, visualizing and communicating data using Open Science principles***. Students will encounter the entire data life cycle from generation to preservation in the context of biological and ecological research. Students will be expected to complete assignments using their own data or other available datasets. It is a topic-driven weekly seminar (14 sessions at \~2h each), combining small amounts of lecture with problem solving and hands-on exercises.
@@ -60,21 +60,16 @@ The primary assessment of the course will be weekly reports that cover the topic
 
 At the end of the course, letter grades will be assigned to the quantitative point totals from student performance in the class. Pretty standard stuff here! Grading scale follows university policy: [Grading and Transcripts policy](https://policy.umn.edu/education/gradingtranscripts).
 
-:::::: {columns}
-::: {.column-width="47.5%"}
+::: {layout-ncol=2}
+
 | Point Breakdown                           |            |             |
 |-------------------------------------------|:-----------|:------------|
 | **Assignment**                            | **Points** | **Percent** |
-| Weekly reports (10 × 12)                  | 120        | 60%         |
+| Workshop reports & review (8 × 15)        | 120        | 60%         |
 | Data management plan (grad students only) | 40         | 20%         |
-| Data communication project                | 40         | 20%         |
+| Data workflow project                     | 40         | 20%         |
 | **Total**                                 | **200**    | **100%**    |
-:::
 
-::: {.column-width="5%"}
-:::
-
-::: {.column-width="47.5%"}
 | Final Grade Breakdown |           |           |           |
 |-----------------------|:----------|:----------|:----------|
 | **Grade**             | **Range** | **Grade** | **Range** |
@@ -84,8 +79,8 @@ At the end of the course, letter grades will be assigned to the quantitative poi
 | B                     | 83–86%    | D         | 63–66%    |
 | B−                    | 80–82%    | D−        | 60–62%    |
 | C+                    | 77–79%    | F         | \< 60%    |
+
 :::
-::::::
 
 Adjustments to final grades based on class participation or instructional interaction demonstrating mastery may be made on a case-by-case basis. Similarly, adjustments to the entire class based on comparisons to previous offerings may be made.
 
@@ -93,7 +88,7 @@ Adjustments to final grades based on class participation or instructional intera
 
 ## Textbooks/Readings
 
-This course does not have a single, assigned text, however we’ll make use of material from several reference books, journal articles, and websites throughout the semester. All of these materials will be posted on the course website. These are for reference only and serve as more in-depth treatments of some of the course material.
+This course does not have a single, assigned text, however we’ll make use of material from several reference books, journal articles, and websites throughout the semester. The best single source for many of the components we'll cover is the book, [R for Data Science](https://r4ds.hadley.nz/) which is available as a paid hard-copy, or a free online book. Any additional materials will be posted on the course website. While these are for reference and serve as more in-depth treatments of some of the course material, I highly recommend folks read them!
 
 ## Software
 
@@ -116,12 +111,12 @@ I highly recommend **NOT** using ChatGPT or other large language models (aka LLM
 These tools, while highly functional and time-saving in certain situations, are at direct odds with the practice of learning and developing competence in concepts and skills - be they coding, writing, or other artistic pursuits. I’m not opposed to using these tools in a variety of circumstances, and I use ChatGPT for a variety of tasks to provide a quick review of my own work. These tools are phenomenal resources for coding ***when you already know what you are doing***. Using LLMs requires careful skill, attention, practice, and they tend to be useful only in specific limited cases.
 
 Using ChatGPT to write all of your code will not help you learn how to master R or understand the statistical concepts that we are learning in this class. What these models do is essentially amalgamate all of the publicly-available code on GitHub and spit out a plausible looking answer. This is otherwise known as [bullshitting](https://link.springer.com/article/10.1007/s10676-024-09775-5). Sure, bullshitting can sometimes get you part of, or, in rare instances, all the way to the right answer. But more often than not, the code it spits out will contain components that are outright wrong or have stuff you don’t need. These models don’t care if the “answer” provided is wrong or right (nor can the models actually know). It doesn’t care if your code runs or not. It just cares that the crap it spits back at you looks plausible. A hilarious, and slightly terrifying example of this comes from [Andrew Heiss](https://www.andrewheiss.com/):
-        
+
 > "A good analogy for this is with recipes. ChatGPT is really confident at spitting out plausible-looking recipes. A few months ago, for fun, I asked it to give me a cookie recipe. I got back something with flour, eggs, sugar, and all other standard-looking ingredients, but it also said to include 3/4 cup of baking powder. That’s wild and obviously wrong, but I only knew that because I’ve made cookies before. I’ve seen other AI-generated recipes that call for a cup of horseradish in brownies or 21 pounds of cabbage for a pork dish. In May 2024, Google’s AI recommended adding glue to pizza sauce to stop the cheese from sliding off. Again, to people who have cooked before, these are all obviously wrong (and dangerous in the case of the glue!), but to a complete beginner, these look like plausible instructions."
 
 The purpose of this course is to outfit y’all with the concepts and tools needed to accurately and honestly portray the results of hard-won data that we use to understand the way the world works so that we can be better stewards and citizens of our shared planet. I want y’all to succeed in this. I don’t want to read a bunch of bullshit generated by an LLM. It’s not useful to you. It’s not useful to me. It’s a waste of time.
 
-All that said, I’m not going to play Sherlock and try and guess whether or not what you’re turning in is AI-generated. As I mentioned above, there are legitimate and good use-cases for LLMs in the work that we do such as helping debug some code, interpreting an error message that you don’t understand, or helping translate what individual lines of code may be doing if you can’t understand from the documentation. However, there’s a fairly good chance that I will notice if what you’re turning in came from a LMM. There are tells in the way machines write code versus the way most humans do. While this may not impact your grade, it will impact your learning. And it will make us sad. Please don’t make us sad.
+All that said, I’m not going to play Sherlock and try and guess whether or not what you’re turning in is AI-generated. As I mentioned above, there are legitimate and good use-cases for LLMs in the work that we do such as helping debug some code, interpreting an error message that you don’t understand, or helping translate what individual lines of code may be doing if you can’t understand from the documentation. However, there’s a fairly good chance that I will notice if what you’re turning in came from a LMM. There are tells in the way machines write code versus the way most humans do. While this may not impact your grade, it will impact your learning. And it will make me sad. Please don’t make me sad.
 
 ## Phones and electronic devices
 
