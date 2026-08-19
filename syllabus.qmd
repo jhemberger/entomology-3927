@@ -9,6 +9,8 @@ page-layout: full
 Description Researchers are typically well-trained in the theory and practice of their chosen specialty, from developing questions to designing experiments and collecting data, as well as analyzing those data using statistical methods. However, the practice of working with and managing data to produce repeatable analyses is a critical skillset that is often not formally trained, despite how critical it is to ensure transparency and meet open science practices.
 
 ***This course is focused on providing hands-on experience in accessing, manipulating, managing, visualizing and communicating data using Open Science principles***. Students will encounter the entire data life cycle from generation to preservation in the context of biological and ecological research. Students will be expected to complete assignments using their own data or other available datasets. It is a topic-driven weekly seminar (14 sessions at \~2h each), combining small amounts of lecture with problem solving and hands-on exercises.
+
+[{{< fa file-pdf >}} Download syllabus as PDF](media/ento3927-syllabus_fall2026.pdf){.btn .btn-primary}
 :::
 
 # Audience
@@ -60,8 +62,7 @@ The primary assessment of the course will be weekly reports that cover the topic
 
 At the end of the course, letter grades will be assigned to the quantitative point totals from student performance in the class. Pretty standard stuff here! Grading scale follows university policy: [Grading and Transcripts policy](https://policy.umn.edu/education/gradingtranscripts).
 
-::: {layout-ncol=2}
-
+::: {layout-ncol="2"}
 | Point Breakdown                           |            |             |
 |-------------------------------------------|:-----------|:------------|
 | **Assignment**                            | **Points** | **Percent** |
@@ -79,7 +80,6 @@ At the end of the course, letter grades will be assigned to the quantitative poi
 | B                     | 83–86%    | D         | 63–66%    |
 | B−                    | 80–82%    | D−        | 60–62%    |
 | C+                    | 77–79%    | F         | \< 60%    |
-
 :::
 
 Adjustments to final grades based on class participation or instructional interaction demonstrating mastery may be made on a case-by-case basis. Similarly, adjustments to the entire class based on comparisons to previous offerings may be made.

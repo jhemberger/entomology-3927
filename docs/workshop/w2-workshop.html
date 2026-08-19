@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jeremy Hemberger">
-<meta name="dcterms.date" content="2026-08-14">
+<meta name="dcterms.date" content="2026-08-19">
 
 <title>Workshop 1: Data structures, objects, tibbles, etc. – Entomology 3927/5927</title>
 <style>
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources.html"> 
-<span class="menu-text">resources.html</span></a>
+<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, tibbles, etc</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, code style, etc</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -196,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop/w2-workshop.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 2: Data structures, objects, tibbles, etc</span></a>
+ <span class="menu-text">Week 2: Data structures, objects, code style, etc</span></a>
   </div>
 </li>
       </ul>
@@ -318,21 +318,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#frontmatter" id="toc-frontmatter" class="nav-link active" data-scroll-target="#frontmatter">Frontmatter ‼️</a></li>
-  <li><a href="#tour-de-objects" id="toc-tour-de-objects" class="nav-link" data-scroll-target="#tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</a>
-  <ul class="collapse">
-  <li><a href="#the-atomic-data-types" id="toc-the-atomic-data-types" class="nav-link" data-scroll-target="#the-atomic-data-types">The atomic data types</a></li>
-  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
-  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
-  <li><a href="#data-frames-and-tibbles" id="toc-data-frames-and-tibbles" class="nav-link" data-scroll-target="#data-frames-and-tibbles">Data frames and tibbles</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
-  </ul></li>
-  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style 💃</a>
-  <ul class="collapse">
-  <li><a href="#naming-files-objects" id="toc-naming-files-objects" class="nav-link" data-scroll-target="#naming-files-objects">Naming files, objects</a></li>
-  <li><a href="#spaces" id="toc-spaces" class="nav-link" data-scroll-target="#spaces">Spaces</a></li>
-  <li><a href="#pipes" id="toc-pipes" class="nav-link" data-scroll-target="#pipes">Pipes</a></li>
-  <li><a href="#comments-and-code-outline-via-.qmd" id="toc-comments-and-code-outline-via-.qmd" class="nav-link" data-scroll-target="#comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</a></li>
-  </ul></li>
   <li><a href="#hands-on-exercises" id="toc-hands-on-exercises" class="nav-link" data-scroll-target="#hands-on-exercises">Hands-on exercises 🧑🏻‍💻</a></li>
   </ul>
 </nav>
@@ -340,7 +325,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, tibbles, etc</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop/w1-workshop.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../workshop/w2-workshop.html">Week 2: Data structures, objects, code style, etc</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Workshop 1: Data structures, objects, tibbles, etc.</h1>
 <p class="subtitle lead">Entomology 3927 - Fall 2026</p>
@@ -360,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 14, 2026</p>
+      <p class="date">August 19, 2026</p>
     </div>
   </div>
   
@@ -374,46 +359,8 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="frontmatter" class="level2">
 <h2 class="anchored" data-anchor-id="frontmatter">Frontmatter ‼️</h2>
-<p class="buttons" style="text-align:left;">
-</p><p><a href="https://canvas.umn.edu/courses/539629/modules/items/15583284" class="btn btn-primary"><i class="fa-solid fa-download" aria-label="download"></i> Download lab data</a></p>
-<p></p>
-</section>
-<section id="tour-de-objects" class="level2">
-<h2 class="anchored" data-anchor-id="tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</h2>
-<p>As we discussed last week, programming in R is all about creating, maniupulating, and operating on <span class="highlight-tomato">objects</span>.</p>
-<section id="the-atomic-data-types" class="level3">
-<h3 class="anchored" data-anchor-id="the-atomic-data-types">The atomic data types</h3>
-</section>
-<section id="vectors" class="level3">
-<h3 class="anchored" data-anchor-id="vectors">Vectors</h3>
-</section>
-<section id="lists" class="level3">
-<h3 class="anchored" data-anchor-id="lists">Lists</h3>
-</section>
-<section id="data-frames-and-tibbles" class="level3">
-<h3 class="anchored" data-anchor-id="data-frames-and-tibbles">Data frames and tibbles</h3>
-</section>
-<section id="functions" class="level3">
-<h3 class="anchored" data-anchor-id="functions">Functions</h3>
-</section>
-</section>
-<section id="code-style" class="level2">
-<h2 class="anchored" data-anchor-id="code-style">Code Style 💃</h2>
-<section id="naming-files-objects" class="level3">
-<h3 class="anchored" data-anchor-id="naming-files-objects">Naming files, objects</h3>
-<section id="reserved-words" class="level4">
-<h4 class="anchored" data-anchor-id="reserved-words">Reserved words 🤐</h4>
-</section>
-</section>
-<section id="spaces" class="level3">
-<h3 class="anchored" data-anchor-id="spaces">Spaces</h3>
-</section>
-<section id="pipes" class="level3">
-<h3 class="anchored" data-anchor-id="pipes">Pipes</h3>
-</section>
-<section id="comments-and-code-outline-via-.qmd" class="level3">
-<h3 class="anchored" data-anchor-id="comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</h3>
-</section>
+<p><a href="https://canvas.umn.edu/courses/539629/modules/items/15583284" class="btn btn-primary"><i class="fa-solid fa-download" aria-label="download"></i> Download lab data</a> <a href="https://canvas.umn.edu/courses/539629/modules/items/15583284" class="btn btn-primary"><i class="fa-solid fa-file-code" aria-label="file-code"></i> <code>qmd</code> template</a></p>
+<p><br> <br></p>
 </section>
 <section id="hands-on-exercises" class="level2">
 <h2 class="anchored" data-anchor-id="hands-on-exercises">Hands-on exercises 🧑🏻‍💻</h2>

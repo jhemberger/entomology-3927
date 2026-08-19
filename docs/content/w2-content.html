@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-08-19">
 
-<title>w2-content – Entomology 3927/5927</title>
+<title>Week 1 – Entomology 3927/5927</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -43,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2baf9616dcd62a487e8517e630363ef5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8e27d02d7e9ddeb70974f9e6cee4b5cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b827b83e2543535bb52db5d8068cfdad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -74,6 +110,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -117,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../resources.html"> 
-<span class="menu-text">resources.html</span></a>
+<span class="menu-text">Resources</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -310,17 +375,663 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a></li>
+  <li><a href="#questions-well-address-this-week" id="toc-questions-well-address-this-week" class="nav-link" data-scroll-target="#questions-well-address-this-week">Questions we’ll address this week</a></li>
+  <li><a href="#tour-de-objects" id="toc-tour-de-objects" class="nav-link" data-scroll-target="#tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</a>
+  <ul class="collapse">
+  <li><a href="#the-atomic-data-types" id="toc-the-atomic-data-types" class="nav-link" data-scroll-target="#the-atomic-data-types">The atomic data types</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a></li>
+  <li><a href="#data-frames-and-tibbles" id="toc-data-frames-and-tibbles" class="nav-link" data-scroll-target="#data-frames-and-tibbles">Data frames and tibbles</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  </ul></li>
+  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code Style 💃</a>
+  <ul class="collapse">
+  <li><a href="#naming-files-objects" id="toc-naming-files-objects" class="nav-link" data-scroll-target="#naming-files-objects">Naming files, objects</a></li>
+  <li><a href="#spaces" id="toc-spaces" class="nav-link" data-scroll-target="#spaces">Spaces</a></li>
+  <li><a href="#pipes" id="toc-pipes" class="nav-link" data-scroll-target="#pipes">Pipes</a></li>
+  <li><a href="#comments-and-code-outline-via-.qmd" id="toc-comments-and-code-outline-via-.qmd" class="nav-link" data-scroll-target="#comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Project organization, RStudio, your ‘devenv’</a></li></ol></nav></header>
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Project organization, RStudio, your ‘devenv’</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Week 1</h1>
+<p class="subtitle lead">Class orientation; What is data science?</p>
+</div>
 
 
 
+<div class="quarto-title-meta column-body">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<section id="readings" class="level2">
+<h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<ul>
+<li><i class="fa-solid fa-file-code" aria-label="file-code"></i> <a href="https://r4ds.hadley.nz/workflow-style.html">R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 4: Workflow: Code Style</a></li>
+</ul>
+</section>
+<section id="questions-well-address-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="questions-well-address-this-week">Questions we’ll address this week</h2>
+<ol type="1">
+<li>What are the atomic data types in R?</li>
+<li>How do we create and access data in the fundamental R objects?</li>
+<li>How should we style our code for maximal readability and accessibility?</li>
+</ol>
+</section>
+<section id="tour-de-objects" class="level2">
+<h2 class="anchored" data-anchor-id="tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</h2>
+<p>As we discussed last week, programming in R is all about creating, maniupulating, and operating on <span class="highlight-tomato">objects</span>.</p>
+<section id="the-atomic-data-types" class="level3">
+<h3 class="anchored" data-anchor-id="the-atomic-data-types">The atomic data types</h3>
+<p>R has 6 basic (“atomic”) vector types, but 4 are most commonly used:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Logical</strong></td>
+<td style="text-align: left;">Boolean values (<code>TRUE</code> / <code>FALSE</code>)</td>
+<td style="text-align: left;"><code>TRUE</code>, <code>FALSE</code>, <code>T</code>, <code>F</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Numeric (Double)</strong></td>
+<td style="text-align: left;">Real numbers (default numeric type)</td>
+<td style="text-align: left;"><code>3.14</code>, <code>42.0</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Numeric (Integer)</strong></td>
+<td style="text-align: left;">Whole numbers (designated with <code>L</code>)</td>
+<td style="text-align: left;"><code>42L</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Character</strong></td>
+<td style="text-align: left;">Text strings</td>
+<td style="text-align: left;"><code>"hello"</code>, <code>"camera trap"</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Complex / Raw</strong></td>
+<td style="text-align: left;">Imaginary numbers or raw bytes (rare)</td>
+<td style="text-align: left;"><code>1 + 4i</code>, <code>charToRaw("A")</code></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Type Checking
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Use <code>typeof()</code> to check an object’s underlying storage type, and <code>is.*</code> functions (e.g., <code>is.numeric()</code>, <code>is.character()</code>) to test for specific types.</p>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create atomic variables</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>my_numeric   <span class="ot">&lt;-</span> <span class="fl">42.5</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>my_integer   <span class="ot">&lt;-</span> <span class="dv">42</span>L</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>my_character <span class="ot">&lt;-</span> <span class="st">"iBUG Lab"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>my_logical   <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Check types</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(my_numeric)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "double"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(my_integer)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "integer"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">is.numeric</span>(my_character)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+</section>
+<section id="vectors" class="level3">
+<h3 class="anchored" data-anchor-id="vectors">Vectors</h3>
+<p>A vector is a 1-dimensional collection of elements of the same <em>type</em> (that is, all numeric, character, etc.). We create vectors using the <code>c()</code> function which <em>combines</em> or <em>concatenates</em> elements.</p>
+<ul>
+<li>Mixing data types in R will perform <em>implicit coercion</em>, which basically means it will convert everything into the most flexible type. The flexibility of objects in R from most to least is: <code>character &gt; double &gt; integer &gt; logical</code>.</li>
+<li>In R, many functions or operations are <em>vectorized</em>, meaning they will apply math/functions/operations to every element of the vector automatically</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a numeric vector</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>my_counts <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">4</span>, <span class="dv">30</span>, <span class="dv">0</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Vectorized maths</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>my_counts_doubled <span class="ot">&lt;-</span> my_counts <span class="sc">*</span> <span class="dv">2</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>my_counts_doubled</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 24  8 60  0</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Coercion of data: what do you think this will be converted to?</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>messy_vector <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="st">"shikaka"</span>, <span class="cn">TRUE</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(messy_vector)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+</div>
+</section>
+<section id="lists" class="level3">
+<h3 class="anchored" data-anchor-id="lists">Lists</h3>
+<p>Lists are very much like vectors, but they can hold <em>different data types</em> (including things like other lists). You can essentially put anything into them and retain its native data type.</p>
+<ul>
+<li>Created using <code>list()</code></li>
+<li>We access elements using single brackets <code>[]</code> (which returns a sub-list) or double brackets <code>[[]]</code> or <code>$</code> (which extracts the actual object, e.g., another list, character, or vector).</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a list</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>camera_traps <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">site_id =</span> <span class="st">"SITE-01"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">active =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">battery =</span> <span class="fl">88.5</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">target_species =</span> <span class="fu">c</span>(<span class="st">"affinis"</span>, <span class="st">"auricomus"</span>, <span class="st">"impatiens"</span>)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Exctracting/accessing elements</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>camera_traps<span class="sc">$</span>site_id</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "SITE-01"</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>camera_traps[[<span class="dv">4</span>]][<span class="dv">1</span>] <span class="co"># list element 4, object 1 (i.e., first target species)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "affinis"</code></pre>
+</div>
+</div>
+</section>
+<section id="data-frames-and-tibbles" class="level3">
+<h3 class="anchored" data-anchor-id="data-frames-and-tibbles">Data frames and tibbles</h3>
+<p>Most of us will work with data frames 90% of the time. Tabular data, that is, a standard excel or Google Sheets file, arranged in a two-dimensional grid of rows and columns, is what most of us are familiar using to aggregate data from experiments and observational studies. When we bring these data into R, we’ll bring them in as <em>data frames</em>. At their core, data frames are essentially lists (each list is a “column”) of equal-length vectors (each vector element is a “row”).</p>
+<p><img src="content_media/w2/tibble_structure.png" class="img-fluid" style="width:100.0%"></p>
+<section id="accessing-data-in-data-frames" class="level4">
+<h4 class="anchored" data-anchor-id="accessing-data-in-data-frames">Accessing data in data frames</h4>
+<p>Because data frames are essentially lists, the manner in which we access data is very similar. We’ll discuss more advanced/modern ways to access data in the coming weeks, but the base R ways to get at data are:</p>
+<ul>
+<li><strong>Extract column:</strong>
+<ul>
+<li>By name:<code>my_df$col_1</code> or <code>my_df[, "col_1"]</code> or <code>my_df[["col_1"]]</code></li>
+<li>By index: <code>my_df[, 1]</code> or <code>my_df[[1]]</code></li>
+</ul></li>
+<li><strong>Extract row:</strong>
+<ul>
+<li><code>my_df[1, ]</code> (extracts row 1 across all columns)</li>
+</ul></li>
+<li><strong>Extract cell:</strong>
+<ul>
+<li><code>my_df[1, "col_1"]</code> or <code>my_df[1, 1]</code></li>
+</ul></li>
+<li><strong>Extract range:</strong>
+<ul>
+<li><code>my_df[1:5, c("col_1", "col_2")]</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="ok-got-data-frames-what-the-hell-is-a-tibble" class="level4">
+<h4 class="anchored" data-anchor-id="ok-got-data-frames-what-the-hell-is-a-tibble">Ok, got data frames ✅, what the hell is a tibble?</h4>
+<p>Great question! A tibble is a type of data frame. But a data frame is not necessarily a tibble! Tibbles are a special type of data frame that belong to the Tidyverse: a series of R packages and a philosophy of data organization and presentation. The developers describe them as: &gt; “Tibbles are data.frames that are lazy and surly: they do less (i.e.&nbsp;they don’t change variable names or types, and don’t do partial matching) and complain more (e.g.&nbsp;when a variable does not exist). This forces you to confront problems earlier, typically leading to cleaner, more expressive code. Tibbles also have an enhanced print() method which makes them easier to use with large datasets containing complex objects.”</p>
+<p>The visualization capacity alone makes them worth using, and they play nicely with all of the other tidyverse packages that we’ll be using throughout this semester. Here are the big advantages of tibbles:</p>
+<ol type="1">
+<li><p><strong>No unintended vector dropping (<code>drop = FALSE</code> by default):</strong> When subsetting a single column in a standard <code>data.frame</code>, base R silently simplifies the output into a 1D vector. A <code>tibble</code> always returns a 2D tibble unless explicitly told otherwise, preventing downstream code breakage in functions expecting tabular data.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Base Data Frame</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">a =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">b =</span> <span class="fu">c</span>(<span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span>))</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(df[, <span class="st">"a"</span>]) </span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] "integer"  &lt;-- Automatically dropped to a vector!</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Tibble</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">a =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">b =</span> <span class="fu">c</span>(<span class="st">"x"</span>, <span class="st">"y"</span>, <span class="st">"z"</span>))</span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(tbl[, <span class="st">"a"</span>]) </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] "tbl_df" "tbl" "data.frame"  &lt;-- Remains a 1-column tibble!</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></li>
+<li><p><strong>No partial name matching:</strong> Base data frames try to guess column names if you make a typo or use shorthand. Tibbles require exact column matching and trigger a warning if a column doesn’t exist, preventing silent logical errors.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Base Data Frame (Silently matches "species_name" via "$spec")</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">species_name =</span> <span class="fu">c</span>(<span class="st">"affinis"</span>, <span class="st">"impatiens"</span>))</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>spec</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># [1] "affinis" "impatiens"  &lt;-- Dangerous!</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Tibble</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">species_name =</span> <span class="fu">c</span>(<span class="st">"affinis"</span>, <span class="st">"impatiens"</span>))</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>tbl<span class="sc">$</span>spec</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># NULL</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Warning message: Unknown or uninitialised column: `spec`.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></li>
+<li><p><strong>Better printing for large datasets:</strong> Printing a large <code>data.frame</code>can easily overwhelm your screen by dumping thousands of rows and wrapping dozens of columns. Tibbles automatically truncate output to 10 rows, fit columns to your console width, displays data types for every column, and adds colored text to help elements stand out.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a large-ish dataset</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_large  <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">x =</span> <span class="fu">runif</span>(<span class="dv">100</span>), <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>))</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>tbl_large <span class="ot">&lt;-</span> <span class="fu">as_tibble</span>(df_large)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing base df floods the console with oodles of lines</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(df_large) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     id           x            y
+1     1 0.375494162 -0.270275723
+2     2 0.178008724 -0.692150806
+3     3 0.926973524 -1.104666201
+4     4 0.273987005 -0.573655726
+5     5 0.093118925  1.154170220
+6     6 0.344865951 -0.915015194
+7     7 0.199182594  1.694261329
+8     8 0.318823314 -0.815553317
+9     9 0.393487083 -0.360585435
+10   10 0.422034774 -1.702769521
+11   11 0.819720092 -1.699214838
+12   12 0.765438502 -1.143016089
+13   13 0.632905295  0.668341006
+14   14 0.815902623  1.084839923
+15   15 0.360177425 -0.613062192
+16   16 0.842489202  2.239613154
+17   17 0.522986446 -1.068746188
+18   18 0.370034499 -0.062615047
+19   19 0.674031303  0.652188487
+20   20 0.757445056  0.135185259
+21   21 0.863622993  0.014561502
+22   22 0.505280524  0.220701420
+23   23 0.935748774  0.621627009
+24   24 0.955783842  0.692526221
+25   25 0.904924726 -0.479592225
+26   26 0.086507690 -2.281600848
+27   27 0.267154868  0.133896192
+28   28 0.597888992  0.723754133
+29   29 0.046875841  0.410816590
+30   30 0.956438070  0.034719270
+31   31 0.932866895  0.116739998
+32   32 0.360430918 -0.194634925
+33   33 0.604576919 -0.289693323
+34   34 0.060920992  1.745302810
+35   35 0.489684612 -0.586514432
+36   36 0.966939950  0.276426537
+37   37 0.244509927 -2.267181484
+38   38 0.019298134 -0.078155890
+39   39 0.972181380  0.307323683
+40   40 0.335201510  0.485186062
+41   41 0.673454189 -0.616489858
+42   42 0.732079513  0.637745251
+43   43 0.114968110 -2.288435732
+44   44 0.135659645 -0.868228422
+45   45 0.670123147  0.513142867
+46   46 0.996881070 -1.665993086
+47   47 0.781002423  0.545181045
+48   48 0.232948050 -1.021772815
+49   49 0.527035582 -0.411083422
+50   50 0.315814622 -0.009926214
+51   51 0.592975873  0.057953365
+52   52 0.550930779  1.369492228
+53   53 0.370422387  1.130060955
+54   54 0.834014474  0.078654513
+55   55 0.535701124 -1.146675482
+56   56 0.374162831  0.019946735
+57   57 0.284003658 -1.397532878
+58   58 0.470348952  0.907019863
+59   59 0.501695743 -2.506537148
+60   60 0.232065367  0.002157294
+61   61 0.982894958 -0.361895413
+62   62 0.723600966  0.951089808
+63   63 0.251082503 -0.025502792
+64   64 0.006446470  0.330568316
+65   65 0.759406640  1.379335705
+66   66 0.753031136 -1.841027017
+67   67 0.904787492  0.139637848
+68   68 0.706112382  0.129597475
+69   69 0.689834015 -0.708469689
+70   70 0.121994131 -0.972856800
+71   71 0.517537162  0.928867616
+72   72 0.533535110 -2.076889527
+73   73 0.692723817  0.951230341
+74   74 0.594658686  0.848783341
+75   75 0.045297324  1.795495562
+76   76 0.708830997 -0.042201906
+77   77 0.390691358  1.527328258
+78   78 0.843252729  0.333821933
+79   79 0.120222228  1.905942829
+80   80 0.438149967 -1.253376648
+81   81 0.767218947  0.166500648
+82   82 0.863460572 -1.295706633
+83   83 0.670978965 -0.045867972
+84   84 0.640290755 -0.021396779
+85   85 0.365454595  1.342206292
+86   86 0.499564855  1.475142161
+87   87 0.213929296  0.090433487
+88   88 0.914321087  0.229207008
+89   89 0.399420599  0.211114188
+90   90 0.369086461  0.639427623
+91   91 0.005035799  0.264713414
+92   92 0.424140475 -0.607950426
+93   93 0.293063456 -2.327623080
+94   94 0.480322552 -0.645003836
+95   95 0.124486111 -1.268874405
+96   96 0.392862755  0.817314906
+97   97 0.817679206  1.258437389
+98   98 0.435691843  1.675716549
+99   99 0.470175991  1.470808066
+100 100 0.289899901 -1.194432467</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing tibble gives a clean, readable overview with data types (e.g., &lt;int&gt;, &lt;dbl&gt;)</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>tbl_large</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 100 × 3
+      id      x      y
+   &lt;int&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+ 1     1 0.375  -0.270
+ 2     2 0.178  -0.692
+ 3     3 0.927  -1.10 
+ 4     4 0.274  -0.574
+ 5     5 0.0931  1.15 
+ 6     6 0.345  -0.915
+ 7     7 0.199   1.69 
+ 8     8 0.319  -0.816
+ 9     9 0.393  -0.361
+10    10 0.422  -1.70 
+# ℹ 90 more rows</code></pre>
+</div>
+</div></li>
+<li><p><strong>Better column construction:</strong> When creating a <code>tibble</code>, you can reference variables created earlier in the exact same call. Base <code>data.frame</code> throws an error if you attempt this.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Works in tibble</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>,</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> x <span class="sc">*</span> <span class="dv">2</span>  <span class="co"># References 'x' immediately</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div></li>
+</ol>
+</section>
+</section>
+<section id="functions" class="level3">
+<h3 class="anchored" data-anchor-id="functions">Functions</h3>
+<p>Functions are code objects that perform <em>operations</em> on some input (called <em>arguments</em>) and return some output. As we discussed last week, anything with some word followed by <code>()</code> is a function. R has thousands of built in functions, and packages that we install come with their own sets of functions. We can also create our own! In fact, we’ll spend a whole chunk of a class on this topic as knowing how to do this can save you a ton of time and make fewer mistakes than simply copying and pasting code over and over again.</p>
+<p>As a quick example, we can create a function to calculate the rate at which we capture images of insects in a camera trap:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Defining our functions name and what it does</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>calculate_trap_rate <span class="ot">&lt;-</span> <span class="cf">function</span>(image_count, days_active) {</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  rate <span class="ot">&lt;-</span> image_count <span class="sc">/</span> days_active</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(rate)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Using the function</span></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="fu">calculate_trap_rate</span>(<span class="at">image_count =</span> <span class="dv">142</span>, <span class="at">days_active =</span> <span class="dv">7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20.28571</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="code-style" class="level2">
+<h2 class="anchored" data-anchor-id="code-style">Code Style 💃</h2>
+<p>Style is important. But unlike in life, having your “own” style when coding, is not necessarily something to strive for. In this space, style means having code formatting that is predictable and readable. To quote R4DS again… &gt;“Good coding style is like correct punctuation: you can manage without it, butitsuremaesthingseasiertoread.”</p>
+<p>It isn’t just a tedious exercise to make everything line up and look “pretty”. It legitimately helps both you and others be able to more quickly assess what your code is doing, and spot potential errors. remember, code is instruction to a an extremely inflexible, ridgid computer: they don’t like messy, confusing, and imprescise instructions! There is an implied contract between you and the computer: R will do the crap you don’t want to do provided that you are precise in your instructions.</p>
+<section id="naming-files-objects" class="level3">
+<h3 class="anchored" data-anchor-id="naming-files-objects">Naming files, objects</h3>
+<p>In R, object names <em>must</em> start with a letter and can only contain letters, numbers, <code>_</code>, and <code>.</code>. Object names should be descriptive and have some internal logic, and you’ll need to figure out how you want to deal with multiple words. There are several methods:</p>
+<ol type="1">
+<li><strong>Snake case</strong>: <code>i_use_snake_case</code></li>
+<li><strong>Camel case</strong>: <code>iUseCamelCase</code></li>
+<li><strong>Period case</strong>: <code>period.case</code></li>
+<li><strong>Chaos case</strong>: <code>You.DO_you</code> &lt;– Resist entropy. Don’t do this.</li>
+</ol>
+<p>Personally, I use a split convention. I use period case to name assigned R objects that are saved in the environment. For column names in tibbles/data frames, I use snake case.</p>
+<p>Another thing you’ll need to do is be <em>concise</em> in your naming. The longer the object name is, the more keystrokes you need to enter to access/reference to it (increasing chances of mistakes and it’s just annoying to have to type that much). That said, it’s better to have a longer, more descriptive name than an extremely short, easy to type one. Ultimately, you’ll save more time typing a longer name than searching your code for what <code>thing.2</code> is. In the event you have many different objects that are variations on a theme, it’s better to distinguish them using a common prefix rather than a suffix as autocomplete works most efficiently that way. For example, <code>spp.model.1.glm</code> and <code>spp.model.2.glm</code></p>
+<p>There’s a million ways to figure out a naming convention that works for you, but the most important part is to be consistent in your application. I do use suffixes for common object types in R so that I can easily tell what they are from the name:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Object Type</th>
+<th style="text-align: left;">Suffix</th>
+<th style="text-align: left;">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Data frame/tibble</td>
+<td style="text-align: left;"><code>.df</code></td>
+<td style="text-align: left;"><code>mydata.df</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">List</td>
+<td style="text-align: left;"><code>.list</code></td>
+<td style="text-align: left;"><code>mylist.list</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Models</td>
+<td style="text-align: left;"><code>.lm</code>, <code>.glm</code>, <code>.glmm</code>, <code>.gam</code></td>
+<td style="text-align: left;"><code>model1.gam</code></td>
+</tr>
+</tbody>
+</table>
+<section id="reserved-words" class="level4">
+<h4 class="anchored" data-anchor-id="reserved-words">Reserved words 🤐</h4>
+<p>When naming things, there are a few no-no words that you cannot use because R reserves them for specific uses.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Word / Symbol</th>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>if</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Executes code conditionally</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>else</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Alternate execution branch for <code>if</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>for</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Loop over a collection or vector</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>while</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Loop while a condition is true</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>repeat</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Infinite loop (requires <code>break</code> to exit)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>in</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Used within <code>for</code> loops to specify sequence iteration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>break</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Exits a loop immediately</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>next</code></td>
+<td style="text-align: left;">Control Flow</td>
+<td style="text-align: left;">Skips the rest of the current loop iteration</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>function</code></td>
+<td style="text-align: left;">Definition</td>
+<td style="text-align: left;">Defines a custom function</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>TRUE</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Logical true value</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>FALSE</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Logical false value</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>NULL</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Represents an empty object or absent value</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>NA</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Represents missing or unavailable data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>Inf</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Positive infinity</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>-Inf</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">Negative infinity</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>NaN</code></td>
+<td style="text-align: left;">Constant</td>
+<td style="text-align: left;">“Not a Number” (e.g., <span class="math inline">\(0/0\)</span>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="spaces" class="level3">
+<h3 class="anchored" data-anchor-id="spaces">Spaces</h3>
+<p>Spaces are good! Spaces are your friend! White space, as it’s called (harkening back to the days of typewriters), helps our eyes to more quickly assess what is happening in code. We should put spaces on either side of mathematical operators (except exponentiation <code>^</code>) and around the assignment operator <code>&lt;-</code>. Also put spaces after commas, just like we would writing. You can also add spaces to improve code alignment: this makes it easier to digest/skim quickly.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good spacing style</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> (a <span class="sc">+</span> b)<span class="sc">^</span><span class="dv">4</span> <span class="sc">/</span> d</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Bad spacing style</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>z<span class="ot">&lt;-</span>( a <span class="sc">+</span> b )<span class="sc">^</span><span class="dv">4</span><span class="sc">/</span>d</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Spaces after commas!</span></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Spaces for alignment</span></span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">|&gt;</span> </span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">speed     =</span> distance <span class="sc">/</span> air_time,</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">dep_hour  =</span> dep_time <span class="sc">%/%</span> <span class="dv">100</span>,</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">dep_min   =</span> dep_time <span class="sc">%%</span> <span class="dv">100</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="pipes" class="level3">
+<h3 class="anchored" data-anchor-id="pipes">Pipes</h3>
+<p>We will talk more about pipes when we get into data wranglin’ in a couple of weeks, but pipes are a great way to streamline your code and avoid creating intermediate objects that clutter your environment and take up memory. Briefly, a pipe takes stuff on its left and passes it along to the function on its right. So, <code>x |&gt; f(y)</code> is equivalent to <code>f(x, y)</code> and <code>x |&gt; f(y) |&gt; g(z)</code> is equivalent to <code>g(f(x, y), z)</code>. In english, pipes basically translate to “then”. The point of introducing them here is to discuss how to <em>style</em> the code you write using pipes, not to get into their use per se.</p>
+<p>Pipes should always have a space before them, and be the last thing on a line. This makes it easier to re-shuffle how things are ordered and quickly see the logic of a set of piped functions.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Strive for </span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">|&gt;</span>  </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(arr_delay), <span class="sc">!</span><span class="fu">is.na</span>(tailnum)) <span class="sc">|&gt;</span> </span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(dest)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Avoid</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>flights<span class="sc">|&gt;</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(arr_delay), <span class="sc">!</span><span class="fu">is.na</span>(tailnum))<span class="sc">|&gt;</span><span class="fu">count</span>(dest)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>If the function you’re piping into has named arguments (e.g., <code>mutate()</code> or <code>summarize()</code>) put each argument on a new line. If it doesn’t (e.g., <code>filter()</code>), keep it on one line unless you can’t fit it all.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Strive for </span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>flights <span class="sc">|&gt;</span>  </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(tailnum) <span class="sc">|&gt;</span> </span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">delay =</span> <span class="fu">mean</span>(arr_delay, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>()</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Avoid</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>flights<span class="sc">|&gt;</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(tailnum) <span class="sc">|&gt;</span> </span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>             <span class="at">delay =</span> <span class="fu">mean</span>(arr_delay, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>             <span class="at">n =</span> <span class="fu">n</span>()</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>           )</span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Avoid</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>flights<span class="sc">|&gt;</span></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(tailnum) <span class="sc">|&gt;</span> </span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">delay =</span> <span class="fu">mean</span>(arr_delay, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>  <span class="at">n =</span> <span class="fu">n</span>()</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="comments-and-code-outline-via-.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</h3>
+<p>One key area to keep style and organization in mind is how you structure your scripts/markdown files from a meta-level. Rather than a bunch of jumbled code that flows endlessly for 500 lines, use hierarchical markdown structure or sectioning comments to delineate or break up your file into cohesive/logical pieces. Look at the <a href="#frontmatter-‼️">frontmatter</a> to download the template <code>.qmd</code> file that I use for all new notebooks.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 📦 LOAD PACKAGES</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 💾 LOAD DATA</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Tabular data</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Spatial data</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 🧹 CLEAN DATA</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="do">## Dataset 1</span></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="do">## Dataset 2</span></span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 🏗️ BUILD MODELS</span></span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Abundance models</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a><span class="do">## Spatial models</span></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a><span class="co"># 📈 VISUALIZE RESULTS</span></span>
+<span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a><span class="do">## Abundance models</span></span>
+<span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="do">## Spatial models</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
