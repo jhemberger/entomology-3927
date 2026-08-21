@@ -8,6 +8,7 @@ format:
     theme: custom.scss
 ---
 
+:::{.content-callout1}
 ## Readings
 ### Textbook
 -   {{< fa file-code >}} [R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 6: Workflow: Scripts and Projects](https://r4ds.hadley.nz/workflow-scripts.html)
@@ -39,6 +40,10 @@ format:
 ::: callout-tip
 **Tip**: If you type <kbd>?</kbd> (or <kbd>shift</kbd> + <kbd>/</kbd>) while going through the slides, you can see a list of special slide-specific commands.
 :::
+
+:::
+
+</br>
 
 ## A tour of the R studio IDE and GUI 💻
 
@@ -194,6 +199,7 @@ ggplot(data, aes(x = species, y = abundance)) +
 
 When you are finished and want to export this to a report, you could render it as `.html` where it will look like this:
 
+:::{.content-callout2}
 ## Example quarto document
 
 This is a simple Quarto document.
@@ -217,6 +223,7 @@ library(ggplot2)
 ggplot(data, aes(x = species, y = abundance)) +
   geom_col()
 ```
+:::
 
 ::: {.callout-tip title="Suggestion:"}
 Go peek at the [GitHub repository](https://github.com/entomology-3927-5927) for this site to see how the various pages are constructed as `.qmd` files and compare that to the rendered, website version. You'll get a sense of how the various formatting features of markdown work.

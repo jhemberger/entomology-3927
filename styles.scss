@@ -23,6 +23,7 @@ $green: #e0f5cd;
 $theme3927-1: #97B27D;
 $theme3927-2: #3A3A3A;
 $theme3927-3: #FFC200;
+$theme3927-3-t: #FFC20020;
 $theme3927-4: #CFFFFE;
 $theme3927-5: #E56B08;
 $theme3927-6: #FAF0CAff;
@@ -136,6 +137,30 @@ body {
     background-color: rgba($theme3927-6, 0.5);
 }
 
+.content-callout1 {
+  // height: 80%;
+  background-color: $theme3927-3-t;
+  box-sizing: content-box;
+  padding: 15px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #1d1c1c20;
+  border-width: 1px;
+}
+
+.content-callout2 {
+  // height: 80%;
+  background-color: $flower-white;
+  box-sizing: content-box;
+  padding: 15px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #1d1c1c20;
+  border-width: 1px;
+}
+
 // Custom styling for primary buttons
 .btn.btn-primary {
   background-color: $theme3927-3;       /* Custom background color */
@@ -165,4 +190,14 @@ body {
 .highlight-tomato {
   color: #ff6347;
   font-weight: 600
+}
+
+// Custom WebR font scaling
+div.qwebr-interactive-area {
+  .monaco-editor {
+    font-size: 0.8rem !important;
+  }
+  pre {
+    font-size: 0.8rem !important;
+  }
 }

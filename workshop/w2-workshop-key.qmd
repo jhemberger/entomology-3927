@@ -1,0 +1,67 @@
+---
+title: "Workshop 2: Instructor Answer Key"
+subtitle: "Entomology 3927 - Fall 2026"
+author: Jeremy Hemberger
+date: last-modified
+date-format: long
+engine: knitr
+format:
+  live-html:
+    theme: 
+    - ../styles.scss
+    highlight-style: ayu
+---
+
+## Vectors
+### Exercise 1
+```{r}
+species <- c("Apis mellifera", "Bombus impatiens", "Osmia lignaria")
+individual_counts <- c(12, 45, 8)
+survey_data <- c(species, individual_counts)
+class(survey_data)
+# [1] "character"
+```
+
+### Exercise 2
+```{r}
+dry_weight_mg <- c(120, 340, 85, 510, 230, 410)
+dry_weight_g <- dry_weight_mg / 1000
+net_mass_g <- dry_weight_g - c(0.005, 0.008)
+net_mass_g
+# [1] 0.115 0.332 0.080 0.502 0.225 0.402
+```
+
+### Exercise 3
+```{r}
+stem_density <- c(145, 212, 88, 304, 199, 250, 180, 218)
+dense_even_plots <- stem_density[stem_density > 200 & stem_density %% 2 == 0]
+dense_even_plots
+# [1] 212 304 250 218
+```
+
+### Exercise 4
+```{r}
+soil_moisture <- c(0.24, NA, 0.31, 0.19, NA, 0.28, 0.22)
+mean_moisture <- mean(soil_moisture, na.rm = TRUE)
+soil_moisture[is.na(soil_moisture)] <- mean_moisture
+soil_moisture
+# [1] 0.24 0.248 0.31 0.19 0.248 0.28 0.22
+```
+
+### Exercise 5
+```{r}
+shannon_index <- c(Site_A = 1.82, Site_B = 2.45, Site_C = 1.31, Site_D = 2.89, Site_E = 2.10, Ctrl_1 = 0.45, Ctrl_2 = 0.62)
+target_sites <- shannon_index[c("Site_B", "Site_D")]
+intact_sites <- shannon_index[-c(6, 7)]
+
+target_sites
+# Site_B Site_D 
+#   2.45   2.89 
+
+intact_sites
+# Site_A Site_B Site_C Site_D Site_E 
+#   1.82   2.45   1.31   2.89   2.10
+```
+
+
+

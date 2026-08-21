@@ -5,17 +5,24 @@ date: last-modified
 date-format: long
 format:
   html:
-    theme: custom.scss
+    theme: ../styles.scss
 ---
 
+:::{.content-callout1}
 ## Readings
+### Textbook
 -   {{< fa file-code >}} [R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 2: Workflow: Basics](https://r4ds.hadley.nz/workflow-basics.html)
 -   {{< fa file-code >}} [R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 4: Workflow: Code Style](https://r4ds.hadley.nz/workflow-style.html)
+
+### Optional extras
 
 ## Questions we'll address this week
 1. What are the atomic data types in R? 
 2. How do we create and access data in the fundamental R objects?
 3. How should we style our code for maximal readability and accessibility?
+:::
+
+</br>
 
 ## Tour de Objects 🚴 🚴 🚴💨
 As we discussed last week, programming in R is all about creating, maniupulating, and operating on [objects]{.highlight-tomato}. 
@@ -89,13 +96,15 @@ camera_traps <- list(
 # Exctracting/accessing elements
 camera_traps$site_id
 camera_traps[[4]][1] # list element 4, object 1 (i.e., first target species)
-
 ```
+We can visualize lists using a series of nested boxes, as well as how different subsetting commands grab data from lists:
+
+![](https://r4ds.had.co.nz/diagrams/lists-subsetting.png){fig-align="center" width="50%"}
 
 ### Data frames and tibbles
-Most of us will work with data frames 90% of the time. Tabular data, that is, a standard excel or Google Sheets file, arranged in a two-dimensional grid of rows and columns, is what most of us are familiar using to aggregate data from experiments and observational studies. When we bring these data into R, we'll bring them in as *data frames*. At their core, data frames are essentially lists (each list is a "column") of equal-length vectors (each vector element is a "row").
+Most of us will work with *tabular data* 90% of the time. Tabular data, that is, a standard excel or Google Sheets file, arranged in a two-dimensional grid of rows and columns, is what most of us are familiar using to aggregate data from experiments and observational studies. When we bring these data into R, we'll bring them in as *data frames*. At their core, data frames are essentially lists (each list is a "column") of equal-length vectors (each vector element is a "row").
 
-![](content_media/w2/tibble_structure.png){width="100%"}
+![](content_media/w2/tibble_structure.png){fig-align="center" width="75%"}
 
 #### Accessing data in data frames
 Because data frames are essentially lists, the manner in which we access data is very similar. We'll discuss more advanced/modern ways to access data in the coming weeks, but the base R ways to get at data are:
@@ -208,17 +217,17 @@ In R, object names *must* start with a letter and can only contain letters, numb
 3. **Period case**: `period.case`
 4. **Chaos case**: `You.DO_you` <-- Resist entropy. Don't do this. 
 
-Personally, I use a split convention. I use period case to name assigned R objects that are saved in the environment. For column names in tibbles/data frames, I use snake case. 
+Personally, I use a split convention. I use period case to name assigned R objects that are saved in the environment. For column names in tibbles/data frames, I use snake case. In my mind, this helps me keep R object names separated from column or variable names within my data. Do what works best for you, just be *consistent*!
 
-Another thing you'll need to do is be *concise* in your naming. The longer the object name is, the more keystrokes you need to enter to access/reference to it (increasing chances of mistakes and it's just annoying to have to type that much). That said, it's better to have a longer, more descriptive name than an extremely short, easy to type one. Ultimately, you'll save more time typing a longer name than searching your code for what `thing.2` is. In the event you have many different objects that are variations on a theme, it's better to distinguish them using a common prefix rather than a suffix as autocomplete works most efficiently that way. For example, `spp.model.1.glm` and `spp.model.2.glm`
+Another thing you'll need to do is be *concise* in your naming. The longer the object name is, the more keystrokes you need to enter to access/reference to it (increasing chances of mistakes, and it's just annoying to have to type that much). That said, it's better to have a longer, more descriptive name than an extremely short, easy to type one. Ultimately, you'll save more time typing a longer name than searching your code for what `thing.2` is. In the event you have many different objects that are variations on a theme, it's better to distinguish them using a common prefix rather than a suffix as autocomplete works most efficiently that way. For example, `spp.model.1.glm` and `spp.model.2.glm`
 
-There's a million ways to figure out a naming convention that works for you, but the most important part is to be consistent in your application. I do use suffixes for common object types in R so that I can easily tell what they are from the name:
+There's a million ways to figure out a naming convention that works for you, but the most important part is to be consistent in your application. A trick I use is appending suffixes for common object types in R so that I can easily tell what they are from the name:
 
 | Object Type | Suffix | Examples |
 | :--- | :--- | :--- |
 | Data frame/tibble | `.df` | `mydata.df` |
 | List | `.list` | `mylist.list` | 
-| Models | `.lm`, `.glm`, `.glmm`, `.gam` | `model1.gam` |
+| Models/model type | `.lm`, `.glm`, `.glmm`, `.gam` | `model1.gam` |
 
 #### Reserved words 🤐
 When naming things, there are a few no-no words that you cannot use because R reserves them for specific uses. 
@@ -243,7 +252,7 @@ When naming things, there are a few no-no words that you cannot use because R re
 | `NaN` | Constant | "Not a Number" (e.g., $0/0$) |
 
 ### Spaces
-Spaces are good! Spaces are your friend! White space, as it's called (harkening back to the days of typewriters), helps our eyes to more quickly assess what is happening in code. We should put spaces on either side of mathematical operators (except exponentiation `^`) and around the assignment operator `<-`. Also put spaces after commas, just like we would writing. You can also add spaces to improve code alignment: this makes it easier to digest/skim quickly.
+Spaces are good! Spaces are your friend! White space, as it's called (harkening back to the days of physially published things like newspapers and books), helps our eyes to more quickly assess what is happening in code. We should put spaces on either side of mathematical operators (except exponentiation `^`) and around the assignment operator `<-`. Also put spaces after commas, just like we would writing. You can also add spaces to improve code alignment: this makes it easier to digest/skim quickly.
 
 ```{r eval=FALSE}
 # Good spacing style
@@ -333,3 +342,6 @@ One key area to keep style and organization in mind is how you structure your sc
 
 ## Spatial models
 ```
+
+### Style hacks
+There are some great R packages/add-ins that you can configure to help you quickly re-format your code to have a cohesive style. The best option is probably the [`styleR`](https://styler.r-lib.org/) package. 

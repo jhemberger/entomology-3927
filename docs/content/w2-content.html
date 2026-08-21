@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-19">
+<meta name="dcterms.date" content="2026-08-21">
 
 <title>Week 1 – Entomology 3927/5927</title>
 <style>
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2baf9616dcd62a487e8517e630363ef5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b827b83e2543535bb52db5d8068cfdad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-031befad0a4d684cfbd9d79fbcf2d72e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -212,7 +212,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Project organization, RStudio, your ‘devenv’</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Data structures, objects, code style, etc</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -253,13 +253,13 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/w1-content.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1: Intro to data science and R</span></a>
+ <span class="menu-text">Week 1: Intro to data science and R: Project organization, RStudio, your ‘devenv’</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/w2-content.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Week 2: Project organization, RStudio, your ‘devenv’</span></a>
+ <span class="menu-text">Week 2: Data structures, objects, code style, etc</span></a>
   </div>
 </li>
       </ul>
@@ -380,9 +380,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a></li>
-  <li><a href="#questions-well-address-this-week" id="toc-questions-well-address-this-week" class="nav-link" data-scroll-target="#questions-well-address-this-week">Questions we’ll address this week</a></li>
-  <li><a href="#tour-de-objects" id="toc-tour-de-objects" class="nav-link" data-scroll-target="#tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</a>
+  <li><a href="#tour-de-objects" id="toc-tour-de-objects" class="nav-link active" data-scroll-target="#tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</a>
   <ul class="collapse">
   <li><a href="#the-atomic-data-types" id="toc-the-atomic-data-types" class="nav-link" data-scroll-target="#the-atomic-data-types">The atomic data types</a></li>
   <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors">Vectors</a></li>
@@ -396,6 +394,7 @@ window.Quarto = {
   <li><a href="#spaces" id="toc-spaces" class="nav-link" data-scroll-target="#spaces">Spaces</a></li>
   <li><a href="#pipes" id="toc-pipes" class="nav-link" data-scroll-target="#pipes">Pipes</a></li>
   <li><a href="#comments-and-code-outline-via-.qmd" id="toc-comments-and-code-outline-via-.qmd" class="nav-link" data-scroll-target="#comments-and-code-outline-via-.qmd">Comments and code outline (via <code>.qmd</code>)</a></li>
+  <li><a href="#style-hacks" id="toc-style-hacks" class="nav-link" data-scroll-target="#style-hacks">Style hacks</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -403,7 +402,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Project organization, RStudio, your ‘devenv’</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/w1-content.html">Module 1: Introduction to Data Science and R</a></li><li class="breadcrumb-item"><a href="../content/w2-content.html">Week 2: Data structures, objects, code style, etc</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Week 1</h1>
 <p class="subtitle lead">Class orientation; What is data science?</p>
@@ -417,7 +416,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 19, 2026</p>
+      <p class="date">August 21, 2026</p>
     </div>
   </div>
   
@@ -429,11 +428,19 @@ window.Quarto = {
 </header>
 
 
+<div class="content-callout1">
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings">Readings</h2>
+<section id="textbook" class="level3">
+<h3 class="anchored" data-anchor-id="textbook">Textbook</h3>
 <ul>
+<li><i class="fa-solid fa-file-code" aria-label="file-code"></i> <a href="https://r4ds.hadley.nz/workflow-basics.html">R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 2: Workflow: Basics</a></li>
 <li><i class="fa-solid fa-file-code" aria-label="file-code"></i> <a href="https://r4ds.hadley.nz/workflow-style.html">R for Data Science (2e) was written by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. Chapter 4: Workflow: Code Style</a></li>
 </ul>
+</section>
+<section id="optional-extras" class="level3">
+<h3 class="anchored" data-anchor-id="optional-extras">Optional extras</h3>
+</section>
 </section>
 <section id="questions-well-address-this-week" class="level2">
 <h2 class="anchored" data-anchor-id="questions-well-address-this-week">Questions we’ll address this week</h2>
@@ -443,6 +450,8 @@ window.Quarto = {
 <li>How should we style our code for maximal readability and accessibility?</li>
 </ol>
 </section>
+</div>
+<p><br></p>
 <section id="tour-de-objects" class="level2">
 <h2 class="anchored" data-anchor-id="tour-de-objects">Tour de Objects 🚴 🚴 🚴💨</h2>
 <p>As we discussed last week, programming in R is all about creating, maniupulating, and operating on <span class="highlight-tomato">objects</span>.</p>
@@ -576,11 +585,21 @@ window.Quarto = {
 <pre><code>[1] "affinis"</code></pre>
 </div>
 </div>
+<p>We can visualize lists using a series of nested boxes, as well as how different subsetting commands grab data from lists:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://r4ds.had.co.nz/diagrams/lists-subsetting.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
 </section>
 <section id="data-frames-and-tibbles" class="level3">
 <h3 class="anchored" data-anchor-id="data-frames-and-tibbles">Data frames and tibbles</h3>
-<p>Most of us will work with data frames 90% of the time. Tabular data, that is, a standard excel or Google Sheets file, arranged in a two-dimensional grid of rows and columns, is what most of us are familiar using to aggregate data from experiments and observational studies. When we bring these data into R, we’ll bring them in as <em>data frames</em>. At their core, data frames are essentially lists (each list is a “column”) of equal-length vectors (each vector element is a “row”).</p>
-<p><img src="content_media/w2/tibble_structure.png" class="img-fluid" style="width:100.0%"></p>
+<p>Most of us will work with <em>tabular data</em> 90% of the time. Tabular data, that is, a standard excel or Google Sheets file, arranged in a two-dimensional grid of rows and columns, is what most of us are familiar using to aggregate data from experiments and observational studies. When we bring these data into R, we’ll bring them in as <em>data frames</em>. At their core, data frames are essentially lists (each list is a “column”) of equal-length vectors (each vector element is a “row”).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="content_media/w2/tibble_structure.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
 <section id="accessing-data-in-data-frames" class="level4">
 <h4 class="anchored" data-anchor-id="accessing-data-in-data-frames">Accessing data in data frames</h4>
 <p>Because data frames are essentially lists, the manner in which we access data is very similar. We’ll discuss more advanced/modern ways to access data in the coming weeks, but the base R ways to get at data are:</p>
@@ -646,124 +665,124 @@ window.Quarto = {
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing base df floods the console with oodles of lines</span></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(df_large) </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>     id           x            y
-1     1 0.375494162 -0.270275723
-2     2 0.178008724 -0.692150806
-3     3 0.926973524 -1.104666201
-4     4 0.273987005 -0.573655726
-5     5 0.093118925  1.154170220
-6     6 0.344865951 -0.915015194
-7     7 0.199182594  1.694261329
-8     8 0.318823314 -0.815553317
-9     9 0.393487083 -0.360585435
-10   10 0.422034774 -1.702769521
-11   11 0.819720092 -1.699214838
-12   12 0.765438502 -1.143016089
-13   13 0.632905295  0.668341006
-14   14 0.815902623  1.084839923
-15   15 0.360177425 -0.613062192
-16   16 0.842489202  2.239613154
-17   17 0.522986446 -1.068746188
-18   18 0.370034499 -0.062615047
-19   19 0.674031303  0.652188487
-20   20 0.757445056  0.135185259
-21   21 0.863622993  0.014561502
-22   22 0.505280524  0.220701420
-23   23 0.935748774  0.621627009
-24   24 0.955783842  0.692526221
-25   25 0.904924726 -0.479592225
-26   26 0.086507690 -2.281600848
-27   27 0.267154868  0.133896192
-28   28 0.597888992  0.723754133
-29   29 0.046875841  0.410816590
-30   30 0.956438070  0.034719270
-31   31 0.932866895  0.116739998
-32   32 0.360430918 -0.194634925
-33   33 0.604576919 -0.289693323
-34   34 0.060920992  1.745302810
-35   35 0.489684612 -0.586514432
-36   36 0.966939950  0.276426537
-37   37 0.244509927 -2.267181484
-38   38 0.019298134 -0.078155890
-39   39 0.972181380  0.307323683
-40   40 0.335201510  0.485186062
-41   41 0.673454189 -0.616489858
-42   42 0.732079513  0.637745251
-43   43 0.114968110 -2.288435732
-44   44 0.135659645 -0.868228422
-45   45 0.670123147  0.513142867
-46   46 0.996881070 -1.665993086
-47   47 0.781002423  0.545181045
-48   48 0.232948050 -1.021772815
-49   49 0.527035582 -0.411083422
-50   50 0.315814622 -0.009926214
-51   51 0.592975873  0.057953365
-52   52 0.550930779  1.369492228
-53   53 0.370422387  1.130060955
-54   54 0.834014474  0.078654513
-55   55 0.535701124 -1.146675482
-56   56 0.374162831  0.019946735
-57   57 0.284003658 -1.397532878
-58   58 0.470348952  0.907019863
-59   59 0.501695743 -2.506537148
-60   60 0.232065367  0.002157294
-61   61 0.982894958 -0.361895413
-62   62 0.723600966  0.951089808
-63   63 0.251082503 -0.025502792
-64   64 0.006446470  0.330568316
-65   65 0.759406640  1.379335705
-66   66 0.753031136 -1.841027017
-67   67 0.904787492  0.139637848
-68   68 0.706112382  0.129597475
-69   69 0.689834015 -0.708469689
-70   70 0.121994131 -0.972856800
-71   71 0.517537162  0.928867616
-72   72 0.533535110 -2.076889527
-73   73 0.692723817  0.951230341
-74   74 0.594658686  0.848783341
-75   75 0.045297324  1.795495562
-76   76 0.708830997 -0.042201906
-77   77 0.390691358  1.527328258
-78   78 0.843252729  0.333821933
-79   79 0.120222228  1.905942829
-80   80 0.438149967 -1.253376648
-81   81 0.767218947  0.166500648
-82   82 0.863460572 -1.295706633
-83   83 0.670978965 -0.045867972
-84   84 0.640290755 -0.021396779
-85   85 0.365454595  1.342206292
-86   86 0.499564855  1.475142161
-87   87 0.213929296  0.090433487
-88   88 0.914321087  0.229207008
-89   89 0.399420599  0.211114188
-90   90 0.369086461  0.639427623
-91   91 0.005035799  0.264713414
-92   92 0.424140475 -0.607950426
-93   93 0.293063456 -2.327623080
-94   94 0.480322552 -0.645003836
-95   95 0.124486111 -1.268874405
-96   96 0.392862755  0.817314906
-97   97 0.817679206  1.258437389
-98   98 0.435691843  1.675716549
-99   99 0.470175991  1.470808066
-100 100 0.289899901 -1.194432467</code></pre>
+<pre><code>     id          x            y
+1     1 0.29224401 -0.772212110
+2     2 0.34844001 -1.934799235
+3     3 0.60341420  1.611797556
+4     4 0.02652776 -1.767763525
+5     5 0.56246441  0.073048706
+6     6 0.36772110 -0.679771961
+7     7 0.97158168  0.135997346
+8     8 0.05928214  0.184743956
+9     9 0.68322563  0.535903093
+10   10 0.91766039 -1.144563672
+11   11 0.46511393 -1.649541405
+12   12 0.86764652 -1.262211479
+13   13 0.74749775  0.072106929
+14   14 0.49479885  0.797852501
+15   15 0.73657884 -1.349075776
+16   16 0.95688003 -1.359392311
+17   17 0.44487694  0.823724989
+18   18 0.86222072 -0.248048614
+19   19 0.15061197 -0.758842274
+20   20 0.49262214 -0.777129357
+21   21 0.56079129  0.540975645
+22   22 0.85500526 -0.171226852
+23   23 0.14244389 -0.472368080
+24   24 0.14940422 -0.624587929
+25   25 0.82903294  0.209435945
+26   26 0.53530030  0.396729190
+27   27 0.27000126 -1.703970486
+28   28 0.71899996  1.528193262
+29   29 0.73373567 -1.366847901
+30   30 0.99029727 -0.627520701
+31   31 0.94093812 -0.857529741
+32   32 0.19751226 -1.066562849
+33   33 0.17661296 -0.032921299
+34   34 0.13135919 -1.363191324
+35   35 0.54928222  0.562060695
+36   36 0.18658590  0.334504340
+37   37 0.31250987 -0.191948733
+38   38 0.43650051 -1.616850996
+39   39 0.55030525  0.270525270
+40   40 0.51832235  1.430497007
+41   41 0.33227647 -0.162355534
+42   42 0.25445127  0.271992442
+43   43 0.62335337  1.166615495
+44   44 0.67584206  0.370833646
+45   45 0.10374934 -0.353522258
+46   46 0.45725398 -1.172017290
+47   47 0.58505823 -0.346153057
+48   48 0.46429189  0.254048409
+49   49 0.68338516 -0.440395614
+50   50 0.04224752  1.182167589
+51   51 0.95664306  1.295710871
+52   52 0.77179693  0.393272186
+53   53 0.80581101  0.254015534
+54   54 0.83518369 -0.138241527
+55   55 0.90124920 -0.032329300
+56   56 0.58224368 -0.305978351
+57   57 0.70154943 -0.870412982
+58   58 0.93406246  0.668608313
+59   59 0.82866660 -0.647340529
+60   60 0.80605296 -1.445373403
+61   61 0.39974675  0.420863764
+62   62 0.21723738  0.149079434
+63   63 0.37789323  0.921103145
+64   64 0.47249195 -1.066768290
+65   65 0.87124311  0.597588236
+66   66 0.12927249 -1.150632875
+67   67 0.21762981 -0.451162251
+68   68 0.13890228  0.009249081
+69   69 0.69363093  0.281774825
+70   70 0.96841692 -0.064495201
+71   71 0.74350130  1.747725805
+72   72 0.36158569 -1.073186835
+73   73 0.67656650 -0.375602807
+74   74 0.46326749 -0.840728981
+75   75 0.18790661  2.073438171
+76   76 0.50410885 -0.074993020
+77   77 0.99177669  0.944234945
+78   78 0.84367125  0.475003614
+79   79 0.54923819 -2.182471765
+80   80 0.55153243 -0.571151394
+81   81 0.53895034  1.411265508
+82   82 0.20019808  1.436290830
+83   83 0.11933212  0.824894585
+84   84 0.84306523  0.327621553
+85   85 0.18892175  0.235161342
+86   86 0.73075015  1.714279825
+87   87 0.84103397 -0.226115274
+88   88 0.57434785  0.049312670
+89   89 0.70917508  1.158395132
+90   90 0.90576085 -0.933550574
+91   91 0.95900290 -0.290561316
+92   92 0.37882870 -0.150932924
+93   93 0.32453673  0.441396448
+94   94 0.69789981 -1.026178572
+95   95 0.80699856 -0.684987261
+96   96 0.20207935 -0.517426674
+97   97 0.22222976 -0.174174260
+98   98 0.86491887 -1.912205401
+99   99 0.77188486 -0.265385422
+100 100 0.14646743 -0.754066159</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Printing tibble gives a clean, readable overview with data types (e.g., &lt;int&gt;, &lt;dbl&gt;)</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>tbl_large</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 100 × 3
-      id      x      y
-   &lt;int&gt;  &lt;dbl&gt;  &lt;dbl&gt;
- 1     1 0.375  -0.270
- 2     2 0.178  -0.692
- 3     3 0.927  -1.10 
- 4     4 0.274  -0.574
- 5     5 0.0931  1.15 
- 6     6 0.345  -0.915
- 7     7 0.199   1.69 
- 8     8 0.319  -0.816
- 9     9 0.393  -0.361
-10    10 0.422  -1.70 
+      id      x       y
+   &lt;int&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+ 1     1 0.292  -0.772 
+ 2     2 0.348  -1.93  
+ 3     3 0.603   1.61  
+ 4     4 0.0265 -1.77  
+ 5     5 0.562   0.0730
+ 6     6 0.368  -0.680 
+ 7     7 0.972   0.136 
+ 8     8 0.0593  0.185 
+ 9     9 0.683   0.536 
+10    10 0.918  -1.14  
 # ℹ 90 more rows</code></pre>
 </div>
 </div></li>
@@ -810,9 +829,9 @@ window.Quarto = {
 <li><strong>Period case</strong>: <code>period.case</code></li>
 <li><strong>Chaos case</strong>: <code>You.DO_you</code> &lt;– Resist entropy. Don’t do this.</li>
 </ol>
-<p>Personally, I use a split convention. I use period case to name assigned R objects that are saved in the environment. For column names in tibbles/data frames, I use snake case.</p>
-<p>Another thing you’ll need to do is be <em>concise</em> in your naming. The longer the object name is, the more keystrokes you need to enter to access/reference to it (increasing chances of mistakes and it’s just annoying to have to type that much). That said, it’s better to have a longer, more descriptive name than an extremely short, easy to type one. Ultimately, you’ll save more time typing a longer name than searching your code for what <code>thing.2</code> is. In the event you have many different objects that are variations on a theme, it’s better to distinguish them using a common prefix rather than a suffix as autocomplete works most efficiently that way. For example, <code>spp.model.1.glm</code> and <code>spp.model.2.glm</code></p>
-<p>There’s a million ways to figure out a naming convention that works for you, but the most important part is to be consistent in your application. I do use suffixes for common object types in R so that I can easily tell what they are from the name:</p>
+<p>Personally, I use a split convention. I use period case to name assigned R objects that are saved in the environment. For column names in tibbles/data frames, I use snake case. In my mind, this helps me keep R object names separated from column or variable names within my data. Do what works best for you, just be <em>consistent</em>!</p>
+<p>Another thing you’ll need to do is be <em>concise</em> in your naming. The longer the object name is, the more keystrokes you need to enter to access/reference to it (increasing chances of mistakes, and it’s just annoying to have to type that much). That said, it’s better to have a longer, more descriptive name than an extremely short, easy to type one. Ultimately, you’ll save more time typing a longer name than searching your code for what <code>thing.2</code> is. In the event you have many different objects that are variations on a theme, it’s better to distinguish them using a common prefix rather than a suffix as autocomplete works most efficiently that way. For example, <code>spp.model.1.glm</code> and <code>spp.model.2.glm</code></p>
+<p>There’s a million ways to figure out a naming convention that works for you, but the most important part is to be consistent in your application. A trick I use is appending suffixes for common object types in R so that I can easily tell what they are from the name:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -833,7 +852,7 @@ window.Quarto = {
 <td style="text-align: left;"><code>mylist.list</code></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Models</td>
+<td style="text-align: left;">Models/model type</td>
 <td style="text-align: left;"><code>.lm</code>, <code>.glm</code>, <code>.glmm</code>, <code>.gam</code></td>
 <td style="text-align: left;"><code>model1.gam</code></td>
 </tr>
@@ -942,7 +961,7 @@ window.Quarto = {
 </section>
 <section id="spaces" class="level3">
 <h3 class="anchored" data-anchor-id="spaces">Spaces</h3>
-<p>Spaces are good! Spaces are your friend! White space, as it’s called (harkening back to the days of typewriters), helps our eyes to more quickly assess what is happening in code. We should put spaces on either side of mathematical operators (except exponentiation <code>^</code>) and around the assignment operator <code>&lt;-</code>. Also put spaces after commas, just like we would writing. You can also add spaces to improve code alignment: this makes it easier to digest/skim quickly.</p>
+<p>Spaces are good! Spaces are your friend! White space, as it’s called (harkening back to the days of physially published things like newspapers and books), helps our eyes to more quickly assess what is happening in code. We should put spaces on either side of mathematical operators (except exponentiation <code>^</code>) and around the assignment operator <code>&lt;-</code>. Also put spaces after commas, just like we would writing. You can also add spaces to improve code alignment: this makes it easier to digest/skim quickly.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good spacing style</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> (a <span class="sc">+</span> b)<span class="sc">^</span><span class="dv">4</span> <span class="sc">/</span> d</span>
@@ -1028,6 +1047,10 @@ window.Quarto = {
 <span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a><span class="do">## Spatial models</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
+</section>
+<section id="style-hacks" class="level3">
+<h3 class="anchored" data-anchor-id="style-hacks">Style hacks</h3>
+<p>There are some great R packages/add-ins that you can configure to help you quickly re-format your code to have a cohesive style. The best option is probably the <a href="https://styler.r-lib.org/"><code>styleR</code></a> package.</p>
 
 
 </section>

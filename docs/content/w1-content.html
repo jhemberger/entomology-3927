@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-08-19">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>Week 1 – Entomology 3927/5927</title>
 <style>
@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2baf9616dcd62a487e8517e630363ef5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b827b83e2543535bb52db5d8068cfdad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-031befad0a4d684cfbd9d79fbcf2d72e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -351,14 +351,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#readings" id="toc-readings" class="nav-link active" data-scroll-target="#readings">Readings</a>
-  <ul class="collapse">
-  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook">Textbook</a></li>
-  <li><a href="#recommended-papers" id="toc-recommended-papers" class="nav-link" data-scroll-target="#recommended-papers">Recommended papers</a></li>
-  </ul></li>
-  <li><a href="#questions-well-address-this-week" id="toc-questions-well-address-this-week" class="nav-link" data-scroll-target="#questions-well-address-this-week">Questions we’ll address this week</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#a-tour-of-the-r-studio-ide-and-gui" id="toc-a-tour-of-the-r-studio-ide-and-gui" class="nav-link" data-scroll-target="#a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI 💻</a>
+  <li><a href="#a-tour-of-the-r-studio-ide-and-gui" id="toc-a-tour-of-the-r-studio-ide-and-gui" class="nav-link active" data-scroll-target="#a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI 💻</a>
   <ul class="collapse">
   <li><a href="#setting-up-your-devenv-development-environment" id="toc-setting-up-your-devenv-development-environment" class="nav-link" data-scroll-target="#setting-up-your-devenv-development-environment">Setting up your DevEnv (Development Environment)</a></li>
   </ul></li>
@@ -402,7 +395,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 19, 2026</p>
+      <p class="date">August 20, 2026</p>
     </div>
   </div>
   
@@ -414,6 +407,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="content-callout1">
 <section id="readings" class="level2">
 <h2 class="anchored" data-anchor-id="readings">Readings</h2>
 <section id="textbook" class="level3">
@@ -463,6 +457,8 @@ Tip
 </div>
 </div>
 </section>
+</div>
+<p><br></p>
 <section id="a-tour-of-the-r-studio-ide-and-gui" class="level2">
 <h2 class="anchored" data-anchor-id="a-tour-of-the-r-studio-ide-and-gui">A tour of the R studio IDE and GUI 💻</h2>
 <p>In it’s simplest, out-of-box form, R Studio is composed of four different sections, called panes:</p>
@@ -640,7 +636,7 @@ ggplot(data, aes(x = species, y = abundance)) +
 </section>
 </section>
 </section>
-<section id="example-quarto-document" class="level2">
+<section id="example-quarto-document" class="level2 content-callout2">
 <h2 class="anchored" data-anchor-id="example-quarto-document">Example quarto document</h2>
 <p>This is a simple Quarto document.</p>
 <section id="create-the-data" class="level3">
@@ -676,6 +672,8 @@ ggplot(data, aes(x = species, y = abundance)) +
 </div>
 </div>
 </div>
+</section>
+</section>
 <div class="callout callout-style-default callout-tip callout-titled" title="Suggestion:">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -689,8 +687,6 @@ ggplot(data, aes(x = species, y = abundance)) +
 <p>Go peek at the <a href="https://github.com/entomology-3927-5927">GitHub repository</a> for this site to see how the various pages are constructed as <code>.qmd</code> files and compare that to the rendered, website version. You’ll get a sense of how the various formatting features of markdown work.</p>
 </div>
 </div>
-</section>
-</section>
 <section id="project-and-code-organization" class="level2">
 <h2 class="anchored" data-anchor-id="project-and-code-organization">Project and code organization 💾</h2>
 <p>Keeping your work organized is an extremely important aspect of making your projects reproducible and a great way to help future you or collaborators make sense of what you’ve done. You can conduct your work and analyses in a piecemeal, chaotic fashion, but the goal of this class is to instill consisent, clear protocols to follow for all projects so that we properly document and allow our work to be easily reproduced/checked. The first step toward this is always using <strong>R Studio Projects</strong> (this is similar to the folder-based system that many other IDEs like VSCode and Positron use).</p>

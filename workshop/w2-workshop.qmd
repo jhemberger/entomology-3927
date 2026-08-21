@@ -1,24 +1,152 @@
 ---
-title: "Workshop 1: Data structures, objects, tibbles, etc."
+title: "Workshop 2: Data structures, objects, tibbles, etc."
 subtitle: "Entomology 3927 - Fall 2026"
 author: Jeremy Hemberger
 date: last-modified
 date-format: long
+engine: knitr
 format:
-  html:
-    theme: custom.scss
+  live-html:
+    theme: 
+    - ../styles.scss
     highlight-style: ayu
 ---
 
+{{< include ../_extensions/r-wasm/live/_knitr.qmd >}}
 
 ## Frontmatter ‼️
 
-[{{< fa download >}} Download lab data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
-[{{< fa file-code >}} `qmd` template](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+[{{< fa download >}} Download workshop data](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+[{{< fa file-code >}} `.qmd` template](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+[{{< fa file-code >}} Exercise code](https://canvas.umn.edu/courses/539629/modules/items/15583284){.btn .btn-primary}
+
 
 </br>
 </br>
 
 
 ## Hands-on exercises 🧑🏻‍💻
+### Vectors
 
+### Exercise 1: Species names and survey counts (Vector Types)
+
+Create a character vector named `species` containing `"Apis mellifera"`, `"Bombus impatiens"`, and `"Osmia lignaria"`. Combine it with the numeric count vector `individual_counts` into a single vector named `survey_data`, then print the class of `survey_data`.
+
+```{webr}
+# 1. Create species character vector
+species <- ______
+
+# Given numeric counts vector
+individual_counts <- c(12, 45, 8)
+
+# 2. Combine species and counts into one vector
+survey_data <- ______
+
+# 3. Print the class of survey_data
+class(survey_data)
+```
+
+</br>
+
+### Exercise 2: Biomass calculations and standardized traps (Vector arithmetic & recycling)
+
+Convert insect dry weight values in milligrams (`dry_weight_mg`) to grams by dividing by 1000. Then subtract a 2-element trap-tare weight vector `c(0.005, 0.008)` to calculate the net insect mass in `net_mass_g`.
+
+```{webr}
+dry_weight_mg <- c(120, 340, 85, 510, 230, 410)
+
+# 1. Convert milligrams to grams
+dry_weight_g <- ______
+
+# 2. Subtract alternating tare weights c(0.005, 0.008)
+net_mass_g <- ______
+
+net_mass_g
+
+# What is happening in 2? Chat with your table/neighbor.
+```
+
+</br>
+
+### Exercise 3: Filtering quadrat sample data (Logical Subsetting)
+
+Extract values from `stem_density` (stems per $m^2$) that represent **dense plots** (> 200 stems) AND are **even numbers** (`%% 2 == 0`). Store the resulting values in `dense_even_plots`.
+
+```{webr}
+stem_density <- c(145, 212, 88, 304, 199, 250, 180, 218)
+
+# Filter stem_density for values > 200 AND even
+dense_even_plots <- stem_density[______]
+
+dense_even_plots
+```
+
+</br>
+
+### Exercise 4: Imputing missing field data (`NA` handling)
+
+A field logger missed soil moisture readings due to a sensor malfunction. Calculate the mean of non-`NA` moisture values in `soil_moisture` (using `na.rm = TRUE`) and store it as `mean_moisture`. Then replace all missing `NA` values in `soil_moisture` with `mean_moisture`. This practice is called *imputing*.
+
+```{webr}
+soil_moisture <- c(0.24, NA, 0.31, 0.19, NA, 0.28, 0.22)
+
+# 1. Calculate mean of valid readings
+mean_moisture <- ______
+
+# 2. Replace NAs in soil_moisture with mean_moisture
+soil_moisture[______] <- mean_moisture
+
+soil_moisture
+```
+
+</br>
+
+### Exercise 5: Indexing named biodiversity indices (Vector subsetting)
+
+You have Shannon diversity index values for insect communities at 7 sampling sites. Extract the values for `"Site_B"` and `"Site_D"` by name into `control_sites`. Then remove the disturbance treatment sites (positions 6 and 7) using negative indexing into `disturbed_sites`.
+
+```{webr}
+shannon_index <- c(Site_A = 1.82, Site_B = 2.45, Site_C = 1.31, Site_D = 2.89, Site_E = 2.10, Ctrl_1 = 0.45, Ctrl_2 = 0.62)
+
+# 1. Extract Site_B and Site_D by name
+control_sites <- ______
+
+# 2. Exclude Ctrl_1 and Ctrl_2 (positions 6 and 7) using negative indexing
+disturbed_sites <- ______
+
+control_sites
+disturbed_sites
+```
+
+</br>
+
+---
+
+</br>
+
+### Lists
+
+#### Exercise 1: Extracting elements from nesting sample lists
+
+A field survey stores site metadata, species observations, and environmental variables in a single list. Extract the `temperatures` vector by name into `temp_vals`, then extract the third species name (`"Ceratina dupla"`) using double bracket indexing into `third_species`.
+
+```{webr}
+site_data <- list(
+  site_id = "MN_BEE_01",
+  species = c("Lasioglossum vierecki", "Bombus vagans", "Ceratina dupla", "Agapostemon virescens"),
+  environmental = list(temperatures = c(21.5, 23.0, 22.8), humidity = 64)
+)
+
+# 1. Extract the temperatures vector using name/nested indexing
+temp_vals <- site_data$______$______
+
+# 2. Extract the 3rd species name using [[ ]] indexing
+third_species <- site_data$______[[______]]
+
+temp_vals
+third_species
+```
+
+### Tibbles
+
+### Code style
